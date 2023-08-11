@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" designImageOffsetX="-225" designImageAlpha="100">
+  <controller name="ctrlOkButtonStatus" pages="0,无,1,邀请好友" selected="0"/>
+  <displayList>
+    <component id="n21_u282" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="46,198" size="657,938">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label icon="ui://qkteqwfpdhwd3m"/>
+    </component>
+    <component id="n22_u282" name="inviteBtn" src="n1hp1e" fileName="inviteBtn.xml" xy="218,1168">
+      <gearDisplay controller="ctrlOkButtonStatus" pages="1"/>
+      <relation target="n21_u282" sidePair="center-center%,bottom-bottom"/>
+    </component>
+    <component id="n23_u282" name="topLoader" src="ctsq3a" fileName="banner.xml" xy="64,253" size="620,210" aspect="true">
+      <relation target="n21_u282" sidePair="width-width,center-center%,top-top"/>
+    </component>
+    <component id="n24_u282" name="myPanel" src="ctsq3b" fileName="selfItem.xml" xy="66,996" size="618,125" aspect="true" controller="ctrLastRankStatus,1">
+      <relation target="n21_u282" sidePair="center-center,bottom-bottom"/>
+    </component>
+    <text id="n25_u282" name="noneTxt" xy="322,685" size="204,66" group="n28_u282" fontSize="50" color="#cccccc" text="暂无排行">
+      <relation target="n26_u282" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n26_u282" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="62,485" size="623,490" group="n28_u282">
+      <relation target="n28_u282" sidePair="width-width,height-height"/>
+    </image>
+    <list id="n27_u282" name="curList" xy="62,486" size="623,490" group="n28_u282" overflow="scroll" scrollBarFlags="2" scrollBar="hidden" clipSoftness="0,20" defaultItem="ui://qkteqwfpc8s24" autoClearItems="true">
+      <relation target="n26_u282" sidePair="width-width,height-height,left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n28_u282" name="listRank" xy="62,485" size="623,491" advanced="true">
+      <relation target="n23_u282" sidePair="top-bottom"/>
+      <relation target="n21_u282" sidePair="width-width,height-height,left-left"/>
+    </group>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

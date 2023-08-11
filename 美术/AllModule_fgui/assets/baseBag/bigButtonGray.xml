@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="313,97" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_kqvl" name="n0" src="ctsq2w" fileName="Images/bigButton.png" pkg="qwv197ct" xy="0,0" size="313,97">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_kqvl" name="n2" src="ctsq2x" fileName="Images/cancelButton.png" pkg="qwv197ct" xy="7,7" size="299,83"/>
+    <text id="n1_kqvl" name="title" xy="0,0" size="313,97" fontSize="34" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".8"/>
+</component>

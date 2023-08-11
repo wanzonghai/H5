@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hekdvdn8">
+  <resources>
+    <component id="igfa1" name="Main.xml" path="/" exported="true"/>
+    <image id="igfa3" name="Bag_Btn_Coupon_Select.png" path="/"/>
+    <image id="igfa4" name="Bag_Btn_Coupon_Unselect.png" path="/"/>
+    <image id="igfa5" name="Bag_Btn_Goods_Select.png" path="/"/>
+    <image id="igfa6" name="Bag_Btn_Goods_Unselect.png" path="/"/>
+    <component id="igfa7" name="goodsBtn.xml" path="/"/>
+    <component id="igfa8" name="couponBtn.xml" path="/"/>
+    <component id="igfaa" name="bag.xml" path="/"/>
+    <component id="igfac" name="bagItem.xml" path="/"/>
+    <image id="igfad" name="Bag_Btn_Apply.png" path="/"/>
+    <image id="igfae" name="Bag_Btn_Apply2.png" path="/"/>
+    <component id="igfaj" name="applyBtn.xml" path="/"/>
+    <component id="qlvzl" name="detailCom.xml" path="/"/>
+    <component id="j04in" name="detail.xml" path="/"/>
+    <image id="j04iq" name="Bag_Title.png" path="/"/>
+    <image id="j04ir" name="Bag_Txt_Due.png" path="/"/>
+    <image id="j04is" name="Bag_Txt_Use.png" path="/"/>
+    <image id="j04it" name="Bag_Txt_Used.png" path="/"/>
+    <image id="lt7ov" name="Bag_Btn_cancel.png" path="/"/>
+    <image id="lt7ow" name="Bag_Btn_Confirm.png" path="/"/>
+    <image id="r8mhx" name="Bag_Btn_xiugaidizhi.png" path="/"/>
+    <image id="o0xyy" name="Bag_Btn_yishiyong.png" path="/"/>
+    <image id="o0xyz" name="Bag_Btn_qianwangshiyong.png" path="/"/>
+    <image id="u2xks" name="shouhuoren.png" path="/"/>
+    <image id="u2xk10" name="input_bg.png" path="/" scale="9grid" scale9grid="93,16,186,32"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

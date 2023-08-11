@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,270" bgColorEnabled="true">
+  <controller name="isCan" pages="0,可浏览,1,不可浏览" selected="0"/>
+  <displayList>
+    <loader id="n17_emqn" name="goodsImg" xy="10,14" size="240,240" url="ui://qwv197ctf98g28" fill="scaleFree"/>
+    <image id="n12_emqn" name="n12" src="emqn3a" fileName="Common_Panel_Round.png" pkg="qwv197ct" xy="10,14" size="240,240"/>
+    <component id="n15_emqn" name="browseBtn" src="cb3yf" fileName="browseBtn.xml" xy="510,232" pivot="0.5,0.5" anchor="true">
+      <gearLook controller="isCan" pages="1" values="1,0,1,0" default="1,0,0,1"/>
+    </component>
+    <text id="n14_emqn" name="priceTxt" xy="267,231" pivot="0,0.5" anchor="true" size="160,42" fontSize="28" color="#ff0000" vAlign="middle" leading="0" vars="true" autoSize="shrink" text="￥{price=999}"/>
+    <text id="n13_emqn" name="content" xy="427,15" pivot="0.5,0" anchor="true" size="320,179" fontSize="26" color="#333333" leading="0" vars="true" autoSize="none" text="{title=万代高达模型 原装进口 正品 模型HG}"/>
+    <image id="n18_9m1j" name="n18" src="emqn39" fileName="Common_Line.png" pkg="qwv197ct" xy="-5,267" alpha="0.4" color="#cccccc"/>
+  </displayList>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="616,-" endValue="0,0" duration="6"/>
+  </transition>
+</component>

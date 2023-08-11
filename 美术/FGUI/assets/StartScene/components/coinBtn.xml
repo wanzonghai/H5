@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="220,85" extention="Button" initName="coinBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_8gei" name="n0" src="8geie" fileName="png/jinbidi.png" xy="38,12">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_8gei" name="n1" src="8geie" fileName="png/jinbidi.png" xy="38,13" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_8gei" name="n2" src="8geie" fileName="png/jinbidi.png" xy="38,13">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_8gei" name="n3" src="8geie" fileName="png/jinbidi.png" xy="38,13">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_8gei" name="n4" src="8geia" fileName="png/jinbi.png" xy="40,42" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </image>
+    <text id="n5_8gei" name="coinNText" xy="131,43" pivot="0.5,0.5" anchor="true" size="106,42" fontSize="30" color="#d4680d" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="0"/>
+  </displayList>
+  <Button/>
+</component>

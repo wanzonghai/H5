@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hqkfv22k">
+  <resources>
+    <component id="jx9c0" name="Main.xml" path="/" exported="true"/>
+    <image id="jx9c4" name="img_awardFrame1.png" path="/" exported="true"/>
+    <image id="jx9c5" name="img_awardFrame2.png" path="/" exported="true"/>
+    <image id="jx9c6" name="img_awardFrame3.png" path="/" exported="true"/>
+    <image id="jx9c7" name="img_gxhd.png" path="/"/>
+    <image id="jx9c8" name="img_jb.png" path="/"/>
+    <image id="jx9c9" name="img_jbbg.png" path="/"/>
+    <component id="w7oce" name="prizeImg.xml" path="/"/>
+    <component id="w7ocg" name="coinImg.xml" path="/"/>
+    <component id="w7och" name="openBtn.xml" path="/"/>
+    <component id="w7ocl" name="openGift.xml" path="/"/>
+    <image id="h1k3m" name="img_tips.png" path="/"/>
+    <image id="m12yn" name="title.png" path="/"/>
+    <image id="ari2o" name="design.png" path="/"/>
+    <image id="czb6p" name="title2.png" path="/"/>
+    <image id="e0qwq" name="Bag_Btn_qianwangshiyong.png" path="/"/>
+    <component id="e0qwr" name="useBtn.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,584">
+  <controller name="isInvite" pages="0,被邀请,1,邀请人" selected="1"/>
+  <displayList>
+    <image id="n1_mxaf" name="n1" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,500"/>
+    <image id="n4_mxaf" name="n4" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,105" size="615,300"/>
+    <image id="n2_mxaf" name="n2" src="mxaf2" fileName="Invite_Title.png" xy="168,5"/>
+    <image id="n3_mxaf" name="n3" src="mxaf1" fileName="Invite_Img_Hand.png" xy="172,305"/>
+    <component id="n5_mxaf" name="confirmBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="173,486"/>
+    <loader id="n7_mxaf" name="avatar" xy="278,183" size="100,100" url="ui://qwv197ctjbc722" fill="scaleMatchWidth">
+      <gearXY controller="isInvite" pages="0,1" values="278,183|278,183"/>
+    </loader>
+    <text id="n8_mxaf" name="tipsTxt" xy="327,448" pivot="0.5,0.5" anchor="true" size="404,76" fontSize="28" color="#ffffff" align="center" vAlign="middle" vars="true" text="好友{name=xxxx}偷偷告诉你&#xA;合礼包有机会赢618手机免单哦~">
+      <gearText controller="isInvite" pages="0,1" values="好友{name=xxxx}偷偷告诉你&#xA;合礼包有机会赢618手机免单哦~|好友{name=xxxx}偷偷告诉你&#xA;合礼包有机会赢618手机免单哦~"/>
+    </text>
+    <component id="n11_mxaf" name="coinCom" src="mxaf4" fileName="coinCom.xml" xy="343,177" visible="false" touchable="false">
+      <gearDisplay controller="isInvite" pages="1"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="670,180" bgColorEnabled="true">
+  <controller name="ctrlSendStatus" pages="0,未申请发货,1,已申请发货,6,已发货" selected="0"/>
+  <controller name="ctrlType" exported="true" pages="0,实物,1,优惠券" selected="1"/>
+  <displayList>
+    <loader id="n7_ctsq" name="loadItemHead" xy="29,40" size="100,100" url="ui://qwv197ctctsq3a" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <component id="n10_ctsq" name="btnApply" src="ctsq3b" fileName="smallButton.xml" xy="479,64" size="172,52">
+      <gearDisplay controller="ctrlType" pages="0"/>
+      <gearLook controller="ctrlSendStatus" pages="1,6" values="1,0,1,1|1,0,1,1" default="1,0,0,1"/>
+      <gearText controller="ctrlSendStatus" pages="0,1,6" values="申请发货|已申请发货|已发货"/>
+      <Button title="申请发货" titleFontSize="26"/>
+    </component>
+    <component id="n16_11ndo" name="btnApply2" src="ctsq3b" fileName="smallButton.xml" xy="479,64" size="172,52">
+      <gearDisplay controller="ctrlType" pages="1"/>
+      <Button title="立即使用" titleFontSize="26"/>
+    </component>
+    <text id="n8_ctsq" name="txtName" xy="152,14" size="322,37" group="n13_ctsq" fontSize="26" color="#4e4e4e" autoSize="none" singleLine="true" text="万代手办模型 原装正品描述描述...&#xA;"/>
+    <text id="n9_ctsq" name="txtPrice" xy="152,53" size="322,36" group="n13_ctsq" fontSize="26" color="#ff7c08" vAlign="middle" vars="true" autoSize="none" singleLine="true" text="￥{money=9999}"/>
+    <text id="n11_ctsq" name="txtBeginTime" xy="152,91" size="322,36" group="n13_ctsq" fontSize="20" color="#585858" vAlign="middle" vars="true" autoSize="none" singleLine="true" text="获得时间: {time=2020-12-12}"/>
+    <text id="n12_ctsq" name="txtOrderNo" xy="152,129" size="322,36" group="n13_ctsq" fontSize="20" color="#585858" vAlign="middle" vars="true" autoSize="none" singleLine="true" text="订单号:{orderId=1477061859}"/>
+    <group id="n13_ctsq" name="description" xy="152,14" size="322,151"/>
+    <graph id="n14_ctsq" name="n14" xy="0,178" size="670,2" type="rect" lineSize="0" fillColor="#ffefefef"/>
+  </displayList>
+</component>

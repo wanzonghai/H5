@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="isInvite" pages="0,被邀请,1,邀请人" selected="1"/>
+  <displayList>
+    <component id="n12_msmc" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="47,417" pivot="0.5,0.5" size="656,500">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label icon="ui://czp63sggmxaf2"/>
+    </component>
+    <image id="n13_msmc" name="framebg" src="msmcv" fileName="Images/giftItemBg.png" xy="375,642" pivot="0.5,0.5" anchor="true" size="615,313">
+      <relation target="n12_msmc" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </image>
+    <image id="n3_mxaf" name="n3" src="mxaf1" fileName="Invite/Invite_Img_Hand.png" xy="218,696">
+      <relation target="n13_msmc" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n5_mxaf" name="confirmBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="220,878">
+      <relation target="n12_msmc" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+    <loader id="n7_mxaf" name="avatar" xy="300,515" size="150,150" url="ui://qwv197ctjbc722" fill="scaleMatchWidth">
+      <gearXY controller="isInvite" pages="0,1" values="300,523|300,515"/>
+      <relation target="n13_msmc" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n8_mxaf" name="tipsTxt" xy="385,844" pivot="0.5,0.5" anchor="true" size="204,39" fontSize="28" align="center" vAlign="middle" vars="true" text="{name=xxxx}等帮助了你">
+      <gearText controller="isInvite" pages="1" values="{name=xxxx}等帮助了你" default="你帮助了好友{name=xxxx}，快一起玩吧！"/>
+      <relation target="n13_msmc" sidePair="center-center,top-bottom"/>
+    </text>
+    <component id="n11_mxaf" name="coinCom" src="mxaf4" fileName="Invite/coinCom.xml" xy="343,177" visible="false">
+      <gearDisplay controller="isInvite" pages="1"/>
+    </component>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

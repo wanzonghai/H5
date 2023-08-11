@@ -1,0 +1,186 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <view class="check-time-frame">
+         <view class="check-time-frame-1">
+            <view class="active-msg">
+            选择活动:
+            </view>
+            <view class="active-select">
+               <select dataSource="{{activeList}}" value="{{condition.activeId}}" aria-label="tag mode" mode="single" onChange="checkUserData" followTrigger />
+            </view>
+         </view>
+         <view class='check-time-frame-2'>
+            <view class="user-data">
+            当前用户数: {{total}}
+            </view>
+            <view class="export" onTap="download">
+               导出
+            </view>
+         </view>
+      </view>
+      <view class="check-active-frame">
+         <view class="box-frame-1">
+            <view class="box-frame-1-1">
+               <view class="active-msg">
+               是否是店铺粉丝:
+               </view>
+               <view class="active-select">
+                  <select dataSource="{{isShopVipList}}" value="{{condition.isMember}}" aria-label="tag mode" mode="single" data-type="isMember" onChange="checkTypeAction" followTrigger />
+               </view>
+               <view class="active-msg" style="margin-left:15px;">
+               会员等级:
+               </view>
+               <view class="active-select">
+                  <select dataSource="{{shopVipLvList}}" value="{{condition.memberLv}}" aria-label="tag mode" mode="single" data-type="memberLv" onChange="checkTypeAction" followTrigger />
+               </view>
+               <view class="active-msg" style="margin-left:15px;">
+               用户状态:
+               </view>
+               <view class="active-select">
+                  <select dataSource="{{isInBackList}}" value="{{condition.isInBackList}}" aria-label="tag mode" mode="single" data-type="isInBackList" onChange="checkTypeAction" followTrigger />
+               </view>
+            </view>
+            <view class="box-frame-1-2">
+               <view class="active-msg">
+                  淘宝名称:
+               </view>
+               <view class="active-select">
+                  <input value="{{condition.nickName}}" placeholder="请输入" data-type="nickName" onChange='checkTypeAction' />
+               </view>
+            </view>
+         </view>
+      </view>
+      <view class="center-data-frame">
+         <view class="top-msg-frame">
+           用户数据
+         </view>
+         <view class="result-frame">
+            <table dataSource="{{userData}}" loading="{{loading}}" hasBorder="{{false}}">
+               <table-column title="淘宝名" dataIndex="nickName" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <!-- <table-column title="积分榜排名" dataIndex="isMember" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value ? '是' : '否'}}</view>
+               </table-column> -->
+               <table-column title="会员等级" dataIndex="memberLv" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="剩余次数" dataIndex="userCoin" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="当前积分" dataIndex="point" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="购买商品数量" dataIndex="buyNum" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="购买商品金额" dataIndex="buyCost" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="分享次数" dataIndex="shareNum" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="邀请新增" dataIndex="count_invitation" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="任务次数" dataIndex="taskDoneCount" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="创建时间" dataIndex="createTime" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">{{x.value}}</view>
+               </table-column>
+               <table-column title="用户状态" dataIndex="isInBackList" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">
+                     <block a:if="{{x.value == false}}">
+                        <text style="color:green">正常</text>
+                     </block>
+                     <block a:if="{{x.value == true}}">
+                        <text style="color:red">黑名单</text>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="操作" dataIndex="isInBackList" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" class="btn_frame">
+                     <view class="ship_btn" data-userInfo="{{x.record}}" data-type="getReward" onTap="btnAction">获奖信息</view>
+                     <view class="ship_btn" data-userInfo="{{x.record}}" data-type='addCoin' onTap="btnAction">配置次数</view>
+                     <block a:if="{{x.value == false}}">
+                        <view class="ship_btn_yellow" data-userInfo="{{x.record}}" data-type="pushBlack" onTap="btnAction">加入黑名单</view>
+                     </block>
+                     <block a:if="{{x.value == true}}">
+                        <view class="ship_btn_red" data-userInfo="{{x.record}}" data-type="removeBlack" onTap="btnAction">移除黑名单</view>
+                     </block>
+                  </view>
+               </table-column>
+            </table>
+            <view class="page-frmae">
+               <pagination total= {{total}} pageSize="{{condition.limit}}" onChange="onPageChange" />
+            </view>
+         </view>
+      </view>
+      <!-- 奖品信息弹窗 -->
+      <view class="{{reward_box_frame}}">
+         <scroll-view style='height:270px' scroll-y="{{true}}" onScrollToUpper="upper" onScrollToLower="lower" onScroll="scroll" scroll-left="1">
+            <table dataSource="{{rewardInfoData}}" loading="{{loading}}" hasBorder="{{false}}">
+               <table-column title="奖品图片" dataIndex="rewardInfo.pic_url" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">
+                     <image style="width:60px;height:60px;" mode="scaleToFill" src="{{x.value}}"></image>
+                  </view>
+               </table-column>
+               <table-column title="奖品名称" dataIndex="rewardInfo.title" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+               <table-column title="价值" dataIndex="rewardInfo.price" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+               <table-column title="数量" dataIndex="rewardInfo.sendNum" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">1</view>
+               </table-column>
+               <table-column title="获奖日期" dataIndex="rewardTime" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="font-size:10px">{{x.value}}</view>
+               </table-column>
+            </table>
+         </scroll-view>
+         <view class="reward-close" onTap="close">确定</view>
+      </view>
+      <!-- 配置次数弹窗 -->
+      <view class="{{addCoin_box_frame}}">
+         <view class="add-input">
+            <input trim value="{{sbCoin}}" onChange="addCoin" />
+         </view>
+         <view class="add-input">
+            请输入要修改的次数据量
+         </view>
+         <view class="addCoin-btn-frame">
+            <view class="btn-success {{coinSuccess == false ? 'btn_no' : ''}}" data-type="ok" onTap="addCoin">
+             确定
+            </view>
+            <view class="btn-success" onTap="close">
+             取消
+            </view>
+         </view>
+      </view>
+      <!-- 黑名单弹窗 -->
+      <view class="{{pushBlack_box_frame}}">
+         <view class="msg_1">
+             ********温馨提示********
+         </view>
+         <view class="msg_2">
+            加入黑名单的用户将无法参加活动
+         </view>
+         <view class="msg">
+            确定将此用户
+            <text style="color:red;font-size:20px">{{pusbBlackMsg}}</text>
+            黑名单?
+         </view>
+         <view class="addCoin-btn-frame">
+            <view class="btn-success" data-type="{{pusbBlackMsg == '加入' ? 'push' : 'remove'}}" onTap="pushBlack">
+             确定
+            </view>
+            <view class="btn-success" onTap="close">
+             取消
+            </view>
+         </view>
+      </view>
+   </view>
+</view>

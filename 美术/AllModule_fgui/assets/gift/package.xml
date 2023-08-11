@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="txopsw7a">
+  <resources>
+    <component id="s0ol5" name="exchangeBtn2.xml" path="/components/"/>
+    <component id="s0ol6" name="exchangeConfirm.xml" path="/components/"/>
+    <component id="s0ol7" name="exchangeFail.xml" path="/components/"/>
+    <component id="s0ol8" name="exchangeHint1.xml" path="/components/"/>
+    <component id="s0ol9" name="exchangeHint2.xml" path="/components/"/>
+    <component id="s0ola" name="exchangeSuccess.xml" path="/components/"/>
+    <component id="s0olb" name="Main.xml" path="/" exported="true"/>
+    <component id="s0olc" name="GiftInfo.xml" path="/components/"/>
+    <component id="s0old" name="GiftItem.xml" path="/components/"/>
+    <component id="s0olf" name="MyGiftButton.xml" path="/components/"/>
+    <component id="s0oli" name="scoreExchangeBtn.xml" path="/components/"/>
+    <image id="s0ol1q" name="awardShowBtn.png" path="/Images/"/>
+    <image id="s0ol1v" name="duihuananniu.png" path="/Images/"/>
+    <image id="s0ol1w" name="Icon.png" path="/Images/" exported="true"/>
+    <image id="s0ol1x" name="jifen.png" path="/Images/"/>
+    <image id="s0ol1y" name="jifen_gray.png" path="/Images/"/>
+    <image id="s0ol1z" name="jifendi.png" path="/Images/"/>
+    <image id="s0ol20" name="qipao.png" path="/Images/"/>
+    <image id="s0ol2a" name="duiihuanshibaitubiao.png" path="/Images/"/>
+    <image id="s0ol2b" name="exchangeBg_1.png" path="/Images/"/>
+    <image id="s0ol2c" name="exchangeBg_2.png" path="/Images/"/>
+    <image id="s0ol2e" name="giftConfirm_frame.png" path="/Images/"/>
+    <image id="s0ol2f" name="giftConfirm_titlebg.png" path="/Images/"/>
+    <image id="s0ol2g" name="giftDemo.png" path="/Images/"/>
+    <image id="s0ol2h" name="giftItemBg.png" path="/Images/" scale="9grid" scale9grid="38,44,250,327"/>
+    <image id="s0ol2i" name="giftItemBtnBg.png" path="/Images/"/>
+    <image id="s0ol2j" name="giftItemBtnBg2.png" path="/Images/"/>
+    <image id="s0ol2k" name="giftItemTitlebg.png" path="/Images/"/>
+    <image id="s0ol2l" name="gift_frame.png" path="/Images/"/>
+    <image id="s0ol2m" name="gift_title1.png" path="/Images/"/>
+    <image id="s0ol2n" name="gift_title2.png" path="/Images/"/>
+    <image id="s0ol2o" name="gift_title3.png" path="/Images/"/>
+    <image id="s0ol2q" name="guangxiao.png" path="/Images/"/>
+    <image id="s0ol2r" name="haoliduihuan.png" path="/Images/"/>
+    <image id="s0ol2s" name="my_gift.png" path="/Images/"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\gift"/>
+</packageDescription>

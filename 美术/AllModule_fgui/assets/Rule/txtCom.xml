@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="572,713">
+  <displayList>
+    <text id="n3_igfa" name="ruleTxt" xy="0,0" size="572,699" fontSize="28" color="#4e4e4e" leading="10" autoSize="height" text="1、比赛每局30秒&#xA;2、 用户首先需要躲避炸弹， 避免被提前淘汰出局&#xA;3、 比赛时间结束后， 抢到礼包的用户可以拆开礼包获得奖励&#xA;4、 每次礼包挑战需要消耗一定金币&#xA;5、 通过完成任务可以获得金币&#xA;6、 获得奖品后， 可以在奖品包中查看详情， 向商家申请发货&#xA;7、 每局比赛还可以获得奖杯， 奖杯用来参加排行榜&#xA;8、 排行榜指定名次会获得商家提供的丰厚奖励 n9、 每隔一段时间， 排行榜会刷新一次奖杯数， 并发放奖励&#xA;9、游戏内购买商品送金币时，下单后请点击返回返回游戏，否则无法获得金币奖励"/>
+  </displayList>
+  <relation target="n3_igfa" sidePair="bottomext-bottom"/>
+</component>

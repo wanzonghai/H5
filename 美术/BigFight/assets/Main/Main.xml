@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" designImage="ui://upm5wp5ntk5430" designImageOffsetY="-150" designImageAlpha="100">
+  <displayList>
+    <image id="n0_hd9y" name="bottom" src="tpcm8" fileName="Main_Di.png" xy="375,1336" pivot="0.5,1" anchor="true" size="750,160">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </image>
+    <component id="n65_rfln" name="gameShow" src="rfln1y" fileName="dianshi.xml" xy="251,175" pivot="0.5,0.5" scale="0.85,0.85">
+      <relation target="" sidePair="top-top%"/>
+    </component>
+    <component id="n2_hd9y" name="rankBtn" src="hd9yl" fileName="rankBtn.xml" xy="487,1284" pivot="0.5,1" anchor="true">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </component>
+    <component id="n3_hd9y" name="shopBtn" src="hd9ym" fileName="shopBtn.xml" xy="121,1284" pivot="0.5,1" anchor="true">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </component>
+    <component id="n5_hd9y" name="taskBtn" src="hd9yn" fileName="taskBtn.xml" xy="668,1284" pivot="0.5,1" anchor="true">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </component>
+    <component id="n13_hd9y" name="avatarCom" src="hd9yu" fileName="avatarCom.xml" xy="48,23">
+      <relation target="" sidePair="left-left,top-top%"/>
+    </component>
+    <component id="n20_hd9y" name="coinCom" src="hd9yt" fileName="coinCom.xml" xy="370,31">
+      <relation target="" sidePair="top-top%"/>
+    </component>
+    <component id="n77_md3v" name="pointCom" src="hd9ys" fileName="pointCom.xml" xy="180,31">
+      <relation target="" sidePair="top-top%"/>
+    </component>
+    <component id="n7_hd9y" name="challengeBtn" src="hd9yp" fileName="challengeBtn.xml" xy="374,1040" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="bottom-bottom%"/>
+    </component>
+    <component id="n96_xo2n" name="gift" src="xo2n39" fileName="gift.xml" xy="113,589">
+      <relation target="n7_hd9y" sidePair="bottom-top"/>
+    </component>
+    <image id="n62_rfln" name="mid" src="tpcma" fileName="Main_Gang.png" xy="375,1241" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </image>
+    <image id="n63_rfln" name="right" src="tpcma" fileName="Main_Gang.png" xy="550,1241" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </image>
+    <image id="n78_md3v" name="left" src="tpcma" fileName="Main_Gang.png" xy="196,1241" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </image>
+    <component id="n68_igfa" name="bagBtn" src="igfa26" fileName="bagBtn.xml" xy="300,1284" pivot="0.5,1" anchor="true">
+      <relation target="n0_hd9y" sidePair="middle-middle"/>
+    </component>
+    <component id="n69_igfa" name="ruleBtn" src="igfa27" fileName="ruleBtn.xml" xy="657,32">
+      <relation target="" sidePair="top-top%"/>
+    </component>
+    <component id="n74_jgw6" name="soundBtn" src="jgw62s" fileName="soundBtn.xml" xy="575,32">
+      <relation target="" sidePair="top-top%"/>
+    </component>
+    <component id="n85_vp72" name="n85" src="vp7234" fileName="denglongzu.xml" xy="-3,371" pivot="0.63,0"/>
+    <component id="n87_vp72" name="n87" src="vp7236" fileName="denglongzu2.xml" xy="615,362"/>
+  </displayList>
+  <transition name="slideIn" autoPlay="true">
+    <item time="0" type="Scale" target="n2_hd9y" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+    <item time="0" type="Scale" target="n3_hd9y" value="0,0"/>
+    <item time="0" type="Scale" target="n5_hd9y" value="0,0"/>
+    <item time="0" type="Scale" target="n65_rfln" tween="true" startValue="0,0.85" endValue="0.85,0.85" duration="12" ease="Expo.InOut"/>
+    <item time="0" type="Scale" target="n68_igfa" tween="true" startValue="0,1" endValue="1,1" duration="15"/>
+    <item time="0" type="Scale" target="n85_vp72" value="1,0"/>
+    <item time="0" type="Scale" target="n87_vp72" value="1,0"/>
+    <item time="0" type="XY" target="n0_hd9y" tween="true" startValue="-,2500,0,1.874" endValue="-,1336,0,1.001" duration="15"/>
+    <item time="0" type="XY" target="n13_hd9y" tween="true" startValue="-,-270" endValue="-,20,0,0.015" duration="12"/>
+    <item time="0" type="XY" target="n20_hd9y" tween="true" startValue="-,-270" endValue="-,31,0,0.023" duration="12"/>
+    <item time="0" type="XY" target="n69_igfa" tween="true" startValue="-,-270" endValue="-,32,0.876,0.024" duration="12"/>
+    <item time="0" type="XY" target="n74_jgw6" tween="true" startValue="-,-270" endValue="-,32,0.767,0.024" duration="12"/>
+    <item time="0" type="XY" target="n77_md3v" tween="true" startValue="-,-270" endValue="-,31" duration="12"/>
+    <item time="0" type="XY" target="n7_hd9y" tween="true" startValue="-,2000" endValue="-,1040,0,0.78" duration="12" ease="Sine.Out"/>
+    <item time="3" type="Scale" target="n3_hd9y" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+    <item time="6" type="Scale" target="n5_hd9y" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+    <item time="9" type="Scale" target="n85_vp72" tween="true" startValue="1,0" endValue="1,1" duration="6" ease="Back.Out"/>
+    <item time="9" type="Scale" target="n87_vp72" tween="true" startValue="1,0" endValue="1,1" duration="6" ease="Back.Out"/>
+  </transition>
+  <transition name="showTips"/>
+</component>

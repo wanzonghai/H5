@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="qkteqwfp">
+  <resources>
+    <component id="c8s20" name="Main.xml" path="/" exported="true"/>
+    <component id="c8s24" name="rankItem.xml" path="/"/>
+    <component id="v07rt" name="rank.xml" path="/"/>
+    <component id="n1hp1e" name="inviteBtn.xml" path="/"/>
+    <component id="cowj1h" name="lastRankBtn.xml" path="/"/>
+    <component id="cowj1i" name="ruleBtn.xml" path="/"/>
+    <component id="cowj1k" name="awardBtn.xml" path="/"/>
+    <component id="cowj1n" name="awardItem.xml" path="/"/>
+    <component id="cowj1q" name="awardCom.xml" path="/"/>
+    <component id="cowj1s" name="Awards.xml" path="/" exported="true"/>
+    <component id="cowj1t" name="awardList.xml" path="/"/>
+    <component id="cowj1z" name="LastRank.xml" path="/" exported="true"/>
+    <component id="cowj20" name="last.xml" path="/"/>
+    <component id="ctsq28" name="closeBtn.xml" path="/"/>
+    <image id="ctsq2b" name="rank.png" path="/Images/"/>
+    <image id="ctsq2c" name="rank1.png" path="/Images/"/>
+    <image id="ctsq2d" name="rank2.png" path="/Images/"/>
+    <image id="ctsq2e" name="rankSelect.png" path="/Images/"/>
+    <image id="ctsq2f" name="rank3.png" path="/Images/"/>
+    <image id="ctsq2n" name="timeBar.png" path="/Images/" scale9grid="168,12,336,24"/>
+    <image id="ctsq2q" name="定位.png" path="/Images/"/>
+    <image id="ctsq2z" name="flag.png" path="/Images/"/>
+    <image id="ctsq30" name="flagBg.png" path="/Images/"/>
+    <image id="ctsq31" name="gift.png" path="/Images/"/>
+    <image id="ctsq32" name="header.png" path="/Images/"/>
+    <image id="ctsq36" name="join.png" path="/Images/"/>
+    <image id="ctsq38" name="rankBrief.png" path="/Images/"/>
+    <component id="ctsq3a" name="banner.xml" path="/"/>
+    <component id="ctsq3b" name="selfItem.xml" path="/"/>
+    <component id="ctsq3c" name="bigButton.xml" path="/"/>
+    <component id="ctsq3d" name="ResultRank.xml" path="/" exported="true"/>
+    <component id="ctsq3f" name="result.xml" path="/"/>
+    <image id="igsl3h" name="Icon.png" path="/Images/" exported="true"/>
+    <component id="ip943i" name="smallButtonGray.xml" path="/"/>
+    <component id="ip943j" name="GetReward.xml" path="/" exported="true"/>
+    <component id="ip943k" name="rankItem2.xml" path="/"/>
+    <component id="ip943l" name="smallButton.xml" path="/"/>
+    <image id="dhwd3m" name="Task_Title.png" path="/Images/"/>
+    <image id="dhwd3p" name="图层 92.png" path="/Images/"/>
+    <image id="dhwd3r" name="awardList_title.png" path="/Images/"/>
+    <image id="11ndo3s" name="rankAwrdLine.png" path="/Images/"/>
+    <image id="11ndo3t" name="rankAwardIcon.png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="rank" genCode="true" codePath="..\src\module\rank">
+    <atlas name="默认" index="0"/>
+  </publish>
+</packageDescription>

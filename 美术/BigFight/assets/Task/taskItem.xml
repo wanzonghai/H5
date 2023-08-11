@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,156" bgColorEnabled="true">
+  <controller name="state" pages="0,可领取,1,前往,2,已领取" selected="0"/>
+  <controller name="iconCtrl" pages="0,金币,1,挑战券,2,皮肤" selected="0"/>
+  <controller name="isTimer" pages="0,正常,1,倒计时,6,关注" selected="0"/>
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="0"/>
+  <displayList>
+    <image id="n0_hd9y" name="n0" src="shd82u" fileName="Common_Panel_Item.png" pkg="qwv197ct" xy="0,0" size="620,137" visible="false"/>
+    <image id="n25_emqn" name="n25" src="emqn39" fileName="Common_Line.png" pkg="qwv197ct" xy="3,154" alpha="0.4" color="#cccccc">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <text id="n3_hd9y" name="titleTxt" xy="142,29" pivot="0,0.5" size="124,42" fontSize="30" vAlign="bottom" vars="true" text="炸弹挑战">
+      <gearColor controller="styleCtrl" pages="0,1" values="#000000,#000000|#5935a1,#000000"/>
+    </text>
+    <text id="n4_hd9y" name="awardTxt" xy="142,81" pivot="0,0.5" size="283,56" fontSize="20" color="#ff8b18" vAlign="middle" vars="true" autoSize="shrink" text="奖励: 游戏{time=次数+3、}{score=积分+100} ">
+      <gearColor controller="styleCtrl" pages="0,1" values="#ff8b18,#000000|#a257e4,#000000"/>
+    </text>
+    <text id="n31_nldl" name="taskTxt" xy="267,42" pivot="0,0.5" size="75,29" fontSize="20" color="#ff8b18" vAlign="bottom" vars="true" autoSize="none" text="({done=3}/{need=100})">
+      <gearColor controller="styleCtrl" pages="0,1" values="#ff8b18,#000000|#a257e4,#000000"/>
+      <relation target="n3_hd9y" sidePair="left-right"/>
+    </text>
+    <loader id="n17_hob4" name="rewardLoader" xy="26,28" size="100,100" url="ui://qwv197ctu2xk3k" align="center" vAlign="middle" fill="scaleMatchWidth" clearOnPublish="true"/>
+    <text id="n18_eyxm" name="timeTxt" xy="473,46" pivot="0.5,0.5" size="104,62" fontSize="22" color="#ff611c" vAlign="middle" vars="true" bold="true" text="{time=00:00:00}&#xA;后可领取">
+      <gearDisplay controller="state" pages="1"/>
+      <gearColor controller="styleCtrl" pages="1" values="#a257e4,#000000" default="#ff611c,#000000"/>
+      <gearDisplay2 controller="isTimer" pages="1" condition="0"/>
+    </text>
+    <image id="n19_pkfk" name="n19" src="pkfkp" fileName="Task_Ico_TimeLimt.png" xy="87,7">
+      <gearDisplay controller="iconCtrl" pages="2"/>
+    </image>
+    <image id="n20_g0ib" name="yigaunzhu" src="sl47u" fileName="Task_Btn_Followed.png" xy="430,41">
+      <gearDisplay controller="state" pages="2"/>
+      <gearDisplay2 controller="isTimer" pages="6" condition="0"/>
+    </image>
+    <component id="n5_hd9y" name="getBtn" src="tpcm9" fileName="getBtn.xml" xy="437,53">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="isTimer" pages="0,1,6" condition="0"/>
+    </component>
+    <component id="n6_hd9y" name="goBtn" src="hd9yf" fileName="goBtn.xml" xy="437,53">
+      <gearDisplay controller="state" pages="1"/>
+      <gearDisplay2 controller="isTimer" pages="0,6" condition="0"/>
+    </component>
+    <component id="n22_g0ib" name="gotBtn" src="hd9yg" fileName="gotBtn.xml" xy="436,52">
+      <gearDisplay controller="state" pages="2"/>
+      <gearDisplay2 controller="isTimer" pages="0,1,6" condition="0"/>
+    </component>
+    <component id="n24_g0ib" name="followBtn" src="g0ibs" fileName="followBtn.xml" xy="430,41" visible="false">
+      <gearDisplay controller="state" pages="1"/>
+      <gearIcon controller="isTimer" default=""/>
+      <gearDisplay2 controller="isTimer" pages="6" condition="0"/>
+    </component>
+    <image id="n27_qib4" name="coinIcon" src="fbxk3g" fileName="task_icon1.png" pkg="qwv197ct" xy="356,9" group="n30_u2xk" visible="false"/>
+    <image id="n28_qib4" name="scoreIcon" src="fbxk3f" fileName="task_icon2.png" pkg="qwv197ct" xy="359,32" group="n30_u2xk" visible="false"/>
+    <text id="n16_hwkg" name="countTxt" xy="411,6" pivot="0,0.5" size="19,35" group="n30_u2xk" visible="false" fontSize="25" color="#ff7e0c" vAlign="middle" vars="true" bold="true" text="{count=3}">
+      <relation target="n27_qib4" sidePair="middle-middle,left-left"/>
+    </text>
+    <text id="n26_qib4" name="scorecountTxt" xy="403,32" pivot="0,0.5" size="19,35" group="n30_u2xk" visible="false" fontSize="25" color="#fe4051" vAlign="middle" vars="true" bold="true" text="{scorecount=3}">
+      <relation target="n28_qib4" sidePair="middle-middle,left-left"/>
+    </text>
+    <group id="n30_u2xk" name="old" xy="356,6" size="74,64"/>
+  </displayList>
+  <transition name="slideIn" options="4">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="620,0" endValue="0,0" duration="6"/>
+  </transition>
+</component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <graph id="n7_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" visible="false" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <component id="n17_dhwd" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="35,205" size="680,924">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label icon="ui://txopsw7as0ol2r"/>
+    </component>
+    <image id="n0_praz" name="framebg" src="s0ol2h" fileName="Images/giftItemBg.png" xy="375,695" pivot="0.5,0.5" anchor="true" size="650,827">
+      <relation target="n17_dhwd" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </image>
+    <text id="n4_praz" name="updateTimeTitle" xy="344,277" pivot="0.5,0.5" anchor="true" size="164,29" visible="false" fontSize="20" align="center" vAlign="middle" text="库存更新倒计时：">
+      <relation target="n6_praz" sidePair="center-center,top-top"/>
+    </text>
+    <text id="n5_praz" name="updateTime" xy="430,277" pivot="0,0.5" anchor="true" size="82,29" visible="false" fontSize="20" vAlign="middle" text="08:30:50">
+      <relation target="n4_praz" sidePair="middle-middle,left-right"/>
+    </text>
+    <list id="n6_praz" name="giftList" xy="374,1102" pivot="0.5,1" anchor="true" size="616,806" layout="flow_hz" overflow="scroll" lineGap="15" colGap="10" defaultItem="ui://txopsw7as0old" autoClearItems="true" treeView="true" indent="15" clickToExpand="0">
+      <relation target="n0_praz" sidePair="width-width,height-height,center-center,bottom-bottom"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+    </list>
+    <component id="n16_pywd" name="btnMyGift" src="s0olf" fileName="components/MyGiftButton.xml" xy="56,146">
+      <relation target="n17_dhwd" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n13_nkzp" name="exchangeConfirm" src="s0ol6" fileName="components/exchangeConfirm.xml" xy="375,667" size="750,1334" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n14_nkzp" name="exchangeSuccess" src="s0ola" fileName="components/exchangeSuccess.xml" xy="375,667" size="750,1334" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n15_nkzp" name="exchangeFail" src="s0ol7" fileName="components/exchangeFail.xml" xy="375,667" size="750,1334" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

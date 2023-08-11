@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="c5mx7a76">
+  <resources>
+    <component id="n9oc0" name="Main.xml" path="/" exported="true"/>
+    <image id="n9oc3" name="Rule_Title.png" path="/Images/"/>
+    <component id="n9oc4" name="txtCom.xml" path="/"/>
+    <image id="n9ocl" name="giftItemBg.png" path="/Images/" scale="9grid" scale9grid="38,44,250,327"/>
+    <image id="n9ocm" name="Icon.png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\Rule"/>
+</packageDescription>

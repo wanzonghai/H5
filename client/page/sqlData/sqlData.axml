@@ -1,0 +1,53 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <view class="check-time-frame">
+         <view class="check-time-frame-1">
+            <view class="active-msg">
+            数据库表名:
+            </view>
+            <view class="active-select">
+               <input placeholder="请输入" data-type="dbName" onChange='sql' />
+            </view>
+            <view class="active-msg">
+            查询类型:
+            </view>
+            <view class="active-select">
+               <select dataSource="{{selectList}}" aria-label="tag mode" mode="single" data-type="sqlType" onChange='sql' followTrigger />
+            </view>
+         </view>
+         <view class="check-time-frame-1">
+            <view class="active-msg">
+            Sql:
+            </view>
+            <view class="active-select">
+               <textarea style="width:500px" rows="5" data-type="sql" onChange="sql"></textarea>
+            </view>
+            <view class="export" style="margin-left:15px" onTap="go">
+               查询
+            </view>
+         </view>
+         <view class='check-time-frame-2'>
+            <view class="export" onTap="download">
+               导出
+            </view>
+         </view>
+      </view>
+      <view class="center-data-frame">
+         <view class="top-msg-frame">
+           数据总数:{{data.length}}
+         </view>
+         <view class="result-frame">
+            <view class="table_frame_list">
+              <view class="list" a:for="{{data}}" a:for-item="item">
+                {{item}}
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+</view>

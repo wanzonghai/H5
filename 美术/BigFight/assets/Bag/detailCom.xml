@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,908">
+  <displayList>
+    <image id="n2_qlvz" name="BG" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,820"/>
+    <image id="n15_lt7o" name="n15" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,162" size="615,600"/>
+    <text id="n4_qlvz" name="name" xy="65,209" size="82,36" fontSize="26" color="#666666" text="收货人"/>
+    <text id="n5_qlvz" name="phone" xy="65,309" size="108,36" fontSize="26" color="#666666" text="手机号码"/>
+    <text id="n6_qlvz" name="address" xy="65,419" size="108,36" fontSize="26" color="#666666" text="详细地址"/>
+    <image id="n11_qlvz" name="n11" src="u2xk10" fileName="input_bg.png" xy="220,197" size="370,60" color="#cccccc"/>
+    <image id="n12_qlvz" name="n12" src="u2xk10" fileName="input_bg.png" xy="220,297" size="370,60" color="#cccccc"/>
+    <image id="n13_qlvz" name="n13" src="u2xk10" fileName="input_bg.png" xy="65,474" size="525,200" color="#cccccc"/>
+    <text id="n7_qlvz" name="nameInput" xy="230,207" size="352,50" visible="false" fontSize="30" color="#666666" autoSize="none" text="" input="true" prompt="请输入您的姓名"/>
+    <text id="n8_qlvz" name="phoneInput" xy="230,304" size="352,52" visible="false" fontSize="30" color="#666666" autoSize="none" text="" input="true" prompt="请输入您的手机号码" maxLength="11" keyboardType="5"/>
+    <text id="n9_qlvz" name="addressInput" xy="75,481" size="508,42" visible="false" fontSize="30" color="#666666" autoSize="height" text="" input="true" prompt="请输入您的地址"/>
+    <component id="n17_v77a" name="confirmBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="173,810"/>
+    <component id="n18_v77a" name="closeBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <text id="n19_mljj" name="nameTxt" xy="230,207" size="352,50" fontSize="26" color="#666666" autoSize="none" text=""/>
+    <text id="n20_mljj" name="phoneTxt" xy="230,304" size="352,50" fontSize="26" color="#666666" autoSize="none" text=""/>
+    <text id="n21_mljj" name="addressTxt" xy="75,481" size="508,185" fontSize="30" color="#666666" autoSize="none" text=""/>
+    <image id="n22_u2xk" name="n22" src="u2xks" fileName="shouhuoren.png" xy="162,80" visible="false"/>
+    <text id="n23_934q" name="n23" xy="166,80" size="324,54" fontSize="40" strokeColor="#ffffff" strokeSize="3" shadowColor="#ffffff" shadowOffset="1,1" singleLine="true" text="请确认收货人信息"/>
+  </displayList>
+</component>

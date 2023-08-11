@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="240,310">
+  <displayList>
+    <loader id="n0_o7s4" name="imageLoader" xy="120,120" pivot="0.5,0.5" anchor="true" size="240,240" url="ui://txopsw7as0ol2g" align="center" vAlign="middle" fill="scale"/>
+    <text id="n1_o7s4" name="describText" xy="119,276" pivot="0.5,0.5" anchor="true" size="237,62" fontSize="22" color="#333333" align="center" vAlign="middle" ubb="true" vars="true" autoSize="height" text="店铺 [color=#FF3300]{money=99.9元}[/color] 无门槛券可动正版模型... "/>
+  </displayList>
+</component>

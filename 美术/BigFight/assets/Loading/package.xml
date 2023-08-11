@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="9xqxb3u2">
+  <resources>
+    <component id="my64p" name="Main.xml" path="/" exported="true"/>
+    <image id="my64q" name="loading.png" path="/"/>
+    <component id="my64r" name="loading.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

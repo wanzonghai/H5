@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="2614tyic">
+  <resources>
+    <component id="lh0h0" name="Main.xml" path="/" exported="true"/>
+    <image id="lh0h1" name="surpassFrame.png" path="/Images/"/>
+    <component id="lh0h2" name="SurpassHint.xml" path="/" exported="true"/>
+    <image id="i42s4" name="Icon.png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\atmosphere"/>
+</packageDescription>

@@ -1,0 +1,59 @@
+<view>
+   <view class="top">
+      <view class="game-data">
+         <view class="game-total">
+            
+            <view class="clientV">版本: {{clientVersion}}</view>
+            <view class="btn_2">
+               <image class="game-total-icon" src="../../images/navigation/down.png" onTap="debug_dealine"></image>
+               <text onTap='toDocumentaction'>帮助文档</text>
+            </view>
+            <image class="game-total-icon_time" src="../../images/navigation/time.png"></image>
+            <text class="dao_qi_shi_jian" onTap="sqlFrame">服务到期时间：</text>
+            <text class="dao_qi_shi_jian_time">{{deadline}}</text>
+            <view class="btn_1">
+               <text onTap="openQianniuRenew">续订</text>
+            </view>
+            <view class="ytd-game-num">
+               <image class="qianniu_1" onTap="openQianniu" mode="scaleToFill"
+                  src="https://oss.ixald.com/bigFight/admin/images/wangwang.png"></image>
+               <text style="margin-left:5px;color:#50B3F8" onTap="openQianniu">联系我们</text>
+            </view>
+         </view>
+      </view>
+      <view class="top-title">
+         <view class="{{ pageName == '活动配置' ? '' : 'none'}} top-title-1">
+            {{pageName}}/{{subPageName}}
+         </view>
+         <view class="top-title-2">
+            {{pageName}}
+         </view>
+         <block a:if="{{pageName === '活动列表'}}">
+            <view class="configlist-top">
+               <view class="config-msg-name" onTap="createActive">创建活动</view>
+            </view>
+         </block>
+      </view>
+   </view>
+   <!-- 订阅 -->
+   <block a:if="{{deadline !== ''}}">
+      <deadline slot='deadline' subDeadline="{{deadline}}" />
+   </block>
+   <!-- sql弹窗 -->
+   <view class="{{sqlFrame}}">
+      <view class="add-input">
+         管理员名字!!!!
+      </view>
+      <view class="add-input">
+         <input trim data-type="add" onChange="adminName" />
+      </view>
+      <view class="addCoin-btn-frame">
+         <view class="btn-success {{coinSuccess == false ? 'btn_no' : ''}}" data-type="ok" onTap="adminName">
+            确定
+         </view>
+         <view class="btn-success" onTap="close">
+            取消
+         </view>
+      </view>
+   </view>
+</view>

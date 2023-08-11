@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,80" extention="Button" initName="reviveBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_o7s4" name="n0" src="o7s4u" fileName="png/btnFram2.png" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_o7s4" name="n1" src="o7s4u" fileName="png/btnFram2.png" xy="0,0" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_o7s4" name="n2" src="o7s4u" fileName="png/btnFram2.png" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_o7s4" name="n3" src="o7s4u" fileName="png/btnFram2.png" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4_o7s4" name="title" xy="0,0" size="296,80" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" singleLine="true" text="复活继续">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n5_o7s4" name="n5" xy="140,111" pivot="0.5,0.5" anchor="true" size="124,29" fontSize="20" color="#fffaab" text="消除部分水果">
+      <relation target="" sidePair="center-center,top-bottom"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

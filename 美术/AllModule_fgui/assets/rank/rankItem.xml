@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="671,136" extention="Button" bgColorEnabled="true">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="ctrlRank" pages="0,其他,1,第一,2,第二,3,第三" selected="0"/>
+  <controller name="ctrlHaveAward" pages="0,没有奖励,1,有奖励" selected="0"/>
+  <controller name="ctrlIsSelf" exported="true" pages="0,列表,1,自己实时排行,2,上期自己排行,3,结算时自己排行" selected="0"/>
+  <displayList>
+    <image id="n39_ctsq" name="n39" src="ctsq2e" fileName="Images/rankSelect.png" xy="0,0" size="671,136">
+      <gearDisplay controller="ctrlIsSelf" pages="3"/>
+    </image>
+    <text id="n9" name="nameTxt" xy="235,50" size="196,35" fontSize="25" color="#666666" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="大家好我是坛子大人...">
+      <gearXY controller="ctrlIsSelf" pages="0" values="235,50" default="228,16"/>
+      <gearSize controller="ctrlIsSelf" pages="0,1" values="196,35,1,1|190,39,1,1" default="269,39,1,1"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </text>
+    <text id="n19_n3sv" name="rankTxt" xy="61,68" pivot="0.5,0.5" anchor="true" size="103,66" fontSize="35" color="#f97b48" align="center" vAlign="middle" autoSize="shrink" bold="true" singleLine="true" text="">
+      <gearDisplay controller="ctrlRank" pages="0"/>
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </text>
+    <image id="n20_n3sv" name="n20" src="ctsq2c" fileName="Images/rank1.png" xy="59,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="ctrlRank" pages="1"/>
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </image>
+    <image id="n21_n3sv" name="n21" src="ctsq2d" fileName="Images/rank2.png" xy="59,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="ctrlRank" pages="2"/>
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </image>
+    <image id="n22_n3sv" name="n22" src="ctsq2f" fileName="Images/rank3.png" xy="59,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="ctrlRank" pages="3"/>
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </image>
+    <graph id="n38_ctsq" name="n38" xy="0,134" size="671,2" type="rect" lineSize="0" fillColor="#ffefefef">
+      <gearDisplay controller="ctrlIsSelf" pages="0"/>
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </graph>
+    <loader id="n27_l5lu" name="avatarLoader" xy="121,28" size="80,80" url="ui://qkteqwfpctsq32" fill="scaleMatchWidth" clearOnPublish="true">
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </loader>
+    <component id="n34_cowj" name="awardBtn" src="cowj1k" fileName="awardBtn.xml" xy="585,68" pivot="0.5,0.5" anchor="true" size="100,100" aspect="true" visible="false" touchable="false">
+      <gearDisplay controller="ctrlHaveAward" pages="0,1"/>
+      <gearDisplay2 controller="ctrlIsSelf" pages="0" condition="0"/>
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <image id="n33_cowj" name="n33" src="ctsq30" fileName="Images/flagBg.png" xy="487,44" size="129,49" group="n37_ctsq" visible="false">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </image>
+    <text id="n32_qkmn" name="n32" xy="452,49" size="56,36" group="n37_ctsq" aspect="true" fontSize="26" color="#f97b48" vAlign="middle" text="积分">
+      <relation target="n33_cowj" sidePair="middle-middle,left-left"/>
+    </text>
+    <text id="n4" name="scoreTxt" xy="518,45" size="99,47" group="n37_ctsq" fontSize="22" color="#4e4e4e" align="center" vAlign="middle" leading="0" autoSize="shrink" bold="true" autoClearText="true" text="9999999">
+      <relation target="n33_cowj" sidePair="middle-middle,right-right"/>
+    </text>
+    <group id="n37_ctsq" name="score" xy="452,44" size="165,49" advanced="true">
+      <gearXY controller="ctrlIsSelf" pages="0,1,2,3" values="452,44|231,70|231,70|228,73"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="Visible" target="n38_ctsq" value="false"/>
+    <item time="0" type="XY" tween="true" startValue="600,-" endValue="0,0" duration="6"/>
+    <item time="6" type="Visible" target="n38_ctsq" value="true"/>
+  </transition>
+</component>

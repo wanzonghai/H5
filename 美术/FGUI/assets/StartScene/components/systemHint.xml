@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="625,49" initName="systemHint">
+  <displayList>
+    <image id="n0_8gei" name="n0" src="8geig" fileName="png/paomadengdi.png" xy="312,24" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n1_8gei" name="n1" xy="312,24" pivot="0.5,0.5" anchor="true" size="580,42" fontSize="30" color="#fe4051" align="center" vAlign="middle" autoSize="none" text="xxx 成功兑换 零食大礼包"/>
+  </displayList>
+</component>

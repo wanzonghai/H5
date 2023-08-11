@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,800" extention="Label" initName="frame">
+  <controller name="ctrlCloseStatus" alias="关闭按钮状态" exported="true" pages="0,显示关闭按钮,1,不显示关闭按钮" selected="0"/>
+  <controller name="ctrlTitleStatus" alias="标题状态" exported="true" pages="0,显示标题,1,不显示标题" selected="0"/>
+  <displayList>
+    <image id="n60_dhwd" name="bg" src="s0ol29" fileName="Images/Common_BG.png" xy="0,0" size="600,800">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n61_dhwd" name="icon" xy="299,0" pivot="0.5,0.5" anchor="true" size="349,82" url="ui://qwv197ctdhwd3n" align="center" vAlign="middle" autoSize="true">
+      <gearDisplay controller="ctrlTitleStatus" pages="0"/>
+      <relation target="n60_dhwd" sidePair="center-center,top-top"/>
+    </loader>
+    <component id="n62_dhwd" name="closeButton" src="s0ol3" fileName="CloseBtn.xml" xy="596,9" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="ctrlCloseStatus" pages="0"/>
+      <relation target="n60_dhwd" sidePair="right-right,top-top"/>
+    </component>
+    <graph id="n63_dhwd" name="contentArea" xy="8,53" size="584,736">
+      <relation target="n60_dhwd" sidePair="width-width,height-height,center-center,bottom-bottom"/>
+    </graph>
+  </displayList>
+</component>

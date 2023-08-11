@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ennunbg0">
+  <resources>
+    <component id="r8mh1" name="Main.xml" path="/" exported="true"/>
+    <component id="r8mh2" name="prizePool.xml" path="/"/>
+    <image id="r8mh3" name="PrizePool_Title.png" path="/"/>
+    <component id="r8mh4" name="rankBtn.xml" path="/"/>
+    <image id="r8mh5" name="PrizePool_Btn_Rank_Unselect.png" path="/"/>
+    <image id="r8mh6" name="PrizePool_Btn_Rank_Select.png" path="/"/>
+    <component id="r8mh7" name="giftBtn.xml" path="/"/>
+    <image id="r8mh8" name="PrizePool_Btn_Gift_Unselect.png" path="/"/>
+    <image id="r8mh9" name="PrizePool_Btn_Gift_Select.png" path="/"/>
+    <component id="r8mha" name="prizeItem.xml" path="/"/>
+    <component id="r8mhb" name="checkBtn.xml" path="/"/>
+    <image id="r8mhc" name="PrizePool_Btn_Check.png" path="/"/>
+    <image id="r8mhj" name="PrizePool_Line.png" path="/"/>
+    <image id="u2xkk" name="Design.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

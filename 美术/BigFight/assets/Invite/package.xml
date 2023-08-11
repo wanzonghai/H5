@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="9hzj8k2c">
+  <resources>
+    <component id="mxaf0" name="Main.xml" path="/" exported="true"/>
+    <image id="mxaf1" name="Invite_Img_Hand.png" path="/"/>
+    <image id="mxaf2" name="Invite_Title.png" path="/"/>
+    <component id="mxaf3" name="Invite.xml" path="/"/>
+    <component id="mxaf4" name="coinCom.xml" path="/"/>
+    <image id="d8z65" name="Design.png" path="/"/>
+    <image id="d8z66" name="Invite_Jinbidui.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

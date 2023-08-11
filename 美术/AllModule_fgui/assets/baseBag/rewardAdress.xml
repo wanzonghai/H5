@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n17_ctsq" name="frame" src="ctsq33" fileName="Frame.xml" xy="24,197" size="701,939">
+      <Label title="请添加收货人信息"/>
+    </component>
+    <image id="n21_ctsq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="40,307" size="670,720"/>
+    <text id="n23_ctsq" name="n23" xy="110,368" size="106,46" fontSize="34" color="#666666" text="收货人"/>
+    <component id="n25_ctsq" name="n25" src="ctsq3e" fileName="textInput.xml" xy="280,355"/>
+    <component id="n22_ctsq" name="n22" src="ctsq3b" fileName="smallButton.xml" xy="227,1041">
+      <Button title="确认"/>
+    </component>
+    <text id="n27_ctsq" name="n27" xy="108,491" size="140,46" fontSize="34" color="#666666" text="手机号码"/>
+    <component id="n28_ctsq" name="n28" src="ctsq3e" fileName="textInput.xml" xy="278,478"/>
+    <text id="n29_ctsq" name="n29" xy="114,598" size="140,46" fontSize="34" color="#666666" text="详细地址"/>
+    <component id="n30_ctsq" name="n30" src="ctsq3e" fileName="textInput.xml" xy="114,677" size="526,299"/>
+  </displayList>
+</component>

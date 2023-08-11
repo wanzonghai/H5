@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="155,38" extention="Button" initName="goHomeBtn2">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_ebwf" name="n0" src="ebwf1t" fileName="png/goHomeText.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ebwf" name="n1" src="ebwf1t" fileName="png/goHomeText.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

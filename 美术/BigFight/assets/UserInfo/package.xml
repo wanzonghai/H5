@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="wxz9et6t">
+  <resources>
+    <component id="rfln0" name="Main.xml" path="/" exported="true"/>
+    <image id="jbc7e" name="Design.png" path="/"/>
+    <image id="jbc7f" name="Personal_Chengji.png" path="/"/>
+    <image id="jbc7g" name="Personal_Huoshengdi.png" path="/"/>
+    <image id="jbc7i" name="Personal_Icon_VIP.png" path="/"/>
+    <image id="jbc7j" name="Personal_Icon_VIPhuise.png" path="/"/>
+    <image id="jbc7k" name="Personal_Liansheng.png" path="/"/>
+    <image id="jbc7l" name="Personal_Title.png" path="/"/>
+    <image id="jbc7m" name="Personal_VIPdi.png" path="/"/>
+    <image id="jbc7p" name="Personal_Btn_jihuo.png" path="/"/>
+    <component id="jbc7r" name="vipTips.xml" path="/"/>
+    <component id="jbc7s" name="bestScore.xml" path="/"/>
+    <component id="jbc7t" name="bestRank.xml" path="/"/>
+    <component id="jbc7u" name="beskWin.xml" path="/"/>
+    <component id="jbc710" name="userInfo.xml" path="/"/>
+    <component id="jbc716" name="headInfo.xml" path="/"/>
+    <image id="izpb17" name="Personal_Base.png" path="/"/>
+    <component id="wkiv18" name="pointCom.xml" path="/"/>
+    <image id="zcea19" name="Personal_Btn_yijihuo.png" path="/"/>
+    <component id="zcea1a" name="getVipBtn.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

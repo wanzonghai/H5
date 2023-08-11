@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="8przjlp6">
+  <resources>
+    <component id="l8xz0" name="Main.xml" path="/" exported="true"/>
+    <component id="l8xz1" name="notice.xml" path="/"/>
+    <image id="l8xz2" name="Personal_Title.png" path="/"/>
+    <component id="l8xz5" name="shareBtn.xml" path="/"/>
+    <image id="l8xz7" name="Design.png" path="/"/>
+    <image id="l8xz8" name="share_Btn.png" path="/"/>
+    <image id="l8xz9" name="tishi_Txt.png" path="/"/>
+    <image id="l8xza" name="Niuniandaji_Txt.png" path="/"/>
+    <image id="l8xzb" name="Niuniandaji_BG.png" path="/" scale="9grid" scale9grid="155,126,13,10"/>
+    <image id="l8xzc" name="Niuniandaji_Btn.png" path="/"/>
+    <image id="l8xzd" name="Niuniandaji_duilian_L.png" path="/"/>
+    <image id="l8xze" name="Niuniandaji_duilian_R.png" path="/"/>
+    <image id="l8xzf" name="Niuniandaji_Top.png" path="/"/>
+    <image id="l8xzh" name="Pifushiyong_Jineng.png" path="/"/>
+    <image id="ari2i" name="notice.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="306,78" pivot="0.5,1" extention="Button">
+  <displayList>
+    <image id="n18_ctsq" name="n18" src="ctsq2m" fileName="Images/tabBackground.png" pkg="qwv197ct" xy="0,0"/>
+    <text id="n19_ctsq" name="title" xy="2,2" size="306,78" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="实物奖励"/>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue="1.1"/>
+</component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="128,116" extention="Button" initName="exchangeBtn2">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_nkzp" name="n0" src="j1xko2p" fileName="png/awardShowBtn.png" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_nkzp" name="n1" src="j1xko2p" fileName="png/awardShowBtn.png" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_nkzp" name="n2" src="j1xko2p" fileName="png/awardShowBtn.png" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_nkzp" name="n3" src="j1xko2p" fileName="png/awardShowBtn.png" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="372,72">
+  <displayList>
+    <image id="n25_ctsq" name="n25" src="ctsq33" fileName="Images/inputBackground.png" pkg="qwv197ct" xy="0,0" size="372,72">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n24_ctsq" name="value" xy="9,13" size="358,53" fontSize="34" color="#666666" autoSize="none" text="撒旦发射点" input="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

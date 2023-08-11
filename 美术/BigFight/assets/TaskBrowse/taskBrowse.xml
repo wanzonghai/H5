@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,966">
+  <controller name="haveGoods" pages="0,有商品,1,没有商品" selected="0"/>
+  <controller name="type" pages="0,浏览,1,购买,2,收藏" selected="2"/>
+  <displayList>
+    <image id="n1_cb3y" name="bg" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,924"/>
+    <image id="n10_emqn" name="n10" src="emqnl" fileName="Browse_Title.png" xy="169,5"/>
+    <image id="n7_f98g" name="n7" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,106" size="615,837"/>
+    <list id="n4_cb3y" name="list" xy="21,114" size="613,822" overflow="scroll" defaultItem="ui://cratx1hbemqnn" autoItemSize="false" align="center" autoClearItems="true">
+      <gearDisplay controller="haveGoods" pages="0"/>
+      <gearDisplay2 controller="type" pages="0" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n11_9se0" name="buyList" xy="21,139" size="613,753" overflow="scroll" lineGap="10" defaultItem="ui://cratx1hb9se0s" autoItemSize="false" align="center" autoClearItems="true">
+      <gearDisplay controller="haveGoods" pages="0"/>
+      <gearDisplay2 controller="type" pages="1" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n12_ko9a" name="collectList" xy="21,114" size="613,822" overflow="scroll" defaultItem="ui://cratx1hbhfek11" align="center" autoClearItems="true">
+      <gearDisplay controller="haveGoods" pages="0"/>
+      <gearDisplay2 controller="type" pages="2" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n6_cb3y" name="tips" xy="246,448" size="164,54" fontSize="40" color="#4e4e4e" align="center" vAlign="middle" text="暂无商品">
+      <gearDisplay controller="haveGoods" pages="1"/>
+    </text>
+    <component id="n9_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="608,6"/>
+  </displayList>
+</component>

@@ -1,0 +1,142 @@
+/* 遮罩层 */
+
+.cover_none {
+   display: none
+}
+
+.cover {
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   background: rgba(56, 49, 49, 0.4);
+   width: 100%;
+   /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+   height: 100%;
+   filter: alpha(opacity=60);
+   /*设置透明度为60%*/
+   opacity: 0.6;
+   /*非IE浏览器下设置透明度为60%*/
+   z-Index: 999;
+}
+
+.main-frame {
+   height: auto;
+   background-color: #f6f6f6;
+   padding: 20px 20px 20px 20px;
+   line-height: 50px;
+}
+
+.check-time-frame {
+   height: 60px;
+   background-color: white;
+   border-radius: 5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between
+}
+
+.center-frame {
+   display: flex;
+   flex-flow: column;
+   background-color: #f6f6f6;
+   line-height: 100px
+}
+
+.box-frame-1 {
+   background-color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+}
+
+.box-frame-2 {
+   margin-top: 20px;
+   background-color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+}
+
+.box-frame-3 {
+   margin-top: 20px;
+   background-color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box-frame-4 {
+   margin-top: 20px;
+   background-color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box-frame-5 {
+   margin-top: 20px;
+   background-color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.dd-frame {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.image1 {
+   width: 227px;
+   height: 305px;
+}
+
+.image2 {
+   width: 184px;
+   height: 206px;
+   margin-top: 50px;
+   margin-left: 150px;
+}
+
+.buju-frame {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: 100px;
+}
+
+.buju-iamge-1 image {
+   width: 180px;
+   height: 300px;
+   margin-left: 20px;
+}
+
+.quantao {
+   text-align: center;
+}
+
+.quantao image {
+   width: 613px;
+   height: 402px;
+   background-color: white
+}
+
+.msg-list-1 {
+   display: flex;
+   flex-flow: column;
+   font-size: 14px;
+   color: #999999;
+   line-height: 30px;
+}

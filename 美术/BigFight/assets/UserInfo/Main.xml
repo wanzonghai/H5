@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" designImage="ui://wxz9et6tjbc7e">
+  <controller name="vipState" alias="是否是vip" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n4_rfln" name="maskBg" src="rqvvo" fileName="Common_Mask.png" pkg="qwv197ct" xy="0,-145" size="750,1624" alpha="0.7" filter="color" filterData="0,0,0,0" color="#000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n32_jbc7" name="userInfo" src="jbc710" fileName="userInfo.xml" xy="375,666" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+  <transition name="popUp" autoPlay="true" frameRate="30">
+    <item time="0" type="Scale" target="n32_jbc7" tween="true" startValue="0,0" endValue="1.2,1.2" duration="8"/>
+    <item time="8" type="Scale" target="n32_jbc7" tween="true" startValue="1.2,1.2" endValue="1,1" duration="4"/>
+  </transition>
+  <transition name="packUp" frameRate="30">
+    <item time="0" type="Scale" target="n32_jbc7" tween="true" startValue="1,1" endValue="1.2,1.2" duration="4"/>
+    <item time="4" type="Scale" target="n32_jbc7" tween="true" startValue="1.2,1.2" endValue="0,0" duration="8"/>
+  </transition>
+</component>

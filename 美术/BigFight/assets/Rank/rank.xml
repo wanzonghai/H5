@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,1135">
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="1"/>
+  <displayList>
+    <image id="n12_n3sv" name="BG" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,1035"/>
+    <image id="n17_x8cq" name="listPanel" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,338" size="615,535"/>
+    <image id="n50_cowj" name="myPanel" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,891" size="402,125"/>
+    <component id="n51_cowj" name="myItem" src="c8s24" fileName="rankItem.xml" xy="21,891"/>
+    <image id="n13_n3sv" name="title" src="n3svm" fileName="Rank_Title.png" xy="129,2"/>
+    <component id="n37_n1hp" name="inviteBtn" src="n1hp1e" fileName="inviteBtn.xml" xy="202,1037"/>
+    <component id="n40_cowj" name="lastRankBtn" src="cowj1h" fileName="lastRankBtn.xml" xy="544,912"/>
+    <component id="n41_cowj" name="ruleBtn" src="cowj1i" fileName="ruleBtn.xml" xy="435,909"/>
+    <loader id="n22_hfau" name="topLoader" xy="327,210" pivot="0.5,0.5" anchor="true" size="609,206" url="ui://qkteqwfpn3svc" fill="scaleMatchWidth"/>
+    <image id="n33_n1hp" name="numBanner" src="n1hp1d" fileName="Rank_Panel_Withe.png" xy="473,107">
+      <relation target="n22_hfau" sidePair="top-top"/>
+    </image>
+    <image id="n39_cowj" name="timeBanner" src="cowj1v" fileName="Rank_Panel_Bottom.png" xy="327,304" pivot="0.5,0.5" anchor="true" size="609,50">
+      <relation target="n22_hfau" sidePair="bottom-bottom"/>
+    </image>
+    <list id="n3" name="curList" xy="21,362" size="613,490" overflow="scroll" scrollBarFlags="2" scrollBar="hidden" clipSoftness="0,20" lineGap="10" defaultItem="ui://qkteqwfpc8s24" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n31_s82h" name="noneTxt" xy="226,554" size="204,66" fontSize="50" color="#cccccc" text="暂无排行">
+      <relation target="n17_x8cq" sidePair="center-center,middle-middle"/>
+    </text>
+    <richtext id="n38_n1hp" name="numTxt" xy="552,129" pivot="0.5,0.5" anchor="true" size="80,35" fontSize="25" color="#7665cb" align="center" ubb="true" vars="true" bold="true" text="[color=#ff0000]{num=}[/color]人参加">
+      <gearColor controller="styleCtrl" pages="1" values="#7665cb,#000000" default="#ff611c,#000000"/>
+      <relation target="n33_n1hp" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <richtext id="n36_n1hp" name="timeTxt" xy="327,303" pivot="0.5,0.5" anchor="true" size="330,42" visible="false" fontSize="30" color="#7665cb" align="center" ubb="true" vars="true" bold="true" text="倒计时[color=#ff0000]{time=}[/color]且满[color=#ff0000]{num=500}[/color]人开奖！">
+      <gearColor controller="styleCtrl" pages="1" values="#7665cb,#000000" default="#ff611c,#000000"/>
+      <relation target="n39_cowj" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <component id="n52_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+  </displayList>
+</component>

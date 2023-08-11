@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,250">
+  <displayList>
+    <image id="n0_etve" name="n0" src="sbnb14" fileName="Images/rankAwrdLine.png" xy="306,33" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n1_etve" name="rankText" xy="305,32" pivot="0.5,0.5" anchor="true" size="88,39" fontSize="28" color="#ff7c08" vars="true" text="第 {count=1} 名">
+      <relation target="n0_etve" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n3_etve" name="imageLoader" xy="147,151" pivot="0.5,0.5" anchor="true" size="170,170" url="ui://onlm4vwpiyoco2q" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n4_etve" name="infoText" xy="420,134" pivot="0.5,0.5" anchor="true" size="294,77" fontSize="22" color="#3c3c3c" align="center" vAlign="middle" autoSize="shrink" text="iQOO任一台手机免单&#xA;（限618期间支付订单）  ">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_etve" name="priceText" xy="419,193" pivot="0.5,0.5" anchor="true" size="169,32" fontSize="22" color="#ff7c08" align="center" vars="true" text="价值：{count=999.00}元 ">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

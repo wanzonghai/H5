@@ -1,0 +1,80 @@
+D .
+R 39B957DA texture.png
+D Audio
+R 89C7A00A btn.mp3
+R A403B32E gameOver.mp3
+R 9B7F4718 meet.mp3
+R 7393E031 meet2.mp3
+R B890AAE7 merge.mp3
+R 9C8DB7DA merge2.mp3
+R D3067C8E mergeNew.mp3
+D hallRes
+D img
+D loadingRes
+P 11C8CEE6 Loading_Img.png
+P 18A6FF04 Loading_Txt_Loading.png
+P 49AAB861 logo.png
+D roleAni
+P DACA7972 gift.png
+R FCFB50AB gift.sk
+D hallRes/common
+P BFC1917D img_mask.png
+P 6ED01857 img_singleColor.png
+P 674F6B5D tx_player.png
+D img/fruits
+P B3C33993 BlackCircle.png
+P 3D33F520 fruit_1.png
+P 1A9B09E9 fruit_10.png
+P 105963DF fruit_11.png
+P 47E7FA57 fruit_2.png
+P B99CB30E fruit_3.png
+P 990F9390 fruit_4.png
+P 9823566C fruit_5.png
+P C9A4FE5D fruit_6.png
+P 3C409E5E fruit_7.png
+P DAF967D8 fruit_8.png
+P E9F19E5F fruit_9.png
+P CD39DAFC fruit_supper.png
+P 6F1FB892 q1.png
+P 262C420F q2.png
+P 8ECF4D12 q3.png
+P CFA4725C q4.png
+P FE09A24C q5.png
+P D97CA174 q6.png
+P 423C94C2 q7.png
+P A9FA026C q8.png
+P BA92B46B q9.png
+D img/gameUI
+P CE77FEAF board2.png
+S 0963AD89 GameBG.png
+D img/juices
+P 6F9EFE53 juice_l_1.png
+P 15680C07 juice_l_10.png
+P 289F95D2 juice_l_2.png
+P 386EBAF1 juice_l_3.png
+P 08B404F9 juice_l_4.png
+P 270DFD91 juice_l_5.png
+P BF025D63 juice_l_6.png
+P F6411B27 juice_l_7.png
+P AEA14013 juice_l_8.png
+P 7A11BBDA juice_l_9.png
+P A669D1BA juice_o_1.png
+P 8AAF3D93 juice_o_10.png
+P FE499EBA juice_o_2.png
+P 16E95AD4 juice_o_3.png
+P 8E7A0B52 juice_o_4.png
+P F6BA4BD1 juice_o_5.png
+P 0C36332C juice_o_6.png
+P 2894D3F6 juice_o_7.png
+P B2C58CA7 juice_o_8.png
+P 7103FC9A juice_o_9.png
+P 5A92FE90 juice_q_1.png
+P 779789BC juice_q_10.png
+P 87F8DE16 juice_q_2.png
+P FB127AA8 juice_q_3.png
+P 0472D6E0 juice_q_4.png
+P D08F1D78 juice_q_5.png
+P 779789BC juice_q_6.png
+P FB127AA8 juice_q_7.png
+P A4B056A9 juice_q_8.png
+P EFE65A7C juice_q_9.png

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,250">
+  <controller name="isCan" pages="0,可购买,1,不可购买" selected="0"/>
+  <displayList>
+    <component id="n20_emqn" name="awardImg" src="9se0o" fileName="Browse/award.xml" xy="419,139" pivot="0.5,0.5" anchor="true"/>
+    <loader id="n17_emqn" name="goodsImg" xy="10,5" size="240,240" url="ui://qwv197ctctsq3a" fill="scaleFree"/>
+    <component id="n19_emqn" name="buyBtn" src="9se0q" fileName="Browse/buyBtn.xml" xy="509,212" pivot="0.5,0.5" anchor="true">
+      <gearLook controller="isCan" pages="1" values="1,0,1,0" default="1,0,0,1"/>
+    </component>
+    <text id="n14_emqn" name="priceTxt" xy="267,212" pivot="0,0.5" anchor="true" size="160,42" fontSize="25" color="#ff7c08" vAlign="middle" leading="0" vars="true" autoSize="shrink" text="￥{price=9999.00}"/>
+    <text id="n13_emqn" name="content" xy="427,10" pivot="0.5,0" anchor="true" size="320,82" fontSize="27" color="#4e4e4e" vAlign="middle" leading="0" vars="true" autoSize="none" text="{title=万代高达模型 原装进口 正品 模型HG口 正品 模型HG}"/>
+    <image id="n21_9m1j" name="n21" src="msmcy" fileName="Images/bottom_Line.png" xy="-5,255"/>
+  </displayList>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="607,0" endValue="0,0" duration="6"/>
+  </transition>
+</component>

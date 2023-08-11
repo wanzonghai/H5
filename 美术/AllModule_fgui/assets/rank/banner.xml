@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="673,230">
+  <controller name="ctrlActveStatus" alias="活动状态" pages="0,进行中,1,已结束" selected="0"/>
+  <displayList>
+    <loader id="n22_hfau" name="topLoader" xy="0,0" size="672,230" url="ui://qkteqwfpctsq38" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n33_n1hp" name="numBanner" src="ctsq36" fileName="Images/join.png" xy="555,0" size="117,41" alpha="0.9">
+      <relation target="n22_hfau" sidePair="right-right,top-top"/>
+      <relation target="n38_n1hp" sidePair="width-width"/>
+    </image>
+    <image id="n39_cowj" name="timeBanner" src="ctsq2n" fileName="Images/timeBar.png" xy="0,183" size="673,48" alpha="0.9">
+      <relation target="n22_hfau" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <richtext id="n55_ctsq" name="txtMaxNum" xy="539,45" pivot="1,0.5" size="127,32" alpha="0.8" fontSize="22" color="#666666" align="right" vAlign="middle" ubb="true" vars="true" text="需满[color=#ff6666]{num=0}[/color]人开奖">
+      <relation target="n22_hfau" sidePair="right-right"/>
+    </richtext>
+    <richtext id="n38_n1hp" name="numTxt" xy="664,22" pivot="1,0.5" anchor="true" size="101,36" fontSize="26" color="#f97b48" ubb="true" vars="true" bold="true" text="[color=#FF2145]{num=0}[/color]人参加">
+      <relation target="n33_n1hp" sidePair="right-right,top-top"/>
+    </richtext>
+    <richtext id="n36_n1hp" name="timeTxt" xy="336,209" pivot="0.5,0.5" anchor="true" size="353,42" fontSize="30" color="#666666" ubb="true" vars="true" bold="true" text="还剩 [color=#ff0000]{time=0小时0分钟0秒}[/color] 开奖">
+      <gearText controller="ctrlActveStatus" pages="0" values="还剩 [color=#ff0000]{time=0小时0分钟0秒}[/color] 开奖" default="倒计时[color=#ff0000]{time=}[/color]且满[color=#ff0000]{num=500}[/color]人开奖！"/>
+      <relation target="n39_cowj" sidePair="center-center,middle-middle"/>
+    </richtext>
+  </displayList>
+</component>

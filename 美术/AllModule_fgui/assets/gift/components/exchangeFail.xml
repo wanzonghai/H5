@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="exchangeFail">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n11_r7g3" name="n11" src="s0ol29" fileName="Images/Common_BG.png" xy="375,590" pivot="0.5,0.5" anchor="true" size="657,568" pkg="qwv197ct">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n12_r7g3" name="n12" src="s0ol2h" fileName="Images/giftItemBg.png" xy="375,587" pivot="0.5,0.5" anchor="true" size="600,386">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="s0ol3" fileName="closeBtn.xml" pkg="qwv197ct" xy="692,311" pivot="0.5,0.5" anchor="true">
+      <relation target="n11_r7g3" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n7_o7s4" name="okBtn" src="s0ole" fileName="normalBtn2.xml" pkg="qwv197ct" xy="375,867" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="我知道了"/>
+    </component>
+    <image id="n8_o7s4" name="n8" src="s0ol2a" fileName="Images/duiihuanshibaitubiao.png" xy="374,622" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n10_o7s4" name="failText" xy="321,439" size="117,36" fontSize="26" singleLine="true" text="积分不足!">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n13_r7g3" name="n13" src="s0ol2o" fileName="Images/gift_title3.png" xy="375,302" pivot="0.5,0.5" anchor="true">
+      <relation target="n11_r7g3" sidePair="center-center,top-top"/>
+    </image>
+  </displayList>
+</component>

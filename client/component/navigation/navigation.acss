@@ -1,0 +1,204 @@
+.top {
+    width: 100%;
+    /* height: 60px; */
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.none {
+    display: none;
+}
+
+.top-title {
+    background-color: white;
+    line-height: 60px;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    height: 80px;
+}
+
+.top-title-1 {
+    background-color: white;
+    margin-left: 25px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #666666;
+}
+
+.top-title-2 {
+    background-color: white;
+    line-height: 25px;
+    font-size: 20px;
+    color: #111111;
+    margin: 0px 0px 10px 25px;
+}
+
+
+/* 顶部游戏数据 */
+
+.game-data {
+    /* height: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.ytd-game-num {
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #666666;
+}
+
+.game-total {
+    width: auto;
+    height: 60px;
+    display: flex;
+    line-height: 60px;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.dao_qi_shi_jian {
+    color: #666666;
+    font-size: 14px;
+}
+
+.dao_qi_shi_jian_time {
+    color: #3d7eff;
+    font-size: 14px;
+}
+
+.qianniu_1 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    margin-top: -5px;
+    animation: myMove 0.5s infinite;
+    -webkit-animation: myMove 0.5s infinite;
+}
+
+@keyframes myMove {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: -5px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes myMove {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 5px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.btn_1 {
+    font-size: 13px;
+    margin-left: 10px;
+    width: 48px;
+    height: 29px;
+    line-height: 29px;
+    color: #477CF6;
+    text-align: center;
+    /* background-color: #477CF6; */
+    border-radius: 3px;
+    margin-top: 15px;
+    border: 1px solid;
+}
+.clientV {
+    font-size: 14px;
+    color: #666666;
+    margin-right:5px;
+}
+
+.btn_2 {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 75px;
+    height: 29px;
+    line-height: 29px;
+    color: #666666;
+    text-align: center;
+    /* background-color: #F0F0F0; */
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.game-total-icon {
+    width: 11px;
+    height: 12px;
+    margin-top: 9px;
+    position: absolute;
+    margin-left: -15px;
+}
+
+.game-total-icon_time {
+    width: 13px;
+    height: 13px;
+    margin-top: 24px;
+    margin-right: 4px;
+}
+
+.sqlFrame {
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 20px;
+    flex-flow: column;
+    background-color: #B5B5B5;
+    padding-bottom: 15px;
+    padding: 20px 20px 20px 20px;
+    line-height: 35px;
+}
+
+.add-input {
+    color: red;
+}
+
+.add-input input {
+    width: 100px;
+}
+
+.addCoin-btn-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.btn-success {
+    width: 80px;
+    height: 30px;
+    background-color: #3d7fff;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+    color: white;
+}
+
+.btn_no {
+    background-color: #D7D7D7;
+}

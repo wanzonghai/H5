@@ -1,0 +1,155 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <view class="check-time-frame">
+         <view class="active-msg">
+            活动名称:
+         </view>
+         <view class="active-select">
+            <select dataSource="{{activeList}}" value="{{condition.activeId}}" aria-label="tag mode" mode="single" onChange="checkRetainData" followTrigger />
+         </view>
+         <view class="check-date {{active_time == 0 ? 'active_time' : ''}}" data-type='0' onTap="checkRetainData">
+           今日
+         </view>
+         <view class="check-date {{active_time == 1 ? 'active_time' : ''}}" data-type='1' onTap="checkRetainData">
+           昨日
+         </view>
+         <view class="check-date {{active_time == 6 ? 'active_time' : ''}}" data-type='6' onTap="checkRetainData">
+           近7日
+         </view>
+         <view class="check-date {{active_time == 14 ? 'active_time' : ''}}" data-type='14' onTap="checkRetainData">
+           近15日
+         </view>
+         <view class="check-date {{active_time == 29 ? 'active_time' : ''}}" data-type='29' onTap="checkRetainData">
+           近30日
+         </view>
+         <view class="check-rangeDate">
+            <range-picker class="block" style="width:300px;" value="{{checkTime}}" hasClear format="YYYY-MM-DD" size="{{medium}}" data-type="times" onChange="checkRetainData" />
+         </view>
+         <view class="export" onTap="download">
+            导出
+         </view>
+      </view>
+      <view class="center-data-frame">
+         <view class="top-msg-frame">
+           数据概览
+         </view>
+         <view class="result-frame">
+            <view class="result-box-frame">
+               <view class="box-title">
+                新增用户
+               </view>
+               <view>
+                总数: {{retainData.register}}
+               </view>
+               <view>
+                日均: {{retainData.registerRate }}
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                新增粉丝
+               </view>
+               <view>
+                总数: {{retainData.fans}}
+               </view>
+               <view>
+                订阅率: {{retainData.fansRate}}%
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                新增会员
+               </view>
+               <view>
+                总数: {{retainData.vipNums}}
+               </view>
+               <view>
+                入会率: {{retainData.vipNumsRate}}%
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                消费人数
+               </view>
+               <view>
+                总数: {{retainData.consumeNums}}
+               </view>
+               <view>
+                消费率: {{retainData.consumeNumsRate}}%
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                消费金额
+               </view>
+               <view>
+                总数: {{retainData.consumeTotal}}
+               </view>
+               <view>
+                人均: {{retainData.consumeTotalRate}}
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                活跃用户
+               </view>
+               <view>
+                总数: {{retainData.activeNums}}
+               </view>
+               <view>
+                日均: {{retainData.activeNumsRate}}
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                游戏时长
+               </view>
+               <view>
+                总数: {{retainData.joinTime}}
+               </view>
+               <view>
+                人均: {{retainData.joinTimeRate}}s
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                游戏次数
+               </view>
+               <view>
+                总数: {{retainData.joinNums}}
+               </view>
+               <view>
+                人均: {{retainData.joinNumsRate}}
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                任务次数
+               </view>
+               <view>
+                总数: {{retainData.taskDoneNums}}
+               </view>
+               <view>
+                人均: {{retainData.taskDoneNumsRate}}
+               </view>
+            </view>
+            <view class="result-box-frame">
+               <view class="box-title">
+                游戏参与人数
+               </view>
+               <view>
+                总数: {{retainData.enterGamePlayersNums}}
+               </view>
+               <view>
+                参与率: {{retainData.enterGamePlayersRate}}
+               </view>
+            </view>
+         </view>
+      </view>
+   </view>
+</view>

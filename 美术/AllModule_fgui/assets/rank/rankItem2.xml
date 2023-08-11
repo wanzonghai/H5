@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="671,136" extention="Button" bgColorEnabled="true">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="rank" pages="0,其他,1,第一,2,第二,3,第三" selected="0"/>
+  <controller name="isSelf" exported="true" pages="2,其他人,3,自己排行" selected="0"/>
+  <displayList>
+    <image id="n39_ctsq" name="n39" src="ctsq2e" fileName="Images/rankSelect.png" xy="0,0" size="671,136">
+      <gearDisplay controller="isSelf" pages="3"/>
+    </image>
+    <text id="n9" name="nameTxt" xy="209,48" size="273,39" fontSize="28" color="#666666" align="center" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="大家好我是坛..."/>
+    <text id="n19_n3sv" name="rankTxt" xy="70,68" pivot="0.5,0.5" anchor="true" size="97,66" fontSize="40" color="#ffb556" align="center" vAlign="middle" autoSize="shrink" bold="true" text="4">
+      <gearDisplay controller="rank" pages="0"/>
+    </text>
+    <image id="n20_n3sv" name="n20" src="ctsq2c" fileName="Images/rank1.png" xy="70,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="1"/>
+    </image>
+    <image id="n21_n3sv" name="n21" src="ctsq2d" fileName="Images/rank2.png" xy="70,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="2"/>
+    </image>
+    <image id="n22_n3sv" name="n22" src="ctsq2f" fileName="Images/rank3.png" xy="70,68" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="3"/>
+    </image>
+    <graph id="n38_ctsq" name="n38" xy="0,134" size="671,2" type="rect" lineSize="0" fillColor="#ffefefef">
+      <gearDisplay controller="isSelf" pages="0"/>
+    </graph>
+    <loader id="n27_l5lu" name="avatarLoader" xy="121,28" size="80,80" url="ui://qkteqwfpctsq32" fill="scaleMatchWidth" clearOnPublish="true"/>
+    <image id="n33_cowj" name="n33" src="ctsq30" fileName="Images/flagBg.png" xy="505,48" group="n37_ctsq"/>
+    <image id="n32_qkmn" name="n32" src="ctsq2z" fileName="Images/flag.png" xy="478,48" size="97,69" group="n37_ctsq" aspect="true" scale="0.6,0.6"/>
+    <text id="n4" name="scoreTxt" xy="534,49" size="99,39" group="n37_ctsq" fontSize="22" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="shrink" bold="true" autoClearText="true" text="9999999"/>
+    <group id="n37_ctsq" name="score" xy="478,48" size="156,69"/>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="Visible" target="n38_ctsq" value="false"/>
+    <item time="0" type="XY" tween="true" startValue="600,-" endValue="0,0" duration="6"/>
+    <item time="6" type="Visible" target="n38_ctsq" value="true"/>
+  </transition>
+</component>

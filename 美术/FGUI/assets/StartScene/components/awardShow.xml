@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="505,337">
+  <displayList>
+    <graph id="n0_zxvf" name="n0" xy="253,187" pivot="0.5,0.5" anchor="true" size="238,238" type="rect" lineSize="0">
+      <relation target="n1_zxvf" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+    <loader id="n1_zxvf" name="awardLoader" xy="253,187" pivot="0.5,0.5" anchor="true" size="238,238" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <relation target="n2_zxvf" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n2_zxvf" name="n2" src="zxvf17" fileName="png/awardFrame.png" xy="252,168" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n3_zxvf" name="priceText" xy="257,224" pivot="0.5,0" anchor="true" size="76,42" fontSize="30" color="#ff0000" align="center" vAlign="middle" leading="0" bold="true" text="6888">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <controller name="type" pages="2,实物奖励,0,优惠券" selected="1"/>
+  <displayList>
+    <component id="n17_ctsq" name="frame" src="ctsq33" fileName="Frame.xml" xy="24,141">
+      <Label title="我的奖品包"/>
+    </component>
+    <component id="n19_ctsq" name="n19" src="ctsq37" fileName="TabButton.xml" xy="332,254" group="n20_ctsq" scale="0.8,0.8">
+      <Button checked="true" title="优惠券" controller="type" page="0"/>
+    </component>
+    <component id="n18_ctsq" name="n18" src="ctsq37" fileName="TabButton.xml" xy="112,254" group="n20_ctsq" scale="0.8,0.8">
+      <Button title="实物奖品" controller="type" page="2"/>
+    </component>
+    <group id="n20_ctsq" name="tab" xy="112,254" size="526,78"/>
+    <image id="n21_ctsq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="40,332" size="670,843"/>
+    <text id="n11_lt7o" name="noneTxt" xy="290,664" size="204,66" visible="false" fontSize="50" color="#cccccc" text="暂无奖励"/>
+    <list id="n7_igfa" name="giftList" xy="40,332" size="670,841" overflow="scroll" defaultItem="ui://ennunbg0ctsq39" autoClearItems="true">
+      <gearDisplay controller="type" pages="2"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n8_igfa" name="saleList" xy="40,332" size="670,841" overflow="scroll" defaultItem="ui://ennunbg0ctsq39" autoClearItems="true">
+      <gearDisplay controller="type" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

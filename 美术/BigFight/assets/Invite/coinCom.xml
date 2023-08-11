@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,80">
+  <displayList>
+    <image id="n11_mxaf" name="n11" src="sl472w" fileName="Common_Banner.png" pkg="qwv197ct" xy="33,9" size="146,58" visible="false"/>
+    <image id="n9_mxaf" name="n9" src="bvmi2b" fileName="Common_Ico_Point.png" pkg="qwv197ct" xy="0,0"/>
+    <text id="n10_mxaf" name="countTxt" xy="80,40" pivot="0,0.5" anchor="true" size="180,66" fontSize="45" color="#496db2" vAlign="middle" autoSize="shrink" text="+99"/>
+  </displayList>
+</component>

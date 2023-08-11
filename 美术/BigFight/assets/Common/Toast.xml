@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,150">
+  <displayList>
+    <image id="n31_hwsf" name="n31" src="rqvvo" fileName="Common_Mask.png" xy="375,75" pivot="0.5,0.5" anchor="true" size="750,150" alpha="0.8" color="#000000">
+      <relation target="n32_hwsf" sidePair="height-height"/>
+    </image>
+    <text id="n32_hwsf" name="tipsTxt" xy="374,75" pivot="0.5,0.5" anchor="true" size="545,54" fontSize="40" color="#ffffff" align="center" autoSize="height" text="每周六、周日18:00-22:00开启">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <transition name="fadeOut" autoPlay="true">
+    <item time="0" type="Alpha" value="1"/>
+    <item time="18" type="Alpha" tween="true" startValue="1" endValue="0" duration="18" ease="Custom" customEase=""/>
+  </transition>
+</component>

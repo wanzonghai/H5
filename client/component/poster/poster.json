@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "am-tabs": "mini-ali-ui/es/tabs/index",
+    "tab-content": "mini-ali-ui/es/tabs/tab-content/index",
+    "am-vtabs": "mini-ali-ui/es/vtabs/index"
+  }
+}

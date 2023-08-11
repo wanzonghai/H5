@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="qkteqwfp">
+  <resources>
+    <component id="c8s20" name="Main.xml" path="/" exported="true"/>
+    <component id="c8s24" name="rankItem.xml" path="/"/>
+    <image id="n3svc" name="Rank_Banner.png" path="/"/>
+    <image id="n3svg" name="Rank_Ico_Bronze.png" path="/"/>
+    <image id="n3svh" name="Rank_Ico_Gold.png" path="/"/>
+    <image id="n3svi" name="Rank_Ico_Silver.png" path="/"/>
+    <image id="n3svm" name="Rank_Title.png" path="/"/>
+    <image id="n3svn" name="Design.png" path="/"/>
+    <component id="v07rt" name="rank.xml" path="/"/>
+    <component id="pkc115" name="curRankBtn.xml" path="/"/>
+    <image id="n1hp1c" name="Rank_Btn_Invite.png" path="/"/>
+    <image id="n1hp1d" name="Rank_Panel_Withe.png" path="/"/>
+    <component id="n1hp1e" name="inviteBtn.xml" path="/"/>
+    <image id="cowj1f" name="Rank_Btn_Last.png" path="/"/>
+    <image id="cowj1g" name="Rank_Btn_Rule.png" path="/"/>
+    <component id="cowj1h" name="lastRankBtn.xml" path="/"/>
+    <component id="cowj1i" name="ruleBtn.xml" path="/"/>
+    <component id="cowj1k" name="awardBtn.xml" path="/"/>
+    <component id="cowj1n" name="awardItem.xml" path="/"/>
+    <component id="cowj1q" name="awardCom.xml" path="/"/>
+    <image id="cowj1r" name="Rank_Title_Award.png" path="/"/>
+    <component id="cowj1s" name="Awards.xml" path="/" exported="true"/>
+    <component id="cowj1t" name="awardList.xml" path="/"/>
+    <image id="cowj1u" name="Rank_Btn_Get.png" path="/"/>
+    <image id="cowj1v" name="Rank_Panel_Bottom.png" path="/" scale="9grid" scale9grid="11,7,22,14"/>
+    <image id="cowj1w" name="Rank_Title_Last.png" path="/"/>
+    <component id="cowj1y" name="getBtn.xml" path="/"/>
+    <component id="cowj1z" name="LastRank.xml" path="/" exported="true"/>
+    <component id="cowj20" name="last.xml" path="/"/>
+    <image id="yzjo21" name="Rank_Txt_NotEnough.png" path="/"/>
+    <image id="bi5k22" name="Rank_Award_Line.png" path="/"/>
+    <image id="uur623" name="Rank_Banner_2.png" path="/"/>
+    <image id="iq9i27" name="n32.png" path="/"/>
+  </resources>
+  <publish name="Rank">
+    <atlas name="默认" index="0"/>
+  </publish>
+</packageDescription>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="onlm4vwp">
+  <resources>
+    <image id="r7g3o1o" name="Common_BG.png" path="/Images/" scale="9grid" scale9grid="150,116,16,13"/>
+    <component id="sbnb13" name="ActivityAwardItem.xml" path="/components/"/>
+    <component id="sbnb11" name="ActivityAward.xml" path="/components/" exported="true"/>
+    <component id="sbnb10" name="ActivityEndPopup.xml" path="/components/" exported="true"/>
+    <image id="sbnbx" name="ActivityEnd_awrdbg.png" path="/Images/"/>
+    <image id="sbnby" name="ActivityEnd_rankbg.png" path="/Images/"/>
+    <image id="sbnb14" name="rankAwrdLine.png" path="/Images/"/>
+    <image id="j1xko2p" name="Icon.png" path="/Images/" exported="true"/>
+    <image id="iyoco2q" name="giftDemo.png" path="/Images/"/>
+    <image id="iyoco2s" name="giftItemBg.png" path="/Images/" scale="9grid" scale9grid="80,102,160,204"/>
+    <component id="iyoco2u" name="Main.xml" path="/" exported="true"/>
+    <component id="iyoco2v" name="iconBtn.xml" path="/"/>
+    <image id="bt0do2w" name="ActivityEnd_title(1).png" path="/Images/" exported="true"/>
+    <image id="bt0do2x" name="rankAwrdTitle(1).png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\activity"/>
+</packageDescription>

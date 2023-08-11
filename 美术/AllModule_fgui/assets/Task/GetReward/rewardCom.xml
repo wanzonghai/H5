@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="250,300">
+  <controller name="type" pages="0,皮肤,1,其他,3,商品" selected="0"/>
+  <displayList>
+    <loader id="n17_bkfg" name="rewardLoader" xy="125,122" pivot="0.5,0.5" anchor="true" size="82,85" scale="1.5,1.5" url="ui://czp63sggqqee16" align="center" vAlign="middle" fill="scaleMatchWidth" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n19_bkfg" name="rewardTxt" xy="-15,174" pivot="0.5,0.5" size="280,126" fontSize="30" color="#993399" align="center" vAlign="middle" vars="true" autoSize="none" bold="true" text="{name=}稀有皮肤 x{count=1}">
+      <gearColor controller="type" pages="0" values="#993399,#000000" default="#ff9900,#000000"/>
+      <gearText controller="type" pages="1,3" values="{name=草泥马} x{count=1}|{name=草泥马} x{count=1}" default="{name=}稀有皮肤 x{count=1}"/>
+    </text>
+  </displayList>
+</component>

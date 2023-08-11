@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="ConfirmPopup">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n17_s7b1" name="n17" src="s7b11j" fileName="png/gift/Common_BG.png" xy="372,629" pivot="0.5,0.5" anchor="true" size="643,484">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n18_s7b1" name="n18" src="s7b11k" fileName="png/gift/giftItemBg.png" xy="372,629" pivot="0.5,0.5" anchor="true" size="580,250">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="dx3d17" fileName="components/closeBtn.xml" xy="673,398" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="n17_s7b1" sidePair="right-right,top-top"/>
+    </component>
+    <text id="n12_dx3d" name="hintText" xy="374,615" pivot="0.5,0.5" anchor="true" size="365,117" fontSize="30" align="center" vAlign="middle" autoSize="none" text="是否确认返回首页？&#xA;放弃游戏将无法获得奖励">
+      <relation target="n17_s7b1" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n16_ktub" name="yesBtn" src="dx3d19" fileName="components/attentionBtn.xml" xy="213,860" pivot="0.5,0.5" anchor="true" size="269,93">
+      <relation target="n17_s7b1" sidePair="center-center,top-bottom"/>
+      <Button title="确认返回"/>
+    </component>
+    <component id="n7_o7s4" name="noBtn" src="dx3d19" fileName="components/attentionBtn.xml" xy="524,860" pivot="0.5,0.5" anchor="true" size="269,93">
+      <relation target="n17_s7b1" sidePair="center-center,top-bottom"/>
+      <Button title="点错了"/>
+    </component>
+    <image id="n19_s7b1" name="n19" src="s7b11m" fileName="png/tishiTitle.png" xy="374,394" pivot="0.5,0.5" anchor="true">
+      <relation target="n17_s7b1" sidePair="center-center,top-top"/>
+    </image>
+  </displayList>
+</component>

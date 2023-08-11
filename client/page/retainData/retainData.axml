@@ -1,0 +1,126 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <view class="check-time-frame">
+         <view class="active-msg">
+            活动名称:
+         </view>
+         <view class="active-select">
+            <select dataSource="{{activeList}}" value="{{condition.activeId}}" aria-label="tag mode" mode="single" onChange="checkRetainData" followTrigger />
+         </view>
+         <view class="check-date {{active_time == 0 ? 'active_time' : ''}}" data-type='0' onTap="checkRetainData">
+           今日
+         </view>
+         <view class="check-date {{active_time == 1 ? 'active_time' : ''}}" data-type='1' onTap="checkRetainData">
+           昨日
+         </view>
+         <view class="check-date {{active_time == 7 ? 'active_time' : ''}}" data-type='7' onTap="checkRetainData">
+           近7日
+         </view>
+         <view class="check-date {{active_time == 15 ? 'active_time' : ''}}" data-type='15' onTap="checkRetainData">
+           近15日
+         </view>
+         <view class="check-date {{active_time == 30 ? 'active_time' : ''}}" data-type='30' onTap="checkRetainData">
+           近30日
+         </view>
+         <view class="check-rangeDate">
+            <range-picker class="block" style="width:300px;" value="{{checkTime}}" hasClear format="YYYY-MM-DD" size="{{small}}" data-type="times" onChange="checkRetainData" />
+         </view>
+         <view class="export" onTap="download">
+            导出
+         </view>
+      </view>
+      <view class="center-data-frame">
+         <view class="top-msg-frame">
+            数据概览:
+            <view class="active-btn-frame {{active_retain == 'active' ? 'active_retain' : '' }}" data-type='active' onTap="checkRetainData">
+             活跃用户
+            </view>
+            <view class="add-btn-frame {{active_retain == 'add' ? 'active_retain' : '' }}" data-type="add" onTap="checkRetainData">
+             注册用户
+            </view>
+         </view>
+         <view class="result-frame">
+            <table dataSource="{{checkRetainData}}" loading="{{loading}}" hasBorder="{{false}}">
+               <table-column title="日期" width="{{100}}" dataIndex="time" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="font-weight: bold;">{{x.value}}</view>
+               </table-column>
+               <table-column title="用户数" width="{{100}}" dataIndex="retainNum" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">
+                     <block a:if="{{x.value >= 0}}">
+                        <text>{{ x.value > 0 ? x.value : 0}}</text>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="1日" width="{{100}}" dataIndex="retainResult[0].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px;text-align: center">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="2日" width="{{100}}" dataIndex="retainResult[1].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="3日" width="{{100}}" dataIndex="retainResult[2].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="4日" width="{{100}}" dataIndex="retainResult[3].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="5日" width="{{100}}" dataIndex="retainResult[4].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="6日" width="{{100}}" dataIndex="retainResult[5].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="7日" width="{{100}}" dataIndex="retainResult[6].retainNums" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="width:100%;display:flex;flex-wrap:wrap;justify-content:center">
+                     <block a:if="{{x.value >= 0}}">
+                        <view style="font-weight: bold;width:80px;height:50px;background-color:#DFECFF;line-height:50px">
+                           <text>{{ x.value.toFixed(2) }}%</text>
+                        </view>
+                     </block>
+                  </view>
+               </table-column>
+            </table>
+         </view>
+      </view>
+   </view>
+</view>

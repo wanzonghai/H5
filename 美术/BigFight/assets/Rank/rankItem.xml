@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="615,135" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="rank" pages="0,其他,1,第一,2,第二,3,第三" selected="0"/>
+  <controller name="isLimit" pages="0,正常,1,限时" selected="0"/>
+  <controller name="haveAward" pages="0,没有奖励,1,有奖励" selected="0"/>
+  <controller name="isSelf" pages="0,自己,1,列表" selected="0"/>
+  <controller name="isGoods" pages="0,奖品,1,商品" selected="0"/>
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="0"/>
+  <displayList>
+    <image id="n18_n3sv" name="panel" src="shd82u" fileName="Common_Panel_Item.png" pkg="qwv197ct" xy="0,0" size="615,125" visible="false">
+      <gearDisplay controller="isSelf" pages="1"/>
+    </image>
+    <image id="n36_emqn" name="n36" src="emqn39" fileName="Common_Line.png" pkg="qwv197ct" xy="4,133">
+      <gearDisplay controller="isSelf" pages="1"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <text id="n9" name="nameTxt" xy="223,17" size="180,39" fontSize="25" color="#7e7e7e" vAlign="middle" autoSize="none" text="">
+      <gearColor controller="styleCtrl" pages="1" values="#597fc2,#000000" default="#7e7e7e,#000000"/>
+    </text>
+    <text id="n19_n3sv" name="rankTxt" xy="56,62" pivot="0.5,0.5" anchor="true" size="97,66" fontSize="50" color="#ff611c" align="center" vAlign="middle" autoSize="shrink" bold="true" text="">
+      <gearDisplay controller="rank" pages="0"/>
+      <gearColor controller="styleCtrl" pages="1" values="#6292ed,#000000" default="#ff611c,#000000"/>
+    </text>
+    <image id="n20_n3sv" name="n20" src="n3svh" fileName="Rank_Ico_Gold.png" xy="57,60" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="1"/>
+    </image>
+    <image id="n21_n3sv" name="n21" src="n3svi" fileName="Rank_Ico_Silver.png" xy="57,60" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="2"/>
+    </image>
+    <image id="n22_n3sv" name="n22" src="n3svg" fileName="Rank_Ico_Bronze.png" xy="57,60" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="rank" pages="3"/>
+    </image>
+    <loader id="n27_l5lu" name="avatarLoader" xy="120,17" size="90,90" url="ui://qwv197ctjbc722" fill="scaleMatchWidth" clearOnPublish="true"/>
+    <component id="n34_cowj" name="awardBtn" src="cowj1k" fileName="awardBtn.xml" xy="520,64" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="haveAward" pages="1"/>
+    </component>
+    <image id="n35_fg5x" name="goodsPanel" src="emqn3a" fileName="Common_Panel_Round.png" pkg="qwv197ct" xy="520,64" pivot="0.5,0.5" anchor="true" size="120,120">
+      <gearDisplay controller="isGoods" pages="1"/>
+      <relation target="n34_cowj" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n33_cowj" name="n33" src="uur623" fileName="Rank_Banner_2.png" xy="231,72" size="132,31"/>
+    <image id="n32_qkmn" name="n32" src="bvmi2c" fileName="Common_Ico_Rank.png" pkg="qwv197ct" xy="214,67" scale="0.6,0.6"/>
+    <text id="n4" name="scoreTxt" xy="252,86" pivot="0,0.5" anchor="true" size="97,39" fontSize="28" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="shrink" text=""/>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="600,-" endValue="0,0" duration="6"/>
+  </transition>
+</component>

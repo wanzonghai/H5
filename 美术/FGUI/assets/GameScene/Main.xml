@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" designImage="ui://xehum4g4gyh22p">
+  <displayList>
+    <component id="n7_ieaz" name="startPannel" src="ieaze" fileName="components/startPannel.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </component>
+    <text id="n16_fpmx" name="gameStartHint" xy="375,586" pivot="0.5,0.5" anchor="true" size="244,106" fontSize="40" color="#f24a5f" align="center" vAlign="middle" text="在屏幕上滑动&#xA;落下物品">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n6_tnrq" name="backButton" src="tnrqd" fileName="components/backButton.xml" xy="52,47" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="left-left,top-top%"/>
+    </component>
+    <image id="n10_srl0" name="n10" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="578,47" pivot="0.5,0.5" anchor="true" visible="false" color="#666666">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+    <text id="n19_gyh2" name="n19" xy="474,47" pivot="0.5,0.5" anchor="true" size="60,39" visible="false" fontSize="28" color="#ffd107" align="center" vAlign="middle" autoSize="none" text="积分">
+      <relation target="n10_srl0" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n20_9ffy" name="scoreIcon" xy="155,49" pivot="0.5,0.5" anchor="true" size="82,85" url="ui://xehum4g4maift">
+      <relation target="" sidePair="left-left,top-top%"/>
+    </loader>
+    <text id="n11_srl0" name="score" xy="191,53" pivot="0,0.5" anchor="true" size="228,80" font="ui://xehum4g4srl0j" fontSize="15" color="#ffffff" vAlign="middle" autoSize="shrink" singleLine="true" text="634">
+      <relation target="n20_9ffy" sidePair="middle-middle,left-left"/>
+    </text>
+    <component id="n21_w05t" name="gameFlyTaskBtn" src="w05t3c" fileName="components/GameGadgetBtn.xml" xy="-135,408" pivot="0.5,0.5" anchor="true"/>
+    <component id="n18_wpln" name="SurpassHint" src="wpln2m" fileName="components/SurpassHint.xml" xy="672,207" pivot="0.5,0.5" anchor="true" visible="false" touchable="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n22_w05t" name="GameTaskPopup" src="w05t2z" fileName="components/GameTaskPopup.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n15_wyiu" name="GameAward" src="wyiu25" fileName="components/GameAward.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n17_b9dp" name="MergeExternAward" src="b9dp2j" fileName="components/MergeExternAward.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n12_ktub" name="ConfirmPopup" src="ktub1g" fileName="components/ConfirmPopup.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n13_ebwf" name="RevivePopup" src="dx3d14" fileName="components/RevivePopup.xml" xy="375,667" size="750,1334" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n8_ieaz" name="GameOver" src="ieazf" fileName="components/GameOver.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n14_ebwf" name="DoubleAwardPopup" src="ebwf1w" fileName="components/DoubleAwardPopup.xml" xy="375,667" visible="false">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n16_fpmx" tween="true" startValue="1" endValue="0.3" duration="24" ease="Linear"/>
+    <item time="24" type="Alpha" target="n16_fpmx" tween="true" startValue="0.3" endValue="1" duration="24" ease="Linear"/>
+  </transition>
+  <transition name="flyTask" options="2">
+    <item time="0" type="XY" target="n21_w05t" tween="true" startValue="-159,390" endValue="-100,361" duration="18" ease="Linear"/>
+    <item time="18" type="XY" target="n21_w05t" tween="true" startValue="-100,361" endValue="100,443" duration="18" ease="Linear"/>
+    <item time="36" type="XY" target="n21_w05t" tween="true" startValue="100,443" endValue="300,367" duration="18" ease="Linear"/>
+    <item time="54" type="XY" target="n21_w05t" tween="true" startValue="300,367" endValue="500,437" duration="18" ease="Linear"/>
+    <item time="72" type="XY" target="n21_w05t" tween="true" startValue="500,437" endValue="670,379" duration="18" ease="Linear"/>
+    <item time="90" type="XY" target="n21_w05t" tween="true" startValue="670,379" endValue="500,306" duration="18" ease="Linear"/>
+    <item time="108" type="XY" target="n21_w05t" tween="true" startValue="500,306" endValue="300,386" duration="18" ease="Linear"/>
+    <item time="126" type="XY" target="n21_w05t" tween="true" startValue="300,386" endValue="100,247" duration="18" ease="Linear"/>
+    <item time="144" type="XY" target="n21_w05t" tween="true" startValue="100,247" endValue="200,452" duration="18" ease="Linear"/>
+    <item time="162" type="XY" target="n21_w05t" tween="true" startValue="200,452" endValue="400,345" duration="18" ease="Linear"/>
+    <item time="180" type="XY" target="n21_w05t" tween="true" startValue="400,345" endValue="895,477" duration="30" ease="Linear"/>
+  </transition>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ennunbg0">
+  <resources>
+    <component id="r8mh1" name="Main.xml" path="/" exported="true"/>
+    <component id="r8mh2" name="prizeBag.xml" path="/"/>
+    <component id="r8mhb" name="checkBtn.xml" path="/"/>
+    <component id="v77a31" name="closeBtn.xml" path="/"/>
+    <component id="ctsq33" name="baseFrame.xml" path="/"/>
+    <component id="ctsq37" name="TabButton.xml" path="/"/>
+    <component id="ctsq39" name="prizeItem.xml" path="/"/>
+    <component id="ctsq3b" name="smallButton.xml" path="/"/>
+    <component id="ctsq3d" name="rewardAdress.xml" path="/"/>
+    <component id="ctsq3e" name="textInput.xml" path="/"/>
+    <component id="ctsq3f" name="alertDialog.xml" path="/"/>
+    <component id="ctsq3g" name="smallButtonGray.xml" path="/"/>
+    <component id="ctsq3h" name="Alert.xml" path="/" exported="true"/>
+    <component id="ctsq3i" name="InputRewardAdress.xml" path="/" exported="true"/>
+    <image id="kqvl3j" name="Icon.png" path="/Images/" exported="true"/>
+    <component id="kqvl3k" name="bigButton.xml" path="/"/>
+    <component id="kqvl3l" name="bigButtonGray.xml" path="/"/>
+    <image id="dhwd3m" name="tishiTitle.png" path="/Images/"/>
+    <image id="dhwd3n" name="Bag_Title.png" path="/Images/"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\baseBag"/>
+</packageDescription>

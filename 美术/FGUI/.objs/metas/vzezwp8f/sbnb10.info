@@ -1,0 +1,12 @@
+{
+  "objectStatus": {
+    "n9_sbnb": {
+      "collapsed": true
+    },
+    "n14_sbnb": {
+      "hidden": true
+    }
+  },
+  "adaptiveTest": true,
+  "fitScreen": "FitSize"
+}

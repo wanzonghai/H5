@@ -1,0 +1,44 @@
+<view>
+   <view style="color:red;font-size:17px;width:100%;height:50px;background-color:white;line-height:50px;padding-left:45px;">点击此处查看直播间互动弹窗投放教程</view>
+   <view>
+      <am-tabs tabs="{{tabs2}}" activeTab="{{activeTab2}}" tabsName="activeTab2" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" showPlus="{{false}}" capsule="{{false}}" hasSubTitle="{{true}}" swipeable="{{true}}" tabBarUnderlineWidth="20px">
+         <block a:for="{{tabs2}}" a:for-item="item" a:for-index="index">
+            <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab2}}" a:if="{{index === 0}}">
+               <view class="tab-content">
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[0]}}" onTap="previewImage" src="{{item.img[0]}}" />
+                  </view>
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[1]}}" onTap="previewImage" src="{{item.img[1]}}" />
+                  </view>
+               </view>
+            </tab-content>
+            <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab2}}" a:elif="{{index === 1}}">
+               <view class="tab-content">
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[0]}}" onTap="previewImage" src="{{item.img[0]}}" />
+                  </view>
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[1]}}" onTap="previewImage" src="{{item.img[1]}}" />
+                  </view>
+               </view>
+            </tab-content>
+            <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab2}}" a:elif="{{index === 2}}">
+               <view class="tab-content">
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[0]}}" onTap="previewImage" src="{{item.img[0]}}" />
+                  </view>
+                  <view style="margin-left:10px">
+                     <image mode="widthFix" data-img="{{item.img[1]}}" onTap="previewImage" src="{{item.img[1]}}" />
+                  </view>
+               </view>
+            </tab-content>
+            <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab2}}" a:elif="{{index === 3}}">
+               <view class="tab-content">
+                  <image mode="widthFix" data-img="{{item.img}}" onTap="previewImage" src="{{item.img}}" />
+               </view>
+            </tab-content>
+         </block>
+      </am-tabs>
+   </view>
+</view>

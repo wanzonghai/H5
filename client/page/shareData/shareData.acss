@@ -1,0 +1,147 @@
+/* 遮罩层 */
+
+.cover_none {
+    display: none
+}
+
+.cover {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(56, 49, 49, 0.4);
+    width: 100%;
+    /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height: 100%;
+    filter: alpha(opacity=60);
+    /*设置透明度为60%*/
+    opacity: 0.6;
+    /*非IE浏览器下设置透明度为60%*/
+    z-Index: 999;
+}
+
+.main-frame {
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 20px 20px 20px 20px;
+}
+
+.check-time-frame {
+    height: 60px;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.check-date {
+    text-align: center;
+    line-height: 28px;
+    width: 80px;
+    height: 28px;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666666;
+    border: solid 1px #e0e0e0;
+}
+
+.active_time {
+    color: white;
+    background-color: #477cf6;
+}
+
+.check-rangeDate {
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.export {
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #3d7fff;
+    float: right;
+    margin-top: 14px;
+    border-radius: 3px;
+    color: white;
+    /* margin-right: 20px; */
+}
+
+.check-active-frame {
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.active-msg {
+    width: 80px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #111111;
+}
+
+.active-select {
+    margin-top: 12px;
+}
+
+.center-data-frame {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.top-msg-frame {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    /* border-bottom: 1px solid #ebeef0; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-frame {
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkBtn {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    background-color: #3d7fff;
+    line-height: 35px;
+    margin-top: 6px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.result-box-frame {
+    width: 177px;
+    height: 120px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0px 10px 20px;
+    line-height: 41px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #477cf6;
+    font-size: 14px;
+}
+
+.box-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3d7eff;
+}

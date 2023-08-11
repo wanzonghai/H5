@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hmoqxzvj">
+  <resources>
+    <component id="kv200" name="Main.xml" path="/" exported="true"/>
+    <image id="kv202" name="gift_title4.png" path="/Images/"/>
+    <image id="kv203" name="giftItemBg.png" path="/Images/" scale="9grid" scale9grid="80,102,160,204"/>
+    <image id="kv204" name="Common_BG.png" path="/Images/" scale="9grid" scale9grid="153,117,13,15"/>
+    <component id="kv205" name="AutotriggerAward.xml" path="/" exported="true"/>
+    <image id="kv206" name="couponIcon.png" path="/Images/"/>
+    <image id="kv207" name="Icon.png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\autotriggerAward"/>
+</packageDescription>

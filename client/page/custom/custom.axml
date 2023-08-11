@@ -1,0 +1,93 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <view class="center-frame">
+         <view class="box-frame-1">
+            <view style="font-size:17px;color:#666666;">加钉钉群 或者 联系旺旺 进行专属定制服务</view>
+            <view class="dd-frame">
+               <image class="image1" mode="aspectFit" src="{{imageUrl + 'custom/ddqrcode.png'}}"></image>
+               <image class="image2" mode="aspectFit" onTap="openQianniu" src="../../images/custom/custom.png"></image>
+            </view>
+         </view>
+         <view class="box-frame-2">
+            <view style="font-size:16px;color: #666666;height: 50px;line-height: 50px;">角色定制</view>
+            <view class="msg-list-1">
+               <view>1、可以使用公司品牌形象，或者另行设计</view>
+               <view>2、宣传公司品牌形象，新品等内容</view>
+               <view>3、比例不变，高度和参考图基本一致</view>
+               <!--<view>4、单个角色大约3天/人（不包含反馈和前期设计沟通的时间）</view> -->
+            </view>
+            <view>
+               <swiper indicator-dots="{{true}}">
+                  <block a:for="{{dingzhi}}">
+                     <swiper-item>
+                        <view style="text-align: center;">
+                           <image mode='scaleToFill' style="width: 964px; height:294px;" src="{{item}}"></image>
+                        </view>
+                     </swiper-item>
+                  </block>
+               </swiper>
+            </view>
+         </view>
+         <view class="box-frame-3">
+            <view style="width:100%;font-size:16px;color: #666666;height: 50px;line-height: 50px;">场景定制</view>
+            <view class="msg-list-1" style="width:300px;">
+               <view>1、可以在场景中插入广告，LOGO等元素，
+                  比如立在地上的广告牌，天空飞过的飞艇等
+               </view>
+               <view>2、推广相关产品，品牌文化</view>
+               <view>3、可以进行整体场景的设计，品牌故事场景,节
+                  日场景等
+               </view>
+               <!--<view>4、整体场景大约需要3天/人（不包含反馈和前
+            期设计沟通的时间）</view> -->
+            </view>
+            <view>
+               <view class="buju-frame">
+                  <view class="buju-iamge-1">
+                     <image mode="scaleToFill" src="{{changjing[0]}}" />
+                     <image mode="scaleToFill" src="{{changjing[1]}}" />
+                  </view>
+               </view>
+            </view>
+         </view>
+         <view class="box-frame-4">
+            <view style="width:100%;font-size:16px;color: #666666;height: 50px;line-height: 50px;">UI布局定制</view>
+            <view class="msg-list-1" style="width:300px;">
+               <view>1、可以在场景中插入广告，LOGO等元素，
+                  比如立在地上的广告牌，天空飞过的飞艇等
+               </view>
+               <view>2、推广相关产品，品牌文化</view>
+               <view>3、可以进行整体场景的设计，品牌故事场景,节
+                  日场景等
+               </view>
+               <!--<view>4、整体场景大约需要3天/人（不包含反馈和前
+            期设计沟通的时间）</view> -->
+            </view>
+            <view class="buju-frame">
+               <view class="buju-iamge-1">
+                  <image mode="scaleToFill" src="{{buju[0]}}" />
+               </view>
+               <view class="buju-iamge-1">
+                  <image mode="scaleToFill" src="{{buju[1]}}" />
+               </view>
+            </view>
+         </view>
+         <view class="box-frame-5">
+            <view style="width:100%;font-size:16px;color: #666666;height: 50px;line-height: 50px;">全套平台定制</view>
+            <view class="msg-list-1" style="width:300px;">
+               <view>1、以上3种全套定制，完全符合企业品牌文化
+               </view>
+               <view>2、制作周期根据详细需求确定</view>
+            </view>
+            <view class="quantao">
+               <image mode="scaleToFill" src="{{uidingzhi[0]}}" />
+            </view>
+         </view>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,155" bgColorEnabled="true">
+  <controller name="typeCtrl" pages="0,实物,1,优惠券" selected="1"/>
+  <controller name="stateCtrl" pages="0,可使用,1,已使用,2,已过期" selected="0">
+    <remark page="0" value="申请"/>
+    <remark page="1" value="已申请"/>
+  </controller>
+  <displayList>
+    <image id="n21_zcea" name="n21" src="emqn39" fileName="Common_Line.png" pkg="qwv197ct" xy="3,153" alpha="0.4" color="#cccccc">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <loader id="n19_hag3" name="img" xy="26,27" size="100,100" url="ui://qwv197ctxz9x2k" align="center" vAlign="middle" fill="scaleFree">
+      <gearIcon controller="typeCtrl" pages="1" values="ui://qwv197ctxz9x2k" default="ui://qwv197ctf98g28"/>
+    </loader>
+    <component id="n17_igfa" name="applyBtn" src="igfaj" fileName="applyBtn.xml" xy="505,70" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="typeCtrl" pages="0"/>
+      <gearLook controller="stateCtrl" pages="0,1,2" values="1,0,0,1|1,0,0,0|1,0,0,0"/>
+      <gearIcon controller="stateCtrl" pages="0,1,2" values="ui://hekdvdn8igfad|ui://hekdvdn8igfae|ui://hekdvdn8igfae"/>
+      <Button icon="ui://hekdvdn8igfad"/>
+    </component>
+    <component id="n25_o0xy" name="useBtn" src="igfaj" fileName="applyBtn.xml" xy="505,70" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+      <gearLook controller="stateCtrl" pages="0,1,2" values="1,0,0,1|1,0,0,0|1,0,0,0"/>
+      <gearIcon controller="stateCtrl" pages="0,1,2" values="ui://hekdvdn8o0xyz|ui://hekdvdn8o0xyy|ui://hekdvdn8o0xyy"/>
+      <Button icon="ui://hekdvdn8o0xyz"/>
+    </component>
+    <loader id="n18_lt7o" name="state" xy="509,70" pivot="0.5,0.5" anchor="true" size="108,41" url="ui://hekdvdn8j04is" autoSize="true">
+      <gearDisplay controller="typeCtrl" pages=""/>
+      <gearIcon controller="stateCtrl" pages="0,1,2" values="ui://hekdvdn8j04is|ui://hekdvdn8o0xyy|ui://hekdvdn8j04ir"/>
+    </loader>
+    <text id="n11_igfa" name="titleTxt" xy="152,46" pivot="0,0.5" anchor="true" size="253,36" fontSize="26" color="#4e4e4e" vAlign="middle" leading="5" autoSize="none" text="这个商品的名字有九十一二三四五六七八">
+      <gearXY controller="typeCtrl" pages="0,1" values="152,25|152,46"/>
+    </text>
+    <text id="n12_igfa" name="getTxt" xy="152,99" size="210,29" fontSize="20" color="#585858" leading="5" vars="true" text="获得时间：{date=2020-12-29}">
+      <relation target="n23_mmeu" sidePair="top-bottom"/>
+    </text>
+    <text id="n13_igfa" name="orderTxt" xy="152,131" size="302,29" fontSize="20" color="#585858" leading="5" vars="true" text="订单号：{str=2656556166598516511}">
+      <gearDisplay controller="typeCtrl" pages="0"/>
+      <relation target="n12_igfa" sidePair="top-bottom"/>
+    </text>
+    <text id="n23_mmeu" name="priceTxt" xy="152,67" size="36,29" fontSize="20" color="#ff7c08" leading="5" vars="true" text="￥{price=1}">
+      <relation target="n11_igfa" sidePair="top-bottom"/>
+    </text>
+    <image id="n24_q4n3" name="n24" src="emqn3a" fileName="Common_Panel_Round.png" pkg="qwv197ct" xy="20,20" size="120,120"/>
+  </displayList>
+  <transition name="slideIn" options="4">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="602,-" endValue="0,0" duration="6"/>
+  </transition>
+</component>

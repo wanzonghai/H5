@@ -1,0 +1,15 @@
+{
+  "objectStatus": {
+    "n14_nkzp": {
+      "hidden": true
+    },
+    "n15_nkzp": {
+      "hidden": true
+    },
+    "n13_nkzp": {
+      "hidden": true
+    }
+  },
+  "adaptiveTest": true,
+  "fitScreen": "FitSize"
+}

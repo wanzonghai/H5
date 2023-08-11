@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,942">
+  <displayList>
+    <image id="n22_cowj" name="n22" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,900"/>
+    <image id="n25_cowj" name="n25" src="cowj1r" fileName="Rank_Title_Award.png" xy="154,0"/>
+    <image id="n23_cowj" name="n23" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,122" size="615,774"/>
+    <component id="n27_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <list id="n24_cowj" name="list" xy="21,149" size="613,720" overflow="scroll" defaultItem="ui://qkteqwfpcowj1n" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

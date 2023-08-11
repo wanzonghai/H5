@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,583">
+  <controller name="vipState" pages="2,不是vip,3,是vip" selected="0"/>
+  <displayList>
+    <image id="n32_jbc7" name="bg" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,494"/>
+    <image id="n40_uz4n" name="n40" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,128" size="615,266"/>
+    <image id="n35_jbc7" name="title" src="jbc7l" fileName="Personal_Title.png" xy="153,0"/>
+    <component id="n10_rfln" name="headInfo" src="jbc716" fileName="headInfo.xml" xy="60,154"/>
+    <image id="n15_rfln" name="vip1" src="jbc7i" fileName="Personal_Icon_VIP.png" xy="532,171" pivot="0.5,0.5" anchor="true" grayed="true">
+      <gearLook controller="vipState" pages="2,3" values="1,0,1,0|1,0,0,0"/>
+    </image>
+    <component id="n42_zcea" name="getVipBtn" src="zcea1a" fileName="getVipBtn.xml" xy="532,243" pivot="0.5,0.5" anchor="true">
+      <gearLook controller="vipState" pages="3" values="1,0,0,0" default="1,0,0,1"/>
+      <gearIcon controller="vipState" pages="3" values="ui://wxz9et6tzcea19" default=""/>
+    </component>
+    <component id="n17_rfln" name="vipTipsImg" src="jbc7r" fileName="vipTips.xml" xy="363,96">
+      <gearDisplay controller="vipState" pages="2,3"/>
+    </component>
+    <component id="n19_rfln" name="bestScore" src="jbc7s" fileName="bestScore.xml" xy="55,293"/>
+    <component id="n22_rfln" name="bestRank" src="jbc7t" fileName="bestRank.xml" xy="253,285"/>
+    <component id="n25_rfln" name="bestWin" src="jbc7u" fileName="beskWin.xml" xy="454,273"/>
+    <component id="n39_uz4n" name="shareBtn" src="uz4n2y" fileName="shareBtn.xml" pkg="qwv197ct" xy="202,485"/>
+    <component id="n41_v77a" name="closeBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+  </displayList>
+</component>

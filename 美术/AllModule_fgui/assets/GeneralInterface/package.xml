@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="c66xycir">
+  <resources>
+    <component id="11ndo3p" name="Alert.xml" path="/" exported="true"/>
+    <image id="11ndo0" name="Icon.png" path="/Image/" exported="true"/>
+    <component id="fn9co3q" name="Main.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\GeneralInterface\"/>
+</packageDescription>

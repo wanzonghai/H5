@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="570,700" pivot="0.5,0.5" anchor="true">
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="0"/>
+  <displayList>
+    <image id="n1_fo1o" name="bg" src="l8xzb" fileName="Niuniandaji_BG.png" xy="0,192" size="570,458">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n7_kx34" name="title" src="l8xzf" fileName="Niuniandaji_Top.png" xy="-136,-25"/>
+    <image id="n11_j0sx" name="n11" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="25,255" size="520,240"/>
+    <image id="n10_j0sx" name="n10" src="l8xza" fileName="Niuniandaji_Txt.png" xy="244,257"/>
+    <component id="n5_kx34" name="shareBtn" src="l8xz5" fileName="shareBtn.xml" xy="284,640" pivot="0.5,0.5" anchor="true"/>
+    <component id="n13_emqn" name="cancelBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="528,62"/>
+    <image id="n14_l8xz" name="n14" src="l8xzh" fileName="Pifushiyong_Jineng.png" xy="245,484"/>
+    <text id="n15_l8xz" name="speedTxt" xy="418,524" pivot="0.5,0.5" anchor="true" size="207,42" fontSize="30" color="#fe4545" bold="true" text="移动速度+10%">
+      <gearColor controller="styleCtrl" pages="1" values="#8662db,#000000" default="#fe4545,#000000"/>
+      <relation target="n14_l8xz" sidePair="left-center,top-middle"/>
+    </text>
+    <image id="n16_l8xz" name="duilianL" src="l8xzd" fileName="Niuniandaji_duilian_L.png" xy="-32,210" pivot="0.5,0" anchor="true"/>
+    <image id="n17_l8xz" name="duilianR" src="l8xze" fileName="Niuniandaji_duilian_R.png" xy="600,210" pivot="0.5,0" anchor="true"/>
+    <graph id="n8_kx34" name="role" xy="145,555" pivot="0.5,1" size="1,1" type="rect">
+      <relation target="" sidePair=""/>
+    </graph>
+  </displayList>
+  <transition name="duilian" autoPlay="true" frameRate="30">
+    <item time="0" type="Scale" target="n16_l8xz" value="1,0"/>
+    <item time="0" type="Scale" target="n17_l8xz" value="1,0"/>
+    <item time="13" type="Scale" target="n16_l8xz" tween="true" startValue="1,0" endValue="1,1.1" duration="6"/>
+    <item time="13" type="Scale" target="n17_l8xz" tween="true" startValue="1,0" endValue="1,1.1" duration="6"/>
+    <item time="19" type="Scale" target="n16_l8xz" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="19" type="Scale" target="n17_l8xz" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+  </transition>
+</component>

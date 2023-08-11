@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,280" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n12_w7oc" name="coinImg" src="jx9c9" fileName="img_jbbg.png" xy="151,219" pivot="0.5,0.5" anchor="true" scale="1.3,1.3"/>
+    <image id="n11_w7oc" name="img" src="jx9c8" fileName="img_jb.png" xy="151,79" pivot="0.5,0.5" anchor="true" scale="1.8,1.8"/>
+    <text id="n13_w7oc" name="num" xy="151,214" pivot="0.5,0.5" anchor="true" size="112,60" fontSize="45" color="#ffffff" align="center" vAlign="middle" bold="true" text="+100"/>
+  </displayList>
+</component>

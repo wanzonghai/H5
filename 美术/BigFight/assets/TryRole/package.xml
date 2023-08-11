@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="lkv274rz">
+  <resources>
+    <component id="fo1o0" name="Main.xml" path="/" exported="true"/>
+    <image id="fo1o1" name="Personal_Title.png" path="/"/>
+    <component id="kx342" name="tryBtn.xml" path="/"/>
+    <component id="kx346" name="tryRole.xml" path="/"/>
+    <image id="j0sxp" name="Pifushiyong_Jineng.png" path="/"/>
+    <image id="j0sxq" name="Pifushiyong_Txt.png" path="/"/>
+    <image id="j0sxs" name="Pifushiyong_Btn.png" path="/"/>
+    <image id="j0sxu" name="Design.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

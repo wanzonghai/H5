@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="alertCtrl" exported="true" pages="0,确认取消,1,确认" selected="1"/>
+  <displayList>
+    <component id="n7_n9oc" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="47,448" pivot="0.5,0.5" size="656,437" controller="ctrlCloseStatus,1,ctrlTitleStatus,1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n8_n9oc" name="framebg" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="375,654" pivot="0.5,0.5" anchor="true" size="615,282">
+      <relation target="n7_n9oc" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </image>
+    <text id="n10_11ndo" name="tipsTxt" xy="81,524" size="588,262" fontSize="35" align="center" vAlign="middle" autoSize="none" text="这是一个确认框">
+      <relation target="n8_n9oc" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </text>
+    <component id="n11_11ndo" name="noBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="82,840" size="282,85" aspect="true">
+      <gearDisplay controller="alertCtrl" pages="0"/>
+      <relation target="n7_n9oc" sidePair="center-center,bottom-bottom"/>
+      <Button title="取消"/>
+    </component>
+    <component id="n12_11ndo" name="yesBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="234,840" size="282,85" aspect="true">
+      <gearXY controller="alertCtrl" pages="1" values="234,840" default="388,840"/>
+      <relation target="n7_n9oc" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

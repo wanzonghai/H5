@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="vzezwp8f">
+  <resources>
+    <image id="prazw" name="gift_frame.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="35,36,621,779"/>
+    <image id="prazz" name="giftItemBg.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="19,27,276,349"/>
+    <image id="praz10" name="giftItemTitlebg.png" path="/png/gift/" exported="true"/>
+    <image id="praz11" name="giftDemo.png" path="/png/gift/" exported="true"/>
+    <image id="o7s413" name="exchangeBg_1.png" path="/png/gift/" exported="true"/>
+    <image id="o7s414" name="exchangeBg_2.png" path="/png/gift/" exported="true"/>
+    <image id="o7s418" name="giftBtnbg1.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="52,0,211,97"/>
+    <image id="o7s41d" name="giftConfirm_titlebg.png" path="/png/gift/" exported="true"/>
+    <image id="o7s41e" name="giftConfirm_frame.png" path="/png/gift/" exported="true"/>
+    <image id="dx3d1k" name="giftItemBtnBg.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="44,0,212,80"/>
+    <image id="dx3d1l" name="haoliduihuan.png" path="/png/gift/" exported="true"/>
+    <image id="112yo1m" name="giftItemBtnBg2.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="44,0,204,80"/>
+    <image id="r7g3o1o" name="Common_BG.png" path="/png/gift/" exported="true" scale="9grid" scale9grid="150,116,16,13"/>
+    <component id="o7s417" name="exchangeBtn.xml" path="/components/" exported="true"/>
+    <component id="o7s419" name="goBtn.xml" path="/components/" exported="true"/>
+    <component id="o7s41a" name="okBtn.xml" path="/components/" exported="true"/>
+    <component id="praz12" name="scoreExchangeBtn.xml" path="/components/" exported="true"/>
+    <component id="prazx" name="closeBtn.xml" path="/components/" exported="true"/>
+    <image id="prazt" name="Common_Btn Close.png" path="/png/" exported="true"/>
+    <image id="8geip" name="gamejifen.png" path="/png/" exported="true"/>
+    <image id="112yo1n" name="gamejifen_gray.png" path="/png/" exported="true"/>
+    <image id="8geih" name="gameqipao.png" path="/png/" exported="true"/>
+    <image id="o7s41i" name="duiihuanshibaitubiao.png" path="/png/gift/" exported="true"/>
+    <image id="b9dpo1s" name="guangxiao.png" path="/png/gift/" exported="true"/>
+    <image id="nkzpo1t" name="exchangeBtn.png" path="/png/" exported="true"/>
+    <image id="nkzpo1z" name="Common_Line.png" path="/png/" exported="true"/>
+    <image id="nkzpo20" name="Rank_Ico_Silver.png" path="/png/" exported="true"/>
+    <image id="nkzpo21" name="Rank_Ico_Bronze.png" path="/png/" exported="true"/>
+    <image id="nkzpo22" name="Rank_Ico_Gold.png" path="/png/" exported="true"/>
+    <image id="nkzpo23" name="Common_Img_Player.png" path="/png/" exported="true"/>
+    <component id="nkzpo24" name="exchangeBtn2.xml" path="/components/" exported="true"/>
+    <component id="tlato26" name="NoticeBoard.xml" path="/components/" exported="true"/>
+    <image id="pywdo2m" name="my_gift.png" path="/png/gift/" exported="true"/>
+    <component id="pywdo2n" name="MyGiftButton.xml" path="/components/" exported="true"/>
+    <image id="e26d1y" name="jifendi.png" path="/png/" exported="true" scale="9grid" scale9grid="53,0,231,66"/>
+    <image id="e26d1z" name="duihuananniu(1).png" path="/png/" exported="true" scale="9grid" scale9grid="29,0,58,50"/>
+    <image id="j1xko2p" name="awardShowBtn.png" path="/png/"/>
+    <image id="8geii" name="duihuananniu.png" path="/png/" exported="true" scale="9grid" scale9grid="29,0,58,50"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

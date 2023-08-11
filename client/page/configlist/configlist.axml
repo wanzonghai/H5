@@ -1,0 +1,113 @@
+<view>
+  <!-- 遮罩层 -->
+  <view class="{{cover}}"></view>
+  <!-- 顶部导航 -->
+  <navigation slot="navigation"></navigation>
+  <!-- 中部内容 -->
+  <view class="main-frame">
+    <view id="qrcode"></view>
+    <view class="main-list-frame">
+      <view class="tables">
+        <table dataSource="{{checkActiveList}}" loading="{{loading}}" hasBorder="{{false}}">
+          <table-column title="活动名称" dataIndex="activeName" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x" style="font-size: 14px;color: #111111;">{{x.value}}</view>
+          </table-column>
+          <table-column title="版本" dataIndex="createTime" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x">
+
+              <view style="font-size: 14px;color: #111111;">创建时间:{{x.value}}</view>
+            </view>
+          </table-column>
+          <table-column title="活动状态" width="{{80}}" dataIndex="state" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x" style="width:100%;">
+              <block a:if="{{x.value == true}}">
+                <view style="width: 60px;height: 18px;border-radio:3px;background:#E8F9E8;text-align: center">
+                  <text style="color:green;font-weight: bold;">运营中</text>
+                </view>
+              </block>
+              <block a:if="{{x.value == false}}">
+                <view style="width: 60px;height: 18px;border-radio:3px;background:#E8F9E8;text-align: center">
+                  <text style="color:red;font-weight: bold">已下架</text>
+                </view>
+              </block>
+            </view>
+          </table-column>
+          <table-column title="活动二维码" dataIndex="activeId" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x" data-url="{{x.record}}" data-activeInfo="{{x.record}}" onTap="formSubmit">
+              <canvas style="width: 150px;height: 150px;background:#f1f1f1;" id="mycanvas_{{x.value}}"></canvas>
+              <view>
+                <!--<text style="color:green;font-size:13px">请刷新二维码</text> -->
+              </view>
+            </view>
+          </table-column>
+          <table-column title="活动地址" width="{{250}}" dataIndex="activeUrl" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x" onTap="setClipboard" data-activeUrl="{{x.value}}" style="font-size:10px">
+                     {{x.value}}
+            </view>
+          </table-column>
+          <table-column title="操作" width="{{120}}" dataIndex="state" align="center" alignHeader="{{'center'}}">
+            <view slot-scope="x" class="btn_frame">
+              <block a:if="{{x.value == true}}">
+                <view class="edit_btn" data-type="edit" data-activeInfo="{{x.record}}" onTap="jump">修改活动</view>
+                <view class="put_btn" data-activeInfo="{{x.record}}" data-type="promote" onTap="jump">推广活动
+                </view>
+                <view class="close_btn" data-activeInfo="{{x.record}}" data-type="closeActive" onTap="jump">下架活动
+                </view>
+              </block>
+              <block a:if="{{x.value == false}}">
+                <view class="edit_btn_no">修改活动</view>
+                <view class="put_btn_no">推广活动</view>
+                <view class="close_btn_no">下架活动</view>
+              </block>
+            </view>
+          </table-column>
+        </table>
+      </view>
+      <view class="page-frmae">
+        <pagination total="{{activeList.length}}" pageSize="5" onChange="onPageChange" />
+      </view>
+    </view>
+  </view>
+  <!-- 推广弹窗 -->
+  <view class="{{promote_frame}}">
+    <view class="top-frame">
+      <view class="left-msg">推广活动</view>
+      <view class="right-close">
+        <image mode="scaleToFill" data-type="close" onTap="jump" src="../../images/configlist/close.png"></image>
+      </view>
+    </view>
+    <view class="link-frame">
+      <view class="left-qrcode">
+        <canvas id="mycanvasDetail"></canvas>
+      </view>
+      <view class="right-frame">
+        <view class="right-msg">活动链接(装修推广使用此链接)</view>
+        <view class="right-link">
+          <input class="right-input" type="button" value="{{link_url}}"></input>
+          <view class="right-copy" data-activeUrl="{{link_url}}" onTap="setClipboard">复制地址</view>
+        </view>
+      </view>
+    </view>
+    <view style="font-size: 13px;
+    text-align: center;
+    margin-top: 10px;">可通过以下方式推广活动
+    </view>
+    <view class="dowm-btn-frame">
+      <view class="btn-1">
+        <view class="btn-1-left">直播模块装修</view>
+        <view class="btn-1-right-1" data-type="video_Tutorials" onTap="jump">看教程</view>
+        <view class="btn-1-right-2" data-type="video" onTap="jump">去推广</view>
+      </view>
+      <view class="btn-1">
+        <view class="btn-1-left">手淘首页海报装修</view>
+        <view class="btn-1-right-1" data-type="taobao_main" onTap="jump">看教程</view>
+        <view class="btn-1-right-2" data-type="taobao_qn" onTap="jump">去推广</view>
+      </view>
+      <view class="btn-1">
+        <view class="btn-1-left">手淘详情页装修</view>
+        <view class="btn-1-right-1" data-type="taobao_detail" onTap="jump">看教程</view>
+        <view class="btn-1-right-2" data-type="taobao_qn" onTap="jump">去推广</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,862">
+  <controller name="typeCtrl" pages="0,无公告,1,强制公告,2,可关闭公告,3,跳转公告" selected="2"/>
+  <displayList>
+    <image id="n0_8859" name="n0" src="rqvvk" fileName="Common_BG.png" xy="0,42" size="656,846"/>
+    <image id="n4_bzzg" name="n4" src="f1yh2v" fileName="Common_Panel_White.png" xy="20,93" size="615,723"/>
+    <text id="n1_8859" name="noticeTxt" xy="51,122" size="554,42" fontSize="30" color="#4e4e4e" autoSize="height" text="服务器维护中..."/>
+    <image id="n5_otjz" name="title" src="otjz2q" fileName="Notice_Title.png" xy="203,0"/>
+    <component id="n6_t4ik" name="confirmBtn" src="hob4s" fileName="confirmBtn.xml" xy="202,836">
+      <gearDisplay controller="typeCtrl" pages="2,3"/>
+    </component>
+  </displayList>
+</component>

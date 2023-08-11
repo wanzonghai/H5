@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,250">
+  <controller name="isCollected" pages="0,未收藏,1,已收藏" selected="0"/>
+  <displayList>
+    <loader id="n17_emqn" name="goodsImg" xy="10,5" size="240,240" url="ui://qwv197ctctsq3a" fill="scaleFree"/>
+    <component id="n19_hfek" name="collectBtn" src="hfek12" fileName="Browse/collectBtn.xml" xy="507,206" pivot="0.5,0.5" anchor="true">
+      <gearLook controller="isCollected" pages="0,1" values="1,0,0,1|1,0,1,0"/>
+    </component>
+    <text id="n14_emqn" name="priceTxt" xy="267,206" pivot="0,0.5" anchor="true" size="160,42" fontSize="25" color="#ff7c08" vAlign="middle" leading="0" vars="true" autoSize="shrink" text="￥{price=999}"/>
+    <text id="n13_emqn" name="content" xy="427,13" pivot="0.5,0" anchor="true" size="320,133" fontSize="30" color="#4e4e4e" leading="0" vars="true" autoSize="none" text="{title=万代高达模型 原装进口 正品 模型HG}"/>
+    <image id="n20_9m1j" name="n20" src="msmcy" fileName="Images/bottom_Line.png" xy="-5,255"/>
+  </displayList>
+  <transition name="slideIn" options="6">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="616,-" endValue="0,0" duration="6"/>
+  </transition>
+</component>

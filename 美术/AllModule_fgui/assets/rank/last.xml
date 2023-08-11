@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <controller name="isGet" pages="0,返回,1,领奖" selected="0"/>
+  <displayList>
+    <component id="n40_ctsq" name="frame" src="ctsq37" fileName="Frame.xml" xy="24,247" size="701,884" pkg="qwv197ct">
+      <Label title="上期排行"/>
+    </component>
+    <image id="n41_ctsq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="38,346" size="673,497" group="n42_ctsq"/>
+    <text id="n37_cowj" name="noneTxt" xy="271,526" size="204,66" group="n42_ctsq" fontSize="50" color="#cccccc" text="暂无排行"/>
+    <list id="n34_cowj" name="list" xy="38,354" size="673,480" group="n42_ctsq" overflow="scroll" lineGap="20" defaultItem="ui://qkteqwfpc8s24" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n42_ctsq" name="listRank" xy="38,346" size="673,497"/>
+    <image id="n43_ctsq" name="myPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="38,860" size="671,136" group="n44_ctsq">
+      <relation target="" sidePair="width-width%,height-height"/>
+    </image>
+    <component id="n35_cowj" name="myItem" src="c8s24" fileName="rankItem.xml" xy="39,861" size="671,136" group="n44_ctsq" controller="isSelf,2"/>
+    <group id="n44_ctsq" name="selfItem" xy="38,860" size="672,137"/>
+    <component id="n45_ctsq" name="n45" src="ctsq3c" fileName="smallButton.xml" xy="227,1024"/>
+  </displayList>
+</component>

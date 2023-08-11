@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="MergeExternAward">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n16_s7b1" name="n16" src="r7g3o1o" fileName="png/gift/Common_BG.png" pkg="vzezwp8f" xy="374,613" pivot="0.5,0.5" anchor="true" size="640,484">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n17_s7b1" name="n17" src="s7b11k" fileName="png/gift/giftItemBg.png" xy="375,603" pivot="0.5,0.5" anchor="true" size="600,296">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n23_b9dp" name="n23" src="b9dpo1s" fileName="png/gift/guangxiao.png" pkg="vzezwp8f" xy="375,267" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </image>
+    <image id="n30_zm24" name="n30" src="b9dp2l" fileName="png/externalTitleIcon.png" xy="374,309" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </image>
+    <image id="n18_s7b1" name="n18" src="mzlr2o" fileName="png/getAwards.png" xy="374,365" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="dx3d17" fileName="components/closeBtn.xml" xy="689,382" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="right-right,top-top"/>
+    </component>
+    <text id="n12_dx3d" name="tText" xy="375,496" pivot="0.5,0.5" anchor="true" size="134,36" fontSize="26" color="#f86746" text="实力爆棚！">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n7_o7s4" name="attentionBtn" src="rirr3d" fileName="components/shareBtn2.xml" xy="375,844" pivot="0.5,0.5" anchor="true" size="296,90">
+      <relation target="n16_s7b1" sidePair="center-center,bottom-bottom"/>
+      <Button title="额外再奖50积分"/>
+    </component>
+    <text id="n27_mzlr" name="n27" xy="231,608" pivot="0.5,0.5" anchor="true" size="124,42" fontSize="30" color="#f86746" text="奖励积分">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n28_mzlr" name="n28" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="313,575" size="332,66" visible="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n29_mzlr" name="n29" src="maift" fileName="png/jifenIngame.png" xy="371,608" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n26_b9dp" name="scoreText" xy="441,608" pivot="0,0.5" anchor="true" size="184,85" scale="0.7,0.7" font="ui://xehum4g4srl0j" fontSize="16" vAlign="middle" autoSize="none" text="100">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,246 @@
+[
+    {
+        "key": "index",
+        "name": "首页",
+        "custom": [
+            {
+                "uuid": "ui",
+                "type": "skin",
+                "title": "选择主色调皮肤",
+                "skin_value": {
+                    "key": "red",
+                    "value": "#ff00ff",
+                    "checked": true
+                }
+            },
+            {
+                "uuid": "beginLogo",
+                "type": "uploadImage",
+                "title": "启动页品牌图片",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/start_logo.png",
+                    "checked": true
+                },
+                "uploadImage_left": 169,
+                "uploadImage_top": 401,
+                "uploadImage_width": 390,
+                "uploadImage_height": 220
+            },
+            {
+                "uuid": "bgImage",
+                "type": "uploadImage",
+                "title": "首页背景图片",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/startBG.png",
+                    "checked": true
+                },
+                "uploadImage_width": 750,
+                "uploadImage_height": 1334
+            },
+            {
+                "uuid": "integralIcon",
+                "type": "uploadImage",
+                "title": "积分icon（会自动适配到所有场景）",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/gamejifen.png",
+                    "checked": true
+                },
+                "uploadImage_left": 392,
+                "uploadImage_top": 124,
+                "uploadImage_width": 90,
+                "uploadImage_height": 90
+            },
+            {
+                "uuid": "logo",
+                "type": "uploadImage",
+                "title": "首页品牌图片",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/logo.png",
+                    "checked": true
+                },
+                "uploadImage_left": 68,
+                "uploadImage_top": 293,
+                "uploadImage_width": 624,
+                "uploadImage_height": 353
+            },
+            {
+                "uuid": "ruleIcon",
+                "type": "uploadImage",
+                "title": "活动规则icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/lingjinbi.png",
+                    "checked": true
+                },
+                "uploadImage_left": 132,
+                "uploadImage_top": 772,
+                "uploadImage_width": 129,
+                "uploadImage_height": 108
+            },
+            {
+                "uuid": "rankingIcon",
+                "type": "uploadImage",
+                "title": "排行榜icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/rank.png",
+                    "checked": true
+                },
+                "uploadImage_left": 327,
+                "uploadImage_top": 771,
+                "uploadImage_width": 104,
+                "uploadImage_height": 109
+            },
+            {
+                "uuid": "numberIcon",
+                "type": "uploadImage",
+                "title": "赚次数icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/jiangpinbao.png",
+                    "checked": true
+                },
+                "uploadImage_left": 499,
+                "uploadImage_top": 780,
+                "uploadImage_width": 106,
+                "uploadImage_height": 100
+            },
+            {
+                "uuid": "StartIcon",
+                "type": "uploadImage",
+                "title": "“开始游戏”icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/btn_start.png",
+                    "checked": true
+                },
+                "uploadImage_left": 190,
+                "uploadImage_top": 1093,
+                "uploadImage_width": 370,
+                "uploadImage_height": 159
+            },
+            {
+                "uuid": "speed",
+                "type": "input",
+                "title": "下落速度",
+                "input_value": 10
+            },
+            {
+                "uuid": "sound",
+                "type": "file",
+                "title": "游戏音乐",
+                "file_value": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/index/combo-5-7.mp3",
+                    "checked": true
+                }
+            }
+        ]
+    },
+    {
+        "key": "rank",
+        "name": "排行榜",
+        "custom": [
+            {
+                "uuid": "rankBgImage",
+                "type": "selectBgImage",
+                "title": "背景",
+                "uploadImage_width": 750,
+                "uploadImage_height": 1334,
+                "selectBgImage_value": "index-bgImage"
+            },
+            {
+                "uuid": "bgImage",
+                "type": "image",
+                "title": "排行榜弹框",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/userCustom/1624000147720-rank-bg.png",
+                    "checked": true
+                },
+                "uploadImage_width": 750,
+                "uploadImage_height": 1334
+            },
+            {
+                "uuid": "rankingBanner",
+                "type": "uploadImage",
+                "title": "排行榜banner",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/rank/rankBrief.png",
+                    "checked": true
+                },
+                "uploadImage_left": 65,
+                "uploadImage_top": 295,
+                "uploadImage_width": 614,
+                "uploadImage_height": 165
+            },
+            {
+                "uuid": "prizeIcon",
+                "type": "uploadImage",
+                "title": "奖品预览icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/rank/rankBrief.png",
+                    "checked": true
+                },
+                "uploadImage_left": 523,
+                "uploadImage_top": 1051,
+                "uploadImage_width": 114,
+                "uploadImage_height": 103
+            }
+        ]
+    },
+    {
+        "key": "game",
+        "name": "玩法（游戏中）",
+        "custom": [
+            {
+                "uuid": "gameBgImage",
+                "type": "uploadImage",
+                "title": "游戏背景",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/game/GameBG.png",
+                    "checked": true
+                },
+                "uploadImage_width": 750,
+                "uploadImage_height": 1624
+            },
+            {
+                "uuid": "honeybeeIcon",
+                "type": "uploadImage",
+                "title": "小蜜蜂",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/game/GameGadget.png",
+                    "checked": true
+                },
+                "uploadImage_left": 295,
+                "uploadImage_top": 200,
+                "uploadImage_width": 160,
+                "uploadImage_height": 160
+            }
+        ]
+    },
+    {
+        "key": "score",
+        "name": "积分兑换",
+        "custom": [
+            {
+                "uuid": "bgimageTwo",
+                "type": "image",
+                "title": "积分兑换弹框",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/userCustom/1624000421776-exchange-bg.png",
+                    "checked": true
+                },
+                "uploadImage_width": 750,
+                "uploadImage_height": 1334
+            },
+            {
+                "uuid": "myPrize",
+                "type": "uploadImage",
+                "title": "我的奖品icon",
+                "uploadImage_name": {
+                    "value": "https://oss.ixald.com/ProductInfo/HCDXG/default/score/my_gift.png",
+                    "checked": true
+                },
+                "uploadImage_left": 62,
+                "uploadImage_top": 229,
+                "uploadImage_width": 125,
+                "uploadImage_height": 107
+            }
+        ]
+    }
+]

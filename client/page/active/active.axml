@@ -1,0 +1,1096 @@
+<view>
+    <!-- 遮罩层 -->
+    <view class="{{cover}}"></view>
+    <!-- 顶部导航 -->
+    <navigation slot="navigation" subPageName="{{subPageName}}"></navigation>
+    <view class="top-frame">
+        <view class="top-box-1">
+            <view class="img">
+                <image class="image_state {{image_active.indexOf(1) >= 0 ? '' : 'image_active'}}" mode="scaleToFill"
+                    src="../../images/config/1.png"></image>
+            </view>
+            <view class="msg">活动信息</view>
+            <view class="top_hengxian"></view>
+        </view>
+        <view class="top-box-1">
+            <view class="img">
+                <image class="image_state {{image_active.indexOf(2) >= 0 ? '' : 'image_active'}}" mode="scaleToFill"
+                    src="../../images/config/2.png"></image>
+            </view>
+            <view class="msg">活动配置</view>
+            <view class="top_hengxian"></view>
+        </view>
+        <view class="top-box-1">
+            <view class="img">
+                <image class="image_state {{image_active.indexOf(3) >= 0 ? '' : 'image_active'}}" mode="scaleToFill"
+                    src="../../images/config/3.png"></image>
+            </view>
+            <view class="msg">投放推广</view>
+        </view>
+    </view>
+    <!-- 活动信息 -->
+    <view class="main-frame-rank {{activePid == 1 ? '' : 'frame-none' }}">
+        <view class="step-frame_1_new">
+            <view class="left-check-frame">
+                <image mode="scaleToFill" class="rank-left-image" src="{{atmo_main}}"></image>
+            </view>
+        </view>
+        <view class="config-frame_1_new">
+            <view class="active_name_frame">
+                <view class="active_name">
+                    <view class="active_name_1">
+                        基本信息
+                    </view>
+                    <view class="active_name_name">
+                        活动名称:
+                        <input style="margin-left:10px;width:220px" placeholder="请输入要配置的活动名称"
+                            value="{{active.activeName}}" data-type="activeName" onChange="globalData"></input>
+                    </view>
+                    <view class="active_name_name">
+                        开始时间:
+                        <date-picker style="width:220px" class="block" showTime="true" value="{{active.sTime}}"
+                            data-type="sTime" onChange="checkActiveTime" />
+                    </view>
+                    <view class="active_name_name">
+                        结束时间:
+                        <date-picker style="width:220px" class="block" showTime="true" value="{{active.eTime}}"
+                            data-type="eTime" onChange="checkActiveTime" />
+                    </view>
+                </view>
+            </view>
+            <view class="share_frame">
+                <view class="share-box-frame">
+                    <view class="share-box-1">
+                        <view class="share-title">分享图片:</view>
+                        <view class="share-frame">
+                            <view class="share-hover-frame" onTap="uploadImage"></view>
+                            <image class="shareImage" mode="scaleToFill"
+                                src="{{active.basisConfig.shareConfig.shareURL}}"></image>
+                        </view>
+                        <view class="gift_msg_1">淘宝分享图,请上传420PX*420PX的png格式图片,图片大小不超过200kb, 如未上传则使用默认分享图</view>
+                    </view>
+                    <view class="share-box-2">
+                        <view class="share-title">分享标题:</view>
+                        <view>
+                            <input value="{{active.basisConfig.shareConfig.shareTitle}}" data-type="title"
+                                onChange="updateShareInfo"></input>
+                        </view>
+                    </view>
+                    <view class="share-box-3">
+                        <view class="share-title">淘口令:</view>
+                        <view>
+                            <input value="{{active.basisConfig.shareConfig.shareDesc}}" data-type="desc"
+                                onChange="updateShareInfo"></input>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 基本配置 -->
+    <view class="main-frame-system {{activePid == 2 ? '' : 'frame-none' }}">
+        <view class="step-frame_1">
+            <view class="left-check-frame">
+                <view class="check_box_frame" data-typeId="{{activeTypeList.daily.typeId}}"
+                    data-config="{{activeTypeList.daily.config}}" onTap="checkActiveEvent">
+                    <image class="{{check_active_type == activeTypeList.daily.typeId ? 'check_images' : 'cover_none'}}"
+                        mode="scaleToFill" src="../../images/config/check-box.png"></image>
+                    <view class="msg_1">{{activeTypeList.daily.title}}</view>
+                    <view class="msg_2">{{activeTypeList.daily.msg}}</view>
+                    <view class="msg_3">
+                        <view class="msg_3_left">{{activeTypeList.daily.desc}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="config-frame_1">
+            <view class="ship_frame">
+                <view class="ship_frame_1">
+                    促销配置:
+                </view>
+                <view class="ship_frame_top">
+                    <view style="line-height:35px;color:#666666;font-size:15px;">活动商品:</view>
+                    <view class="check_shipinfo" data-configType="promotion" onTap="checkShipData">配置促销商品</view>
+                    <view class="ship_msg">需要配置促销商品, 建议可以全选商品,用户浏览或购买选中商品将会完成该任务.</view>
+                </view>
+                <view style="font-size: 13px;font-weight:bold;margin-top: 2px;color: #ff812a;margin-left:103px">
+                    (已选择{{active.basisConfig.promotionList.length}}件商品)</view>
+                <view class="fenxi_frame">
+                    <view class="fenxi_frame_1">会员运营开关:</view>
+                    <view class="fenxi_frame_2">
+                        <checkbox class="block" checked="{{active.basisConfig.isVipSystem}}" data-type="isVipSystem"
+                            onChange="checkSwitchEvent"></checkbox>
+                        <text class="fenxi_frame_2_msg">如果店铺没有会员体系，则不需要</text>
+                    </view>
+                </view>
+            </view>
+            <view class="ship_frame" style="margin-top:15px">
+                <view class="ship_frame_1">
+                    奖品配置:
+                </view>
+                <view class="reward_frame">
+                    <view class="reward_frame_1">活动奖励:</view>
+                    <view class="reward_jiantou">＞＞</view>
+                    <view class="reward_frame_3">
+                        <block a:if="{{active.integralRewardConfig.rewardList[0].title == undefined}}">
+                            <view class="reward_frame_3_msg">奖品未配置</view>
+                        </block>
+                        <block a:else=>
+                            <view class="reward_frame_2_msg">奖品已配置</view>
+                        </block>
+                        <view class="reward_frame_3_btn" data-opType="open" onTap="openIntegralRewardBox">
+                            配置积分奖励
+                        </view>
+                    </view>
+                    <view class="reward_jiantou"> ＜＜</view>
+                    <view class="reward_jiantou">＞＞</view>
+                    <view class="reward_frame_3">
+                        <block a:if="{{active.mergeRewardConfig[0].title == undefined}}">
+                            <view class="reward_frame_3_msg">奖品未配置</view>
+                        </block>
+                        <block a:else=>
+                            <view class="reward_frame_2_msg">奖品已配置</view>
+                        </block>
+                        <view class="reward_frame_3_btn" data-opType="open" onTap="openMergeRewardBox">
+                            配置合成奖励
+                        </view>
+                    </view>
+                    <view class="reward_jiantou"> ＜＜</view>
+                </view>
+            </view>
+            <view class="ship_frame" style="margin-top:15px">
+                <view class="ship_frame_1">弹窗配置:</view>
+                <view class="reward_frame">
+                    <view class="reward_frame_3">
+                        <block
+                            a:if="{{!active.bouncedConfig.luckyBag.title }}">
+                            <view class="reward_frame_3_msg">未配置</view>
+                        </block>
+                        <block a:else=>
+                            <view class="reward_frame_2_msg">已配置</view>
+                        </block>
+                        <view class="reward_frame_3_btn" data-opType="open" onTap="openBouncedBox">配置游戏弹窗</view>
+                    </view>
+                </view>
+            </view>
+            <view class="ship_frame" style="margin-top:15px">
+                <view class="ship_frame_1">
+                    奖励次数任务配置:
+                </view>
+                <view class="mission_frame">
+                    <view class="mission_frame_2">
+                        <view class="mission_frame_2_1">任务标题</view>
+                        <view class="mission_frame_2_2">每日领奖上限</view>
+                        <view class="mission_frame_2_3">次数、积分</view>
+                        <view class="mission_frame_2_4">领取间隔</view>
+                    </view>
+                    <view class="hengxian"></view>
+                    <view class="mission_frame_3">
+                        <view class="mission_frame_3_1">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <block a:if="{{item.bTitle != '不展示' }}">
+                                    <view class="mission_frame_3_1_1">{{item.bTitle}}
+                                        {{item.bTitle == '加入会员' || item.bTitle == '会员福利' ? '(需打开会员开关)' : '' }}</view>
+                                </block>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_2">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' }}">
+                                        <view class="mission_frame_3_2_1_1">
+                                            <block
+                                                a:if="{{item.bTitle == '关注店铺'  || item.bTitle == '加入会员' || item.bTitle == '邀请1名好友' || item.bTitle == '购买店铺商品'}}">
+                                            </block>
+                                            <block a:else=>
+                                                <input class="mission_frame_3_2_input_frame" data-item="{{item}}"
+                                                    data-type="limit" data-activeType={{active.activeType}}
+                                                    onChange="editMissionConfig"
+                                                    value="{{item.limit >=0 ? item.limit : '' }}"></input>
+                                                <view style="margin-left:10px;">次</view>
+                                            </block>
+                                        </view>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_3">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' }}">
+                                        <block a:if="{{item.bTitle === '购买店铺商品'}}">
+                                            <view style="margin-left:-59px;margin-right:5px">商品价格x</view>
+                                            <input type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_1"
+                                                data-activeType={{active.activeType}} onChange="editMissionConfig"
+                                                value="{{item.rewardCount_1 >=0 ? item.rewardCount_1 : '' }}"></input>
+                                            <view style="margin-left:10px;">次数</view>
+                                            <view style="margin-left:5px;margin-right:5px">商品价格x</view>
+                                            <input type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_2"
+                                                data-activeType={{active.activeType}} onChange="editMissionConfig"
+                                                value="{{item.rewardCount_2 >= 0 ? item.rewardCount_2: '' }}"></input>
+                                            <view style="margin-left:10px;">积分</view>
+                                        </block>
+                                        <block a:else=>
+                                            <input type="text" style="margin-left:5px"
+                                                class="mission_frame_3_2_input_frame" data-item="{{item}}"
+                                                data-type="rewardCount_1" data-activeType={{active.activeType}}
+                                                onChange="editMissionConfig"
+                                                value="{{item.rewardCount_1 >=0 ? item.rewardCount_1 : '' }}"></input>
+                                            <view style="margin-left:10px;">次数</view>
+                                            <input type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_2"
+                                                data-activeType={{active.activeType}} onChange="editMissionConfig"
+                                                value="{{item.rewardCount_2 >=0 ? item.rewardCount_2 : ''}}"></input>
+                                            <view style="margin-left:10px;">积分</view>
+                                        </block>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_4">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' }}">
+                                        <view class="mission_frame_3_2_1_1">
+                                            <block
+                                                a:if="{{item.bTitle == '关注店铺' || item.bTitle == '加入会员' || item.bTitle == '邀请好友1名好友' || item.bTitle == '购买店铺商品' || item.bTitle == '浏览商品页10s' || item.bTitle == '商品收藏' }}">
+                                            </block>
+                                            <block a:else=>
+                                                <input type="text" class="mission_frame_3_2_input_frame"
+                                                    value="{{item.need}}" data-item="{{item}}" data-type="need"
+                                                    data-activeType={{active.activeType}}
+                                                    onChange="editMissionConfig"></input>
+                                                <view style="margin-left:10px;">秒</view>
+                                            </block>
+                                        </view>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="ship_frame" style="margin-top:15px">
+                <view class="ship_frame_1">赚取更多积分任务配置:</view>
+                <view class="mission_frame">
+                    <view class="mission_frame_2">
+                        <view class="mission_frame_2_1">任务标题</view>
+                        <view class="mission_frame_2_2">每日领奖上限</view>
+                        <view class="mission_frame_2_3">次数、积分</view>
+                        <view class="mission_frame_2_4">领取间隔</view>
+                    </view>
+                    <view class="hengxian"></view>
+                    <view class="mission_frame_3">
+                        <view class="mission_frame_3_1">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <block a:if="{{item.bTitle != '不展示' && item.mType == 'more' }}">
+                                    <view class="mission_frame_3_1_1">{{item.bTitle}}
+                                        {{item.bTitle == '加入会员' || item.bTitle == '会员福利' ? '(需打开会员开关)' : '' }}</view>
+                                </block>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_2">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' && item.mType == 'more' }}">
+                                        <view class="mission_frame_3_2_1_1">
+                                            <block
+                                                a:if="{{item.bTitle == '关注店铺'  || item.bTitle == '加入会员' || item.bTitle == '邀请1名好友' || item.bTitle == '购买店铺商品'}}">
+                                            </block>
+                                            <block a:else=>
+                                                <input disabled="true" class="mission_frame_3_2_input_frame"
+                                                    data-item="{{item}}" data-type="limit"
+                                                    data-activeType="{{active.activeType}}" onChange="editMissionConfig"
+                                                    value="{{item.limit >=0 ? item.limit : '' }}"></input>
+                                                <view style="margin-left:10px;">次</view>
+                                            </block>
+                                        </view>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_3">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' && item.mType == 'more' }}">
+                                        <block a:if="{{item.bTitle === '购买店铺商品'}}">
+                                            <view style="margin-left:-59px;margin-right:5px">商品价格x</view>
+                                            <input disabled="true" type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_1"
+                                                data-activeType="{{active.activeType}}" onChange="editMissionConfig"
+                                                value="{{item.rewardCount_1 >=0 ? item.rewardCount_1 : '' }}"></input>
+                                            <view style="margin-left:10px;">次数</view>
+                                            <view style="margin-left:5px;margin-right:5px">商品价格x</view>
+                                            <input disabled="true" type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_2"
+                                                data-activeType="{{active.activeType}}" onChange="editMissionConfig"
+                                                value="{{item.rewardCount_2 >= 0 ? item.rewardCount_2: '' }}"></input>
+                                            <view style="margin-left:10px;">积分</view>
+                                        </block>
+                                        <block a:else=>
+                                            <input disabled="true" type="text" style="margin-left:5px"
+                                                class="mission_frame_3_2_input_frame" data-item="{{item}}"
+                                                data-type="rewardCount_1" data-activeType="{{active.activeType}}"
+                                                onChange="editMissionConfig"
+                                                value="{{item.rewardCount_1 >=0 ? item.rewardCount_1 : '' }}"></input>
+                                            <view style="margin-left:10px;">次数</view>
+                                            <input disabled="true" type="text" class="mission_frame_3_2_input_frame"
+                                                data-item="{{item}}" data-type="rewardCount_2"
+                                                data-activeType="{{active.activeType}}" onChange="editMissionConfig"
+                                                value="{{item.rewardCount_2 >=0 ? item.rewardCount_2 : ''}}"></input>
+                                            <view style="margin-left:10px;">积分</view>
+                                        </block>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="mission_frame_3_4">
+                            <block a:for="{{activeTypeList.daily.config.missionConfig}}" a:for-item="item">
+                                <view class="mission_frame_3_2_1">
+                                    <block a:if="{{item.bTitle != '不展示' && item.mType == 'more' }}">
+                                        <view class="mission_frame_3_2_1_1">
+                                            <block
+                                                a:if="{{item.bTitle == '关注店铺' || item.bTitle == '加入会员' || item.bTitle == '邀请好友1名好友' || item.bTitle == '购买店铺商品' || item.bTitle == '浏览商品页10s' || item.bTitle == '商品收藏' }}">
+                                            </block>
+                                            <block a:else=>
+                                                <input disabled="true" type="text" class="mission_frame_3_2_input_frame"
+                                                    value="{{item.need}}" data-item="{{item}}" data-type="need"
+                                                    data-activeType="{{active.activeType}}"
+                                                    onChange="editMissionConfig"></input>
+                                                <view style="margin-left:10px;">秒</view>
+                                            </block>
+                                        </view>
+                                    </block>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="ship_frame" style="margin-top:15px">
+                <view class="ship_frame_1">
+                    规则设置:
+                </view>
+                <view class="desc_frame">
+                    <view class="desc_frame_title">
+                        活动规则
+                    </view>
+                    <view class="desc_frame_desc">
+                        <textarea value="{{active.rule}}" rows="15" onChange="updateDesc" hasLimitHint="true"
+                            maxLength="1000"></textarea>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 投放 -->
+    <view class="main-frame-put">
+        <view class="put-icon-frame">
+            <view class="{{activePid == 3 ? '' : 'frame-none' }}">
+                <image class="put-icon-image" mode="scaleToFill" src="../../images/config/putIcon.png"></image>
+            </view>
+            <view class="{{activePid == 3 ? '' : 'frame-none' }}" style="width:100%;text-align: center;font-size:13px">
+                那么多好位置开始推广投放吧</view>
+            <view class="qrcode-frame">
+                <view class="qrcode-image {{activePid == 3 ? '' : 'visibility' }}">
+                    <view>请扫描以下二维码进入活动</view>
+                    <canvas style="width: 150px;height: 150px;margin-left: 20px;" id="mycanvasDetail"></canvas>
+                </view>
+                <view class="qrcode-center-frame {{activePid == 3 ? '' : 'frame-none' }}">
+                    <view style="color:#FF8E56">活动链接</view>
+                    <view class="qrcode-input-frame">
+                        <input value="{{c_tb_url + '&query=' + 'activeId=' + activeId}}"></input>
+                        <view class="copy-btn" data-activeUrl="{{c_tb_url + '&query=' + 'activeId=' + activeId}}"
+                            onTap="setClipboard">复制链接</view>
+                    </view>
+                    <view style="font-size: 13px;margin-top: 6px;">
+                        关闭此界面后,在
+                        <text style="color:#579FFF" data-type="configlist" onTap="jump">活动列表</text>
+                        还可以找到!!!
+                    </view>
+                </view>
+            </view>
+            <view class="down-box-frame {{activePid == 3 ? '' : 'frame-none' }}">
+                <view class="tf-box-frame">
+                    <view class="tf-box-left-frame">
+                        <image mode="scaleToFill" src="../../images/config/zhibo1.png"></image>
+                    </view>
+                    <view class="tf-box-right-frame">
+                        <view class="tf-btn-1-frame" data-type="video" data-img="config/zhibo.png" onTap="tf_btnEvent">
+                            去投放</view>
+                        <view class="tf-btn-3-frame" data-type="video_Tutorials" onTap="tf_jump">查看教程</view>
+                    </view>
+                </view>
+                <view class="tf-box-frame">
+                    <view class="tf-box-left-frame">
+                        <image mode="scaleToFill" src="../../images/config/zhibo2.png"></image>
+                    </view>
+                    <view class="tf-box-right-frame">
+                        <view class="tf-btn-1-frame" data-type="toufang" data-img="config/zhibo.png"
+                            onTap="tf_btnEvent">去投放</view>
+                        <view class="tf-btn-3-frame" data-type="video_Tutorials" onTap="tf_jump">查看教程</view>
+                    </view>
+                </view>
+                <view class="tf-box-frame">
+                    <view class="tf-box-left-frame">
+                        <image mode="scaleToFill" src="../../images/config/shouye1.png"></image>
+                    </view>
+                    <view class="tf-box-right-frame">
+                        <view class="tf-btn-1-frame" data-type="tb_wangwang" data-img="config/shouye.png"
+                            onTap="tf_btnEvent">去投放</view>
+                        <view class="tf-btn-3-frame" data-type="taobao_main" onTap="tf_jump">查看教程</view>
+                    </view>
+                </view>
+                <view class="tf-box-frame">
+                    <view class="tf-box-left-frame">
+                        <image mode="scaleToFill" src="../../images/config/xiangqing1.png"></image>
+                    </view>
+                    <view class="tf-box-right-frame">
+                        <view class="tf-btn-1-frame" data-type="tb_wangwang" data-img="config/xiangqing.png"
+                            onTap="tf_btnEvent">去投放</view>
+                        <view class="tf-btn-3-frame" data-type="taobao_detail" onTap="tf_jump">查看教程</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 图片弹窗 -->
+    <view class="{{tf_img_frame}}">
+        <view class="top-frame-images">
+            <view class="right-close" onTap="close">
+                <image mode="scaleToFill" src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <image class="{{imgTmp == 'config/xiangqing.png' ? 'image_4' : 'image_3'}}" mode="scaleToFill" onTap="close"
+            src="{{tf_img_url}}"></image>
+        <view data-type="{{jumpType}}" onTap="tf_jump" class="openwangwang">打开旺铺</view>
+    </view>
+    <!-- 下一步 -->
+    <view class="footer_rate_frame {{activePid == 3 ? 'frame-none' : ''}}">
+        <view class="footer_box_frame">
+            <view class="left_btn_frame_up {{activePid > 1 ?  '' : 'visibility'}}" data-type="stepUp"
+                onTap="nextConfig">上一步</view>
+            <view class="footer_right_frame">
+                <view class="left_btn_frame" data-type="{{nextConfig[activePid].type}}" onTap="nextConfig">下一步</view>
+            </view>
+        </view>
+    </view>
+    <!-- 多选择商品 -->
+    <view class="{{more_shipList_frame}}">
+        <view class="ship-top-frame">
+            <view class="ship-left-msg">选择宝贝</view>
+            <view class="ship-right-close">
+                <image mode="scaleToFill" data-close="more_shipList_frame" onTap="close"
+                    src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <view class="ship-list-frame">
+            <view class="search-frame">
+                <view class="search-left">
+                    <input style="width: 190px;" placeholder="请输入商品名称关键字或商品Id" onChange="searchShipData"></input>
+                </view>
+                <view style='display:flex;'>
+                    <view class="search-right-btn" data-type="all" onTap="checkShopItem">全选</view>
+                    <view class="search-right-btn" data-type="cancel" onTap="checkShopItem">取消</view>
+                </view>
+            </view>
+            <view>
+                <scroll-view class="center-frame" scroll-y="{{true}}" onScrollToUpper="upper" onScrollToLower="lower"
+                    onScroll="scroll" scroll-left="1">
+                    <block a:for="{{shipList}}" a:key="*this" a:for-index="index" a:for-item="item">
+                        <view class="shipList {{item.moreDisplay == true ? 'checkShip': ''}}" data-type="more"
+                            data-num_iid="{{item.num_iid}}" onTap="checkShopItem">
+                            <view class="image">
+                                <image mode="scaleToFill" src="{{item.pic_url}}"></image>
+                            </view>
+                            <view class="tital">{{item.title}}</view>
+                            <view class="money">{{item.price}}元</view>
+                            <view class="nums">库存{{item.num}}件</view>
+                        </view>
+                    </block>
+                </scroll-view>
+            </view>
+            <view class="page-frame">
+                <pagination size="small" current="{{current}}" pageSizeSelector="dropdown" type="simple" pageSizeList="{{[10, 20, 30, 100]}}"
+                    pageSize="{{pageSize}}" total="{{total}}" onPageSizeChange="onPageSizeChange"
+                    onChange="onPageChange" ></pagination>
+                <view class="search-right-btn" data-type="ok" data-configType="promotion"
+                    data-close="more_shipList_frame" onTap="checkShopItem">确定</view>
+            </view>
+        </view>
+    </view>
+    <!-- 单选 -->
+    <view class="{{single_shipList_frame}}">
+        <view class="ship-top-frame">
+            <view class="ship-left-msg">选择宝贝</view>
+            <view class="ship-right-close">
+                <image mode="scaleToFill" data-close="single_shipList_frame" onTap="close"
+                    src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <view class="ship-list-frame">
+            <view class="search-frame">
+                <view class="search-left">
+                    <input style="width: 190px;" placeholder="请输入商品名称关键字或商品Id" onChange="searchShipData"></input>
+                </view>
+            </view>
+            <view>
+                <scroll-view class="center-frame" scroll-y="{{true}}" onScrollToUpper="upper" onScrollToLower="lower"
+                    onScroll="scroll" scroll-left="1">
+                    <block a:for="{{shipList}}" a:key="*this" a:for-index="index" a:for-item="item">
+                        <view class="shipList {{item.singleDisplay == true ? 'checkShip': ''}}" data-type="single"
+                            data-num_iid="{{item.num_iid}}" onTap="checkShopItem">
+                            <view class="image">
+                                <image mode="scaleToFill" src="{{item.pic_url}}"></image>
+                            </view>
+                            <view class="tital">{{item.title}}</view>
+                            <view class="money">{{item.price}}元</view>
+                            <view class="nums">库存{{item.num}}件</view>
+                        </view>
+                    </block>
+                </scroll-view>
+            </view>
+            <view class="page-frame">
+                <pagination size="small" current="{{current}}" pageSizeSelector="dropdown" type="simple" pageSizeList="{{[10, 20, 30, 100]}}"
+                    pageSize="{{pageSize}}" total="{{total}}" onPageSizeChange="onPageSizeChange"
+                    onChange="onPageChange"></pagination>
+                <view class="search-right-btn" data-type="ok" data-configType="integral"
+                    data-close="single_shipList_frame" onTap="checkShopItem">确定</view>
+            </view>
+        </view>
+    </view>
+    <view class="{{single_shipList_frame_1}}">
+        <view class="ship-top-frame">
+            <view class="ship-left-msg">选择宝贝</view>
+            <view class="ship-right-close">
+                <image mode="scaleToFill" data-close="single_shipList_frame" onTap="close"
+                    src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <view class="ship-list-frame">
+            <view class="search-frame">
+                <view class="search-left">
+                    <input style="width: 190px;" placeholder="请输入商品名称关键字或商品Id" onChange="searchShipData"></input>
+                </view>
+            </view>
+            <view>
+                <scroll-view class="center-frame" scroll-y="{{true}}" onScrollToUpper="upper" onScrollToLower="lower"
+                    onScroll="scroll" scroll-left="1">
+                    <block a:for="{{shipList}}" a:key="*this" a:for-index="index" a:for-item="item">
+                        <view class="shipList {{item.singleDisplay == true ? 'checkShip': ''}}" data-type="single"
+                            data-num_iid="{{item.num_iid}}" onTap="checkShopItem">
+                            <view class="image">
+                                <image mode="scaleToFill" src="{{item.pic_url}}"></image>
+                            </view>
+                            <view class="tital">{{item.title}}</view>
+                            <view class="money">{{item.price}}元</view>
+                            <view class="nums">库存{{item.num}}件</view>
+                        </view>
+                    </block>
+                </scroll-view>
+            </view>
+            <view class="page-frame">
+                <pagination size="small" current="{{current}}" pageSizeSelector="dropdown" type="simple" pageSizeList="{{[10, 20, 30, 100]}}"
+                    pageSize="{{pageSize}}" total="{{total}}" onPageSizeChange="onPageSizeChange"
+                    onChange="onPageChange"></pagination>
+                <view class="search-right-btn" data-type="ok" data-configType="bounced"
+                    data-close="single_shipList_frame_1" onTap="checkShopItem">确定</view>
+            </view>
+        </view>
+    </view>
+    <!-- 自定义商品 -->
+    <view class="{{customizeFrame}}">
+        <view class="top-frame-images">
+            <view class="right-close" data-close="customizeFrame" onTap="close">
+                <image mode="scaleToFill" src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <view class="ship-box-frame">
+            <view class="ship-box-left-frame" data-configType="integral" onTap="uploadImage">
+                <image mode="scaleToFill" class="{{customInfo.state == true ? 'add_loading' : 'cover_none' }}"
+                    src="../../images/config/loading.gif"></image>
+                <image mode="scaleToFill" class="customImages {{customInfo.pic_url ? 'addImages' : ''}} "
+                    src="{{ customInfo.state == false ? customInfo.pic_url ? customInfo.pic_url : customImages : ''}}">
+                </image>
+            </view>
+            <view class="ship-right-frame">
+                <view class="right-top-1">
+                    <view>商品名称:</view>
+                    <view>
+                        <input data-type="ship_title" value="{{customInfo.title}}" onChange="updateShareInfo"
+                            class="right-top-1-input"></input>
+                    </view>
+                </view>
+                <view class="right-top-2">
+                    <view class="right-top-2-1">
+                        <view>商品价格:</view>
+                        <view>
+                            <input data-type="ship_price" value="{{customInfo.price}}" onChange="updateShareInfo"
+                                class="right-top-2-input"></input>
+                        </view>
+                    </view>
+                    <view class="right-top-2-2">
+                        <block a:if="{{configType === 'integral'}}">
+                            <view>发放数:</view>
+                            <view>
+                                <input data-type="ship_num" value="{{customInfo.num}}" onChange="updateShareInfo"
+                                    class="right-top-3-input"></input>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <view class="image-desc-frame">图片大小限制 250*250</view>
+        </view>
+        <view class="up-image-btn-frame" onTap="customBtn">确定</view>
+    </view>
+    <!-- 新版-积分奖励 -->
+    <view class="{{integralBox}}">
+        <view class="gift-top-frame">
+            <view class="gift-left-msg">积分奖励配置</view>
+            <view class="gift-right-close">
+                <view class="gift-config-view-help" onTap="couponHelp">查看优惠券配置教程</view>
+                <image mode="scaleToFill" data-opType="close" onTap="openIntegralRewardBox"
+                    src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <scroll-view style="height:500px" trap-scroll="{{true}}" scroll-y="{{true}}" onScrollToUpper="upper"
+            onScrollToLower="lower" onScroll="scroll" scroll-left="1">
+            <view class="rank-zhouqi-frame">
+                <view class="config-view-1">
+                    <text class="reward-1-view" style="width: 120px;line-height:25px">每日重置奖品库存:</text>
+                    <view class="radio-frame">
+                        <view class="radio-frame-1">
+                            <view class="radio-frame-1-frame">
+                                <radio checked="{{ !active.integralRewardConfig.resetConfig.state }}"
+                                    data-type="disabled" onChange="checkResetConfig" />
+                                <view>
+                                    <text class="jianju">不设置, 兑完即止</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="hengxian" style="margin-top:10px;margin-left:15px;margin-right:15px"></view>
+            <view>
+                <block a:for="{{active.integralRewardConfig.rewardList}}" a:for-item="item" a:for-index="index">
+                    <view class="reward-1-frame">
+                        <view class="reward-1-top">
+                            <view class="reward-1-top-left">
+                                <view class="rank-reward-1-view">
+                                    <view class="rank-reward-view-msg">商品{{index+1}}</view>
+                                </view>
+                                <view class="reward-1-btn" data-configType="integral" data-redState="false"
+                                    data-rewardType="{{index + 1}}" onTap="checkShipData">
+                                    {{item.title ? '替换商品' : '添加商品' }}</view>
+                                <view class="reward-1-btn" data-configType="integral" data-redState="false"
+                                    data-rewardType="{{index + 1}}" onTap="navigateToPlugin">
+                                    {{item.title ? '替换优惠券' : '添加优惠券' }}</view>
+                                <view class="reward-1-btn" data-configType="integral" data-redState="true"
+                                    data-rewardType="{{index + 1}}" onTap="navigateToPlugin_red">
+                                    {{item.title ? '替换红包' : '添加红包' }}</view>
+                                <view class="reward-1-btn" data-configType="integral" data-redState="false"
+                                    data-rewardType="{{index + 1}}" onTap="customizeEvent">自定义奖品</view>
+                            </view>
+                            <view class="reward_active">
+                                <block a:if="{{ index > 0 }}">
+                                    <view class="reward_add_frame" data-type="del" data-index="{{index}}"
+                                        onTap="rankRewardAction">
+                                        <view class="reward_add_frame_image">
+                                            <image class="" src="../../images/config/del.png"></image>
+                                        </view>
+                                        <view class="reward_add_frame_msg">删除</view>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="ship-1-frame">
+                            <view class="ship-left-frame">
+                                <block a:if="{{item.pic_url}}">
+                                    <view class="share-hover-frame" data-configType="integral"
+                                        data-pType="{{index + 1}}" onTap="uploadImage"></view>
+                                </block>
+                                <image mode="scaleToFill"
+                                    class="{{ item.pic_url && customInfo.state == true ? 'add_loading_s' : 'cover_none' }}"
+                                    src="../../images/config/loading.gif"></image>
+                                <image mode="scaleToFill" src="{{item.pic_url}}"></image>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    商品名称:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{item.title ? item.title : 'XXXXXX' }}" />
+                                </view>
+                                <view class="ship-center-title" style="margin-top:10px;">
+                                    商品价格:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{item.price ? item.price : '00.00' }}元" />
+                                </view>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    商品库存:
+                                    <input placeholder="" class="ship-detail-box-1"
+                                        value="{{item.num >= 0 ? item.num : '' }}" data-rewardType="integral"
+                                        data-index="{{index}}" onChange="checkNum" />
+                                </view>
+                                <view class="ship-center-title" style="margin-top:10px;">
+                                    兑换积分:
+                                    <input placeholder="" class="ship-detail-box-1"
+                                        value="{{item.integral >= 0 ? item.integral : '' }}" data-index="{{index}}"
+                                        onChange="checkIntegral" />
+                                </view>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    剩余库存:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{ stockConfig[index].nums }}" />
+                                </view>
+                                <view class="ship-center-title" style="margin-top:10px;">
+                                    每人可兑换次数:
+                                    <radio style="margin-left:10px" checked="{{ item.exchangeConfig.state }}"
+                                        data-type="check" data-index="{{index}}" onChange="checkExchangeState" />
+                                    <input placeholder="" disabled="{{ !item.exchangeConfig.state }}"
+                                        class="ship-detail-box-1"
+                                        value="{{item.exchangeConfig.nums >= 0 ? item.exchangeConfig.nums : '' }}"
+                                        data-index="{{index}}" onChange="checkShipExchangeNums" />
+                                    次
+                                </view>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                </view>
+                                <view class="ship-center-title" style="margin-top:40px;">
+                                    <radio style="margin-right:10px" checked="{{ !item.exchangeConfig.state }}"
+                                        data-type="disabled" data-index="{{index}}" onChange="checkExchangeState" />
+                                    不限
+                                </view>
+                            </view>
+                        </view>
+                        <view class="{{ item.name == 'coupon' ? 'coupon_frame' : 'cover_none'}}">
+                            <view class="rank_coupon_frame_up">
+                                <view class="rank_coupon_frame_1">
+                                    优惠券商品链接:
+                                </view>
+                                <view class="rank_coupon_frame_2">
+                                    <input class="rank_coupon_frame_2_input" placeholder="默认跳转店铺主页"
+                                        value="{{item.linkId ? tbWebUrl + item.linkId : '' }}"
+                                        data-configType="integral" data-rewardType="{{index + 1}}"
+                                        onChange="checkCouponUrl"></input>
+                                </view>
+                                <view class="rank_coupon_frame_3">
+                                    <view class="rank_coupon_frame_3_1">
+                                        <image mode="" src="../../images/config/tanhao.png" />
+                                    </view>
+                                    <view class="rank_coupon_frame_3_2" data-configType="integral"
+                                        data-rewardType="{{index + 1}}" onTap="jumpNewUrl">
+                                        检查
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="rank_coupon_frame_down">
+                                <view class="rank_coupon_frame_down_1">请输入商品优惠券对应链接或这个店铺优惠券想要推广的商品链接</view>
+                            </view>
+                        </view>
+                        <view class="hengxian" style="margin-top:10px;margin-left:15px;margin-right:15px"></view>
+                    </view>
+                </block>
+                <view class="reward-1-frame">
+                    <view class="reward-1-top">
+                        <view class="reward-1-top-left"></view>
+                        <view class="reward_active">
+                            <view class="reward_add_frame" data-type="add" onTap="rankRewardAction">
+                                <view class="reward_add_frame_image">
+                                    <image class="" src="../../images/config/add.png"></image>
+                                </view>
+                                <view class="reward_add_frame_msg">增加</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="gift-footer-frame">
+            <view class="gift-footer-success" data-opType="success" onTap="openIntegralRewardBox">
+                确定
+            </view>
+        </view>
+    </view>
+    <!-- 合成奖励 -->
+    <view class="{{mergeBox}}">
+        <view class="gift-top-frame">
+            <view class="gift-left-msg">合成奖励配置</view>
+            <view class="gift-right-close">
+                <image mode="scaleToFill" data-opType="close" onTap="openMergeRewardBox"
+                    src="../../images/configlist/close.png"></image>
+            </view>
+        </view>
+        <scroll-view style="height:500px" trap-scroll="{{true}}" scroll-y="{{true}}" onScrollToUpper="upper"
+            onScrollToLower="lower" onScroll="scroll" scroll-left="1">
+            <view class="gift-desc-frame">
+                <view class="reward-msg-frame">
+                    <view class="reward-msg">
+                        <text>1.配置目的:</text>
+                        通过消费者在单局游戏中合成高阶水果的成就感，给予一定奖励，可有效进行商业指标转化。
+                    </view>
+                    <view class="reward-msg">
+                        <text>2.奖品配置前言:</text>
+                        您可在下方配置需要发放的优惠券，我们将在游戏中按实际情况进行发放。
+                    </view>
+                </view>
+                <view class="hengxian" style="margin-top:10px"></view>
+            </view>
+            <view>
+                <block a:for="{{active.mergeRewardConfig}}" a:for-item="item" a:for-index="index">
+                    <view class="reward-1-frame">
+                        <view class="reward-1-top">
+                            <view class="reward-1-top-left">
+                                <view class="rank-reward-1-view">
+                                    <view class="rank-reward-view-msg">奖品{{index+1}}</view>
+                                </view>
+                                <view class="reward-1-btn" data-configType="merge" data-redState="false"
+                                    data-rewardType="{{index + 1}}" onTap="navigateToPlugin">
+                                    {{item.title ? '替换优惠券' : '添加优惠券' }}</view>
+                            </view>
+                            <view class="reward_active">
+                                <block a:if="{{ index > 0 }}">
+                                    <view class="reward_add_frame" data-type="del" data-index="{{index}}"
+                                        onTap="mergeRewardAction">
+                                        <view class="reward_add_frame_image">
+                                            <image class="" src="../../images/config/del.png"></image>
+                                        </view>
+                                        <view class="reward_add_frame_msg">删除</view>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="ship-1-frame">
+                            <view class="ship-left-frame">
+                                <block a:if="{{item.pic_url}}">
+                                    <view class="share-hover-frame"></view>
+                                </block>
+                                <image mode="scaleToFill"
+                                    class="{{ item.pic_url && customInfo.state == true ? 'add_loading_s' : 'cover_none' }}"
+                                    src="../../images/config/loading.gif"></image>
+                                <image mode="scaleToFill" src="{{item.pic_url}}"></image>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    商品名称:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{item.title ? item.title : 'XXXXXX' }}" />
+                                </view>
+                                <view class="ship-center-title" style="margin-top:10px;">
+                                    商品价格:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{item.price ? item.price : '00.00' }}元" />
+                                </view>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    商品库存:
+                                    <input placeholder="" class="ship-detail-box-1"
+                                        value="{{item.num >= 0 ? item.num : '' }}" data-rewardType="merge"
+                                        data-index="{{index}}" onChange="checkNum" />
+                                </view>
+                            </view>
+                            <view class="ship-center-frame">
+                                <view class="ship-center-title">
+                                    剩余库存:
+                                    <input placeholder="" disabled="false" class="ship-detail-box-1"
+                                        value="{{ mergeConfig[index].nums }}" />
+                                </view>
+                            </view>
+                        </view>
+                        <view class="{{ item.name == 'coupon' ? 'coupon_frame' : 'cover_none'}}">
+                            <view class="rank_coupon_frame_up">
+                                <view class="rank_coupon_frame_1">
+                                    优惠券商品链接:
+                                </view>
+                                <view class="rank_coupon_frame_2">
+                                    <input class="rank_coupon_frame_2_input" placeholder="默认跳转店铺主页"
+                                        value="{{item.linkId ? tbWebUrl + item.linkId : '' }}" data-configType="merge"
+                                        data-rewardType="{{index + 1}}" onChange="checkCouponUrl"></input>
+                                </view>
+                                <view class="rank_coupon_frame_3">
+                                    <view class="rank_coupon_frame_3_1">
+                                        <image mode="" src="../../images/config/tanhao.png" />
+                                    </view>
+                                    <view class="rank_coupon_frame_3_2" data-configType="merge"
+                                        data-rewardType="{{index + 1}}" onTap="jumpNewUrl">
+                                        检查
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="rank_coupon_frame_down">
+                                <view class="rank_coupon_frame_down_1">请输入商品优惠券对应链接或这个店铺优惠券想要推广的商品链接</view>
+                            </view>
+                        </view>
+                        <view class="hengxian" style="margin-top:10px;margin-left:15px;margin-right:15px"></view>
+                    </view>
+                </block>
+                <view class="reward-1-frame">
+                    <view class="reward-1-top">
+                        <view class="reward-1-top-left"></view>
+                        <view class="reward_active">
+                            <view class="reward_add_frame" data-type="add" onTap="mergeRewardAction">
+                                <view class="reward_add_frame_image">
+                                    <image class="" src="../../images/config/add.png"></image>
+                                </view>
+                                <view class="reward_add_frame_msg">增加</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="gift-footer-frame">
+            <view class="gift-footer-success" data-opType="success" onTap="openMergeRewardBox">
+                确定
+            </view>
+        </view>
+    </view>
+    <!-- 弹窗配置 -->
+    <view class="{{bouncedBox}}">
+        <view class="gift-top-frame">
+            <view class="gift-left-msg">弹窗配置</view>
+            <view class="gift-right-close">
+                <image mode="scaleToFill" data-opType="close" onTap="openBouncedBox"
+                    src="../../images/configlist/close.png">
+                </image>
+            </view>
+        </view>
+        <view class="bouncedBox_3">
+            <view class="bouncedBox_3_1" data-configType="bounced" onTap="fudaiReward">福袋商品配置</view>
+            <view class="ship-1-frame">
+                <view class="ship-left-frame">
+                    <image mode="scaleToFill" src="{{active.bouncedConfig.luckyBag.pic_url}}"></image>
+                </view>
+                <view class="ship-center-frame">
+                    <view class="ship-center-title">
+                        商品名称:
+                        <input disabled="false" class="ship-detail-box-1"
+                            value="{{active.bouncedConfig.luckyBag.title ? active.bouncedConfig.luckyBag.title : 'XXXXXX' }}"></input>
+                    </view>
+                    <view class="ship-center-title" style="margin-top:10px;">
+                        商品金额:
+                        <input disabled="false" class="ship-detail-box-1"
+                            value="{{active.bouncedConfig.luckyBag.price ? active.bouncedConfig.luckyBag.price : '00.00' }}元"></input>
+                    </view>
+                </view>
+                <view class="ship-center-frame">
+                    <view class="ship-center-title">
+                        商品库存:
+                        <input disabled="false" class="ship-detail-box-1"
+                            value="{{active.bouncedConfig.luckyBag.num ? active.bouncedConfig.luckyBag.num : '' }}"></input>
+                    </view>
+                    <view class="ship-center-title" style="margin-top:10px;">
+                        剩余库存:
+                        <input disabled="false" class="ship-detail-box-1"
+                            value="{{active.bouncedConfig.luckyBag.nums ? active.bouncedConfig.luckyBag.nums : '' }}"></input>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="hengxian" style="margin-top:10px"></view>
+        <scroll-view style="height:270px" trap-scroll="{{true}}" scroll-y="{{true}}" onScrollToUpper="upper"
+            onScrollToLower="lower" onScroll="scroll" scroll-left="1">
+            <view class="bouncedBox_1">
+                <view class="bouncedBox_1_1">
+                    游戏
+                    <text style="color:red">开始</text>
+                    弹窗配置
+                </view>
+                <view class="bouncedBox_1_2">(658px * 900px)</view>
+                <view class="bouncedBox_1_3">
+                    <view class="bouncedBox_1_3_1">
+                        <block a:if="{{ active.bouncedConfig.startGame.yes !== '' }}">
+                            <view class="bouncedBox_1_3_1_1">
+                                <image src="{{active.bouncedConfig.startGame.yes}}"></image>
+                            </view>
+                        </block>
+                        <view class="bouncedBox_1_3_1_2">
+                            <view data-type="startGame" data-state="yes" onTap="gameUploadImage"
+                                class="bouncedBox_1_3_1_2_1">
+                                <block a:if="{{ active.bouncedConfig.startGame.yes !== '' }}">替换图片</block>
+                                <block a:else=>
+                                    选择图片
+                                </block>
+                            </view>
+                            <view class="bouncedBox_1_3_1_2_2">未购买福袋弹框</view>
+                        </view>
+                    </view>
+                    <view class="bouncedBox_1_3_1">
+                        <block a:if="{{ active.bouncedConfig.startGame.no !== '' }}">
+                            <view class="bouncedBox_1_3_1_1">
+                                <image src="{{active.bouncedConfig.startGame.no}}"></image>
+                            </view>
+                        </block>
+                        <view class="bouncedBox_1_3_1_2">
+                            <view data-type="startGame" data-state="no" onTap="gameUploadImage"
+                                class="bouncedBox_1_3_1_2_1">
+                                <block a:if="{{ active.bouncedConfig.startGame.no !== '' }}">替换图片</block>
+                                <block a:else=>
+                                    选择图片
+                                </block>
+                            </view>
+                            <view class="bouncedBox_1_3_1_2_2">已购买福袋弹框</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="bouncedBox_1">
+                <view class="bouncedBox_1_1">
+                    游戏
+                    <text style="color:red">结束</text>
+                    弹窗配置
+                </view>
+                <view class="bouncedBox_1_2">(658px * 900px)</view>
+                <view class="bouncedBox_1_3">
+                    <view class="bouncedBox_1_3_1">
+                        <block a:if="{{ active.bouncedConfig.endGame.yes !== '' }}">
+                            <view class="bouncedBox_1_3_1_1">
+                                <image src="{{active.bouncedConfig.endGame.yes}}"></image>
+                            </view>
+                        </block>
+                        <view class="bouncedBox_1_3_1_2">
+                            <view data-type="endGame" data-state="yes" onTap="gameUploadImage"
+                                class="bouncedBox_1_3_1_2_1">
+                                <block a:if="{{ active.bouncedConfig.endGame.yes !== '' }}">替换图片</block>
+                                <block a:else=>
+                                    选择图片
+                                </block>
+                            </view>
+                            <view class="bouncedBox_1_3_1_2_2">未购买福袋弹框</view>
+                        </view>
+                    </view>
+                    <view class="bouncedBox_1_3_1">
+                        <block a:if="{{ active.bouncedConfig.endGame.no !== '' }}">
+                            <view class="bouncedBox_1_3_1_1">
+                                <image src="{{active.bouncedConfig.endGame.no}}"></image>
+                            </view>
+                        </block>
+                        <view class="bouncedBox_1_3_1_2">
+                            <view data-type="endGame" data-state="no" onTap="gameUploadImage"
+                                class="bouncedBox_1_3_1_2_1">
+                                <block a:if="{{ active.bouncedConfig.endGame.no !== '' }}">替换图片</block>
+                                <block a:else=>
+                                    选择图片
+                                </block>
+                            </view>
+                            <view class="bouncedBox_1_3_1_2_2">已购买福袋弹框</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="hengxian" style="margin-top:10px"></view>
+        <view class="bouncedBox_2">
+            <view class="bouncedBox_2_1" data-opType="success" onTap="openBouncedBox">确定</view>
+        </view>
+    </view>
+</view>

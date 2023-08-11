@@ -1,0 +1,65 @@
+{
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "workbench.iconTheme": "vscode-icons",
+    "go.formatTool": "gofmt",
+    "go.useLanguageServer": true,
+    "explorer.confirmDelete": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.autoSave": "off",
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Default High Contrast",
+    "explorer.confirmDragAndDrop": false,
+    "go.formatOnSave": true,
+    "[go]": {
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "window.zoomLevel": 1,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "vsicons.dontShowNewVersionMessage": true,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "material-icon-theme.showWelcomeMessage": false,
+    "extensions.autoUpdate": true,
+    "wxmlConfig.format": {
+
+        "brace_style": "collapse",
+        "end_with_newline": false,
+        "indent_char": "",
+        "indent_handlebars": false,
+        "indent_inner_html": false,
+        "indent_scripts": "keep",
+        "indent_size": 2,
+        "indent_with_tabs": true,
+        "max_preserve_newlines": 1,
+        "wrap_attributes_count": 4,
+        "unformatted": "['text']",
+        "disable_automatic_closing_labels": false,
+        "preserve_newlines": true,
+        "wrap_attributes": "force-expand-multiline"
+    },
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "html.format.enable": false,
+    "editor.tabSize": 3,
+    "editor.renderWhitespace": "none",
+    "editor.cursorStyle": "block",
+"editor.columnSelection": true,
+"editor.emptySelectionClipboard": false,
+}

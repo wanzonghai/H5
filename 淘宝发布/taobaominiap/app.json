@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/game"
+  ],
+  "plugins": {
+    "cemMember": {
+      "version": "*",
+      "provider": "3000000026642582"
+    }
+  },
+  "window": {
+    "defaultTitle": "合成大西瓜",
+    "allowsBounceVertical": "NO",
+    "titleBarColor": "#ffffff",
+    "enableSkia": true
+  }
+}

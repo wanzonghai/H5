@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n17_ctsq" name="frame" src="ctsq33" fileName="baseFrame.xml" xy="24,427" size="701,429">
+      <Label title="提示"/>
+    </component>
+    <image id="n21_ctsq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="40,526" size="670,258"/>
+    <text id="n23_ctsq" name="txtMessage" xy="116,584" pivot="0.5,0.5" size="518,144" fontSize="34" color="#666666" autoSize="none" text="请确认收货人信息正确无误，一旦&#xA;确定，不可修改，可能导致无法正&#xA;常发货。"/>
+    <component id="n22_ctsq" name="btnOk" src="kqvl3k" fileName="bigButton.xml" xy="385,806">
+      <Button title="确认"/>
+    </component>
+    <component id="n31_ctsq" name="btnNo" src="kqvl3l" fileName="bigButtonGray.xml" xy="58,806">
+      <Button title="再看看"/>
+    </component>
+  </displayList>
+</component>

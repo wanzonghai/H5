@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="450,150" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <text id="n1_b9dp" name="comboText" xy="66,83" pivot="0.5,0.5" anchor="true" size="126,130" font="ui://xehum4g4b9dp2h" fontSize="12" singleLine="true" text="4"/>
+    <image id="n0_b9dp" name="n0" src="b9dp2c" fileName="png/comboImage.png" xy="273,68" pivot="0.5,0.5" anchor="true">
+      <relation target="n1_b9dp" sidePair="middle-middle,left-right"/>
+    </image>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,180">
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="1"/>
+  <displayList>
+    <image id="n0_cowj" name="n0" src="shd82u" fileName="Common_Panel_Item.png" pkg="qwv197ct" xy="0,50" size="613,130" visible="false"/>
+    <image id="n4_bi5k" name="n4" src="bi5k22" fileName="Rank_Award_Line.png" xy="30,22"/>
+    <list id="n3_cowj" name="list" xy="1,51" size="613,130" layout="row" overflow="hidden" colGap="15" defaultItem="ui://qkteqwfpcowj1q" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+    </list>
+    <text id="n1_cowj" name="rankTxt" xy="306,27" pivot="0.5,0.5" anchor="true" size="82,42" fontSize="30" color="#597fc2" align="center" vars="true" bold="true" text="第{rank=1}名">
+      <gearColor controller="styleCtrl" pages="1" values="#597fc2,#000000" default="#ff611c,#000000"/>
+    </text>
+  </displayList>
+</component>

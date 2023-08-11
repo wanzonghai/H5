@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n0_kv20" name="showAwardBtn" src="s0ole" fileName="normalBtn2.xml" pkg="qwv197ct" xy="220,490">
+      <Button title="自动触发获奖"/>
+    </component>
+    <component id="n1_kv20" name="closeBtn" src="s0ol3" fileName="closeBtn.xml" pkg="qwv197ct" xy="593,77"/>
+  </displayList>
+</component>

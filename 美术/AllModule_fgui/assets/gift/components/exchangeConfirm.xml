@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="exchangeConfirm">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,668" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n10_r7g3" name="n10" src="s0ol29" fileName="Images/Common_BG.png" pkg="qwv197ct" xy="375,590" pivot="0.5,0.5" anchor="true" size="657,568">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n1_o7s4" name="n1" src="s0ol2h" fileName="Images/giftItemBg.png" xy="375,571" pivot="0.5,0.5" anchor="true" size="600,386">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n11_r7g3" name="n11" src="s0ol2m" fileName="Images/gift_title1.png" xy="375,304" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="s0ol3" fileName="CloseBtn.xml" pkg="qwv197ct" xy="687,320" pivot="0.5,0.5" anchor="true">
+      <relation target="n10_r7g3" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n5_o7s4" name="info" src="s0olc" fileName="components/GiftInfo.xml" xy="366,606" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <richtext id="n9_o7s4" name="needScoreText" xy="375,419" pivot="0.5,0.5" anchor="true" size="376,36" fontSize="26" color="#666666" align="center" vAlign="middle" ubb="true" vars="true" bold="true" singleLine="true" text="是否花费[color=#FE4051]{const=999}[/color][color=#FFD107]积分[/color]兑换下方商品">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <component id="n6_o7s4" name="exchangeBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="366,868" pivot="0.5,0.5" anchor="true" size="296,90">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="立即兑换" titleColor="#ffffff"/>
+    </component>
+  </displayList>
+</component>

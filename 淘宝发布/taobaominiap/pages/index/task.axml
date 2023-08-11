@@ -1,0 +1,32 @@
+<button onTap="openModal">打开任务列表</button>
+
+<modal
+  show="{{modalOpened}}"
+  onModalClose="onModalClick"
+  advice="{{true}}"
+>
+  <view style=" width: 300px; height: 350px; background: #F7F7F7">
+    <view>
+      任务列表
+    </view>
+    <view  class="itemBox" a:for="{{taskData}}">
+      <view class="box" a:if="{{!item.hidden}}">
+        <view >
+          <text>{{item.taskTitle}} </text>
+          （{{item.finishCount}}/{{item.taskCount}}） {{item.awardConfig}}
+        </view>
+        <button
+          class="completeButton"
+          size="mini" 
+          type="default" 
+          onTap="complete" 
+          data-value="{{item}}"
+        > 
+          去完成
+        </button>
+      
+      </view>
+      
+    </view>
+  </view>
+</modal>

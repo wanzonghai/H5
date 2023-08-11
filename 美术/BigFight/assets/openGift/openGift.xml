@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <controller name="state" pages="0,未开状态,1,正在开奖,2,已开奖" selected="0"/>
+  <controller name="prizeType" pages="0,中奖,1,没中奖" selected="0"/>
+  <controller name="title" pages="0,游戏礼包,1,每日礼包" selected="0"/>
+  <displayList>
+    <graph id="n20_w7oc" name="giftAniPos" xy="375,750" pivot="0.5,0.5" anchor="true" size="1,1" type="rect"/>
+    <component id="n7_jx9c" name="prizeImg" src="w7oce" fileName="prizeImg.xml" xy="374,530" scale="1.1,1.1">
+      <gearDisplay controller="state" pages="2"/>
+      <gearDisplay2 controller="prizeType" pages="0" condition="0"/>
+    </component>
+    <component id="n12_w7oc" name="coinImg" src="w7ocg" fileName="coinImg.xml" xy="377,570">
+      <gearDisplay controller="state" pages="2"/>
+      <gearDisplay2 controller="prizeType" pages="1" condition="0"/>
+    </component>
+    <image id="n14_w7oc" name="gxhdImg" src="jx9c7" fileName="img_gxhd.png" xy="377,750" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="state" pages="2"/>
+    </image>
+    <text id="n19_w7oc" name="jixuTxt" xy="375,1080" pivot="0.5,0.5" anchor="true" size="220,48" fontSize="35" color="#ffffff" align="center" bold="true" text="点击打开礼包">
+      <gearText controller="state" pages="0,1" values="点击打开礼包|" default="点击继续"/>
+    </text>
+    <component id="n17_w7oc" name="openBtn" src="w7och" fileName="openBtn.xml" xy="377,667"/>
+    <component id="n16_w7oc" name="closeBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="570,250"/>
+    <image id="n21_h1k3" name="tips" src="h1k3m" fileName="img_tips.png" xy="375,153" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="prizeType" pages="1"/>
+      <gearDisplay2 controller="state" pages="2" condition="0"/>
+    </image>
+    <image id="n24_czb6" name="title" src="m12yn" fileName="title.png" xy="375,153" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="title" pages="0" condition="0"/>
+    </image>
+    <image id="n22_m12y" name="title1" src="czb6p" fileName="title2.png" xy="375,153" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="title" pages="1" condition="0"/>
+    </image>
+    <text id="n23_m12y" name="tipsTxt" xy="184,1130" size="381,42" visible="false" fontSize="30" color="#ffe563" bold="true" text="3分钟后会送出下一个礼包~"/>
+    <component id="n25_ioqr" name="useBtn" src="e0qwr" fileName="useBtn.xml" xy="290,970" visible="false" touchable="false"/>
+  </displayList>
+  <transition name="showPrize" options="6" frameRate="30">
+    <item time="0" type="Scale" target="n12_w7oc" tween="true" startValue="0,0" endValue="1.2,1.2" duration="8"/>
+    <item time="0" type="Scale" target="n7_jx9c" tween="true" startValue="0,0" endValue="1.2,1.2" duration="8"/>
+    <item time="8" type="Scale" target="n12_w7oc" tween="true" startValue="1.2,1.2" endValue="1,1" duration="4"/>
+    <item time="8" type="Scale" target="n7_jx9c" tween="true" startValue="1.2,1.2" endValue="1.1,1.1" duration="4"/>
+  </transition>
+</component>

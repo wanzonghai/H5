@@ -1,0 +1,36 @@
+<view>
+    <!-- 顶部导航 -->
+    <navigation slot="navigation" />
+    <!-- 中部内容 -->
+    <view class="main-frame">
+        <view class="main-list-frame">
+            <view class="msg">方案介绍</view>
+            <view class="list-frame">
+                <view class="list">
+                    <view class="list-image">
+                        <image mode="scaleToFill" src="../../images/index/main.png" />
+                    </view>
+                    <view class="right-frame">
+                        <view class="activeName">
+                     iQOO合成大作战
+                        </view>
+                        <view class="activeDesc">
+                            <view>魔性的水果合并，玩法简单易上头</view>
+                            <view>品牌商品深度曝光</view>
+                        </view>
+                        <view class="desc_btn">
+                            <view class="desc_btn_1">
+                        618活动预热
+                            </view>
+                        </view>
+                        <view class="activeBtn_frame">
+                            <view class="activeSuccess" data-type='config' onTap="jump">
+                        创建活动
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

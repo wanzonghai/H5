@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hh5u25h7">
+  <resources>
+    <component id="igfa0" name="Main.xml" path="/" exported="true"/>
+    <component id="igfa1" name="rule.xml" path="/"/>
+    <image id="izpb3" name="Rule_Boy.png" path="/"/>
+    <image id="izpb4" name="Rule_Title.png" path="/"/>
+    <component id="mc3p5" name="txtCom.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

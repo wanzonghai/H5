@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,180">
+  <controller name="typeCtrl" pages="0,商品,1,优惠券" selected="0"/>
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="0"/>
+  <displayList>
+    <image id="n25_r8mh" name="n25" src="r8mhj" fileName="PrizePool_Line.png" xy="30,19"/>
+    <loader id="n19_hag3" name="img" xy="35,55" size="120,120" url="ui://qwv197ctf98g28" align="center" vAlign="middle" fill="scaleFree">
+      <gearIcon controller="typeCtrl" pages="1" values="ui://qwv197ctxz9x2k" default="ui://qwv197ctf98g28"/>
+    </loader>
+    <image id="n24_q4n3" name="n24" src="emqn3a" fileName="Common_Panel_Round.png" pkg="qwv197ct" xy="35,55" size="120,120">
+      <relation target="n19_hag3" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n17_igfa" name="checkBtn" src="r8mhb" fileName="checkBtn.xml" xy="403,75">
+      <gearDisplay controller="typeCtrl" pages="0,1"/>
+      <Button icon="ui://ennunbg0r8mhc"/>
+    </component>
+    <text id="n11_igfa" name="titleTxt" xy="165,100" pivot="0,0.5" anchor="true" size="229,70" fontSize="25" color="#4e4e4e" vAlign="middle" leading="5" autoSize="height" text="这个商品的名字有九十一二三四五六七八"/>
+    <text id="n23_mmeu" name="priceTxt" xy="165,138" size="43,35" fontSize="25" color="#ff7c08" leading="5" vars="true" text="￥{price=1}">
+      <relation target="n11_igfa" sidePair="top-bottom"/>
+    </text>
+    <text id="n26_r8mh" name="rankTxt" xy="306,21" pivot="0.5,0.5" anchor="true" size="94,42" fontSize="30" color="#ff611c" text="第一名">
+      <gearColor controller="styleCtrl" pages="1" values="#597fc2,#000000" default="#ff611c,#000000"/>
+    </text>
+  </displayList>
+  <transition name="slideIn" options="4">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="602,-" endValue="0,0" duration="6"/>
+  </transition>
+</component>

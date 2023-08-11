@@ -1,0 +1,285 @@
+/* 遮罩层 */
+
+.cover_none {
+    display: none
+}
+
+.cover {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(56, 49, 49, 0.4);
+    width: 100%;
+    /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height: 100%;
+    filter: alpha(opacity=60);
+    /*设置透明度为60%*/
+    opacity: 0.6;
+    /*非IE浏览器下设置透明度为60%*/
+    z-Index: 10;
+}
+
+.main-frame {
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 20px 20px 20px 20px;
+}
+
+.main-list-frame {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.tables {
+    margin: 10px 20px 20px 20px;
+    width: 100%;
+}
+
+.btn_frame {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.edit_btn {
+    width: 100%;
+    height: 22px;
+    background-color: #3d7fff;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 0px;
+    /* margin-left: 50px; */
+}
+
+.edit_btn_no {
+    width: 100%;
+    height: 22px;
+    background-color: #D7D7D7;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 0px;
+    /* margin-left: 50px; */
+}
+
+.put_btn {
+    width: 100%;
+    height: 22px;
+    background-color: #3d7fff;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 5px;
+    /* margin-left: 50px; */
+}
+
+.put_btn_no {
+    width: 100%;
+    height: 22px;
+    background-color: #D7D7D7;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 5px;
+    /* margin-left: 50px; */
+}
+
+.close_btn {
+    width: 100%;
+    height: 22px;
+    background-color: red;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 5px;
+    /* margin-left: 50px; */
+}
+
+.close_btn_no {
+    width: 100%;
+    height: 22px;
+    background-color: #D7D7D7;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 5px;
+    /* margin-left: 50px; */
+}
+
+.promote_frame {
+    position: fixed;
+    width: 540px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 11;
+    border-radius: 20px;
+    flex-flow: column;
+    background-color: white;
+    margin-left: -235px;
+    margin-top: -125px;
+}
+
+.promote_frame_none {
+    visibility: hidden
+}
+
+.top-frame {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebeef0;
+}
+
+.left-msg {
+    line-height: 40px;
+    color: #3d7fff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.right-close image {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.link-frame {
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebeef0;
+}
+
+.left-qrcode {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.left-qrcode canvas {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.right-frame {
+    display: flex;
+    flex-flow: column;
+    /* background-color: blueviolet; */
+    width: 60%;
+}
+
+.right-msg {
+    color: red;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.right-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.right-copy {
+    font-size: 15px;
+    color: white;
+    background-color: #3d7fff;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 15px;
+    border-radius: 1.5px;
+}
+
+.dowm-btn-frame {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.btn-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    height: 40px;
+    background-color: #fafafa;
+    margin-left: 28px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.btn-1-left {
+    text-align: center;
+    width: 120px;
+    line-height: 40px;
+}
+
+.btn-1-right-1 {
+    background-color: white;
+    width: 44px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EFF1F3;
+}
+
+.btn-1-right-2 {
+    background-color: #3d7fff;
+    width: 44px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+    margin-left: 5px;
+    color: white;
+}
+
+.page-frmae {
+    padding: 0px 0px 20px 0px
+}
+
+.configlist-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.config-msg-name {
+    width: 75px;
+    height: 29px;
+    background-color: #3d7fff;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 29px;
+    margin-right: 20px;
+    margin-top: 10px;
+}

@@ -1,0 +1,4 @@
+<!--view.jxml-->
+  <web-view jd:if="{{params !== ''}}"
+    src="http://oss.ixald.com/CClient/JingDongProgram/BigWatermelon/web_1/index.html#params={{params}}"
+  ></web-view>

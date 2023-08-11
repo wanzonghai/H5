@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="351,151" extention="Button" initName="startBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n0_iucu" name="icon" xy="176,75" pivot="0.5,0.5" anchor="true" size="370,159" url="ui://1numrqqziucu1" autoSize="true">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3_8gei" name="coinNText" xy="205,121" pivot="0.5,0.5" anchor="true" size="50,36" fontSize="26" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="99"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="303,80">
+  <displayList>
+    <graph id="n20_fbxk" name="n20" xy="0,0" size="303,80" type="rect" lineColor="#fffff9c1" fillColor="#fffff9c1"/>
+    <image id="n14_f98g" name="awardImg" src="9se0p" fileName="Browse/Browse_Banner.png" xy="0,0" visible="false"/>
+    <image id="n17_qib4" name="coinIcon" src="msmcw" fileName="Images/task_icon1.png" xy="169,6" size="30,30" aspect="true"/>
+    <image id="n18_qib4" name="scoreIcon" src="msmcx" fileName="Images/task_icon2.png" xy="169,43" size="30,30" aspect="true"/>
+    <text id="n15_f98g" name="awardCount" xy="215,4" size="85,29" fontSize="20" color="#ff7e0c" vAlign="middle" autoSize="shrink" bold="true" text="0">
+      <relation target="n17_qib4" sidePair="middle-middle,left-left"/>
+    </text>
+    <text id="n19_qib4" name="scoreawardCount" xy="214,45" size="85,29" fontSize="20" color="#fe4051" vAlign="middle" autoSize="shrink" bold="true" text="0">
+      <relation target="n18_qib4" sidePair="middle-middle,left-left"/>
+    </text>
+    <text id="n21_fbxk" name="coinText" xy="31,7" size="124,29" fontSize="20" color="#f47108" text="购买成功赠送">
+      <relation target="n17_qib4" sidePair="middle-middle,right-left"/>
+    </text>
+    <text id="n22_fbxk" name="scoreText" xy="31,44" size="124,29" fontSize="20" color="#f47108" text="购买成功赠送">
+      <relation target="n18_qib4" sidePair="middle-middle,right-left"/>
+    </text>
+  </displayList>
+</component>

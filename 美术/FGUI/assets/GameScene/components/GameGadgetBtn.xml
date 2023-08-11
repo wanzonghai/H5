@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="160,154" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n0_w05t" name="icon" xy="80,77" pivot="0.5,0.5" anchor="true" size="160,154" url="ui://xehum4g4w05t3b" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

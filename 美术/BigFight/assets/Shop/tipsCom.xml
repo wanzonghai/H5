@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,26">
+  <controller name="isSkin" pages="0,皮肤,1,商品" selected="0"/>
+  <controller name="add" pages="0,加时,1,加速,3,商品" selected="0"/>
+  <displayList>
+    <image id="n5_hd9y" name="n5" src="hd9yf" fileName="Shop_Panel_Yellow.png" xy="0,2" size="110,25">
+      <gearDisplay controller="isSkin" pages="0"/>
+    </image>
+    <image id="n15_hd9y" name="n15" src="hd9yd" fileName="Shop_Panel_Red.png" xy="0,2" size="110,25">
+      <gearDisplay controller="isSkin" pages="1"/>
+    </image>
+    <text id="n7_hd9y" name="tipsTxt" xy="5,0" pivot="0.5,0.5" size="97,26" fontSize="18" color="#4e4e4e" align="center" vAlign="middle" vars="true" text="剩余时间+{add=1}">
+      <gearText controller="add" pages="0,3" values="剩余时间+{add=1}|{add=商品介绍}" default="增速{add=1}%"/>
+    </text>
+  </displayList>
+</component>

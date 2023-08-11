@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="qwv197ct">
+  <resources>
+    <image id="bkfg4" name="Common_Skin_1.png" path="/" exported="true"/>
+    <image id="bkfga" name="Common_Coin_1.png" path="/" exported="true"/>
+    <image id="bkfgb" name="Common_Skin_0.png" path="/" exported="true"/>
+    <image id="bkfgc" name="Common_Skin_2.png" path="/" exported="true"/>
+    <image id="bkfgd" name="Common_Skin_3.png" path="/" exported="true"/>
+    <image id="bkfge" name="Common_Skin_4.png" path="/" exported="true"/>
+    <image id="bkfgf" name="Common_Skin_5.png" path="/" exported="true"/>
+    <image id="bkfgg" name="Common_Skin_6.png" path="/" exported="true"/>
+    <image id="bkfgh" name="Common_Skin_7.png" path="/" exported="true"/>
+    <image id="bkfgi" name="Common_Skin_8.png" path="/" exported="true"/>
+    <component id="bkfgj" name="Main.xml" path="/"/>
+    <image id="rqvvk" name="Common_BG.png" path="/" exported="true" scale="9grid" scale9grid="154,117,7,8"/>
+    <image id="rqvvl" name="Common_Btn_Back.png" path="/" exported="true"/>
+    <image id="rqvvm" name="Common_Btn_Confirm.png" path="/" exported="true"/>
+    <image id="rqvvo" name="Common_Mask.png" path="/" exported="true" scale="9grid" scale9grid="25,24,50,48"/>
+    <component id="rqvvp" name="rewardCom.xml" path="/" exported="true"/>
+    <component id="hob4s" name="confirmBtn.xml" path="/" exported="true"/>
+    <image id="f501t" name="Common_Ico_TimeLimt.png" path="/" exported="true"/>
+    <image id="rflnu" name="Commom_Ico_VIP.png" path="/" exported="true"/>
+    <image id="jbc722" name="default_head.png" path="/" exported="true"/>
+    <image id="g0ib25" name="Common_VIP_1.png" path="/" exported="true"/>
+    <image id="f98g28" name="Common_Img_Goods.png" path="/" exported="true"/>
+    <image id="f98g29" name="Panel_shangpin.png" path="/" exported="true" scale="9grid" scale9grid="68,86,136,172"/>
+    <component id="igfa2a" name="backBtn.xml" path="/" exported="true"/>
+    <image id="bvmi2b" name="Common_Ico_Point.png" path="/" exported="true"/>
+    <image id="bvmi2c" name="Common_Ico_Rank.png" path="/" exported="true"/>
+    <component id="88592d" name="BannerShow.xml" path="/" exported="true"/>
+    <component id="88592g" name="Notice.xml" path="/" exported="true"/>
+    <image id="88592h" name="Common_Banner_No1.png" path="/" exported="true" scale="9grid" scale9grid="99,30,19,60"/>
+    <image id="88592i" name="Common_Banner_No2.png" path="/" exported="true" scale="9grid" scale9grid="96,28,19,58"/>
+    <image id="xz9x2k" name="Common_Img_Coupon.png" path="/" exported="true"/>
+    <component id="f4rn2l" name="Toast.xml" path="/" exported="true"/>
+    <image id="f4rn2m" name="Common_Skin_10.png" path="/" exported="true"/>
+    <image id="f4rn2n" name="Common_Skin_11.png" path="/" exported="true"/>
+    <image id="f4rn2o" name="Common_Skin_12.png" path="/" exported="true"/>
+    <image id="f4rn2p" name="Common_Skin_9.png" path="/" exported="true"/>
+    <image id="otjz2q" name="Notice_Title.png" path="/" exported="true"/>
+    <component id="c6182s" name="noticeCom.xml" path="/"/>
+    <image id="shd82u" name="Common_Panel_Item.png" path="/" exported="true" scale="9grid" scale9grid="7,7,14,14"/>
+    <image id="f1yh2v" name="Common_Panel_White.png" path="/" exported="true" scale="9grid" scale9grid="10,7,20,14"/>
+    <image id="sl472w" name="Common_Banner.png" path="/" exported="true" scale9grid="38,12,76,24"/>
+    <image id="uz4n2x" name="Common_Btn_Share.png" path="/" exported="true"/>
+    <component id="uz4n2y" name="shareBtn.xml" path="/" exported="true"/>
+    <component id="mxaf2z" name="Alert.xml" path="/" exported="true"/>
+    <image id="v77a30" name="Common_Btn_Close.png" path="/"/>
+    <component id="v77a31" name="closeBtn.xml" path="/" exported="true"/>
+    <image id="v77a32" name="Common_Btn_Cancel.png" path="/"/>
+    <component id="v77a33" name="cancelBtn.xml" path="/" exported="true"/>
+    <component id="tlj034" name="alertCom.xml" path="/"/>
+    <image id="nqf635" name="Common_Ico_RedPoint.png" path="/" exported="true"/>
+    <image id="fg5x36" name="Common_Panel_Reward.png" path="/" exported="true"/>
+    <image id="the937" name="Common_Ico_RedPoint2.png" path="/" exported="true"/>
+    <image id="qm2m38" name="Common_Member_1.png" path="/" exported="true"/>
+    <image id="emqn39" name="Common_Line.png" path="/" exported="true"/>
+    <image id="emqn3a" name="Common_Panel_Round.png" path="/" exported="true"/>
+    <image id="l8xz3b" name="Common_Skin_13.png" path="/" exported="true"/>
+    <image id="l8xz3c" name="common_rank.png" path="/" exported="true"/>
+    <image id="h1k33e" name="Common_Gift_1.png" path="/" exported="true"/>
+    <image id="fbxk3f" name="task_icon2.png" path="/" exported="true"/>
+    <image id="fbxk3g" name="task_icon1.png" path="/" exported="true"/>
+    <image id="urqj3h" name="icon_jifen.png" path="/" exported="true"/>
+    <image id="urqj3i" name="icon_jinbi.png" path="/" exported="true"/>
+    <image id="u2xk3j" name="Common_Coin_618.png" path="/" exported="true"/>
+    <image id="u2xk3k" name="Common_Coin_dianpu.png" path="/" exported="true"/>
+    <image id="u2xk3l" name="Common_Coin_dingyue.png" path="/" exported="true"/>
+    <image id="u2xk3m" name="Common_Coin_fenxiang.png" path="/" exported="true"/>
+    <image id="u2xk3n" name="Common_Coin_fudai.png" path="/" exported="true"/>
+    <image id="u2xk3o" name="Common_Coin_huiyuan.png" path="/" exported="true"/>
+    <image id="u2xk3p" name="Common_Coin_meiri.png" path="/" exported="true"/>
+    <image id="u2xk3q" name="Common_Coin_wanyouxi.png" path="/" exported="true"/>
+    <image id="u2xk3r" name="Common_Coin_xiangqing.png" path="/" exported="true"/>
+    <image id="u2xk3s" name="giftBtnbg1.png" path="/"/>
+    <image id="nlb9u" name="rewardBg.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

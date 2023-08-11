@@ -1,0 +1,35 @@
+{
+  "path": "..\\..\\clientToC\\hcdxg\\bin\\res\\FGUI",
+  "branchPath": "",
+  "fileExtension": "txt",
+  "packageCount": 2,
+  "compressDesc": false,
+  "binaryFormat": true,
+  "jpegQuality": 80,
+  "compressPNG": false,
+  "codeGeneration": {
+    "allowGenCode": true,
+    "codePath": "E:\\Laya\\Project\\laya_2.10.0\\BigWatermelon\\美术\\FGUI\\out",
+    "classNamePrefix": "UI_",
+    "memberNamePrefix": "m_",
+    "packageName": null,
+    "ignoreNoname": true,
+    "getMemberByName": false,
+    "codeType": ""
+  },
+  "includeHighResolution": 0,
+  "branchProcessing": 0,
+  "seperatedAtlasForBranch": false,
+  "atlasSetting": {
+    "maxSize": 1024,
+    "paging": true,
+    "sizeOption": "pot",
+    "forceSquare": false,
+    "allowRotation": false,
+    "trimImage": true
+  },
+  "include2x": false,
+  "include3x": false,
+  "include4x": false,
+  "fileName": "Publish"
+}

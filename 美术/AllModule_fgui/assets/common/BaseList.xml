@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,240">
+  <displayList>
+    <list id="n0_j6tr" name="listModule" xy="0,0" size="80,240" overflow="scroll" defaultItem="ui://qwv197ctj6tr3k" autoClearItems="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

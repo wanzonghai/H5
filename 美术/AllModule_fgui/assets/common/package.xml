@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="qwv197ct">
+  <resources>
+    <image id="ctsq34" name="background2.png" path="/Images/" exported="true" scale="9grid" scale9grid="38,33,23,34"/>
+    <image id="ctsq35" name="title.png" path="/Images/" exported="true"/>
+    <image id="ctsq36" name="close.png" path="/Images/" exported="true"/>
+    <image id="ctsq2m" name="tabBackground.png" path="/Images/" exported="true"/>
+    <image id="ctsq38" name="background.png" path="/Images/" exported="true" scale="9grid" scale9grid="25,25,50,50"/>
+    <image id="ctsq3a" name="itemIcon_100x100.png" path="/Images/" exported="true"/>
+    <image id="ctsq3c" name="okButton.png" path="/Images/" exported="true" scale9grid="46,0,205,80"/>
+    <image id="ctsq2x" name="cancelButton.png" path="/Images/" exported="true"/>
+    <image id="ctsq33" name="inputBackground.png" path="/Images/" exported="true" scale="9grid" scale9grid="20,18,13,16"/>
+    <image id="ctsq2w" name="bigButton.png" path="/Images/" exported="true" scale="9grid" scale9grid="72,0,162,97"/>
+    <image id="ctsq2i" name="smallButton.png" path="/Images/" exported="true" scale="9grid" scale9grid="39,0,78,50"/>
+    <image id="ctsq2k" name="smallButtonGray.png" path="/Images/" exported="true" scale="9grid" scale9grid="39,0,78,50"/>
+    <image id="igsl3g" name="redPoint.png" path="/Images/" exported="true"/>
+    <image id="igsl3d" name="redPoint2.png" path="/Images/" exported="true"/>
+    <image id="u2823h" name="loading.png" path="/Images/" exported="true"/>
+    <component id="u2823i" name="ModalWaiting.xml" path="/" exported="true"/>
+    <component id="j6tr3j" name="BaseList.xml" path="/" exported="true"/>
+    <component id="j6tr3k" name="BaseListItem.xml" path="/"/>
+    <image id="lh0h3l" name="Common_Img_Player.png" path="/Images/" exported="true"/>
+    <component id="s0ol3" name="CloseBtn.xml" path="/" exported="true"/>
+    <component id="s0ole" name="NormalBtn2.xml" path="/" exported="true"/>
+    <component id="kv203m" name="NormalBtn.xml" path="/" exported="true"/>
+    <component id="ctsq37" name="CommonFrame.xml" path="/" exported="true"/>
+    <image id="s0ol29" name="Common_BG.png" path="/Images/" exported="true" scale="9grid" scale9grid="153,121,18,8"/>
+    <image id="dhwd3n" name="CommonTitle.png" path="/Images/" exported="true"/>
+    <image id="11ndo3q" name="Rule_Title.png" path="/Images/"/>
+    <component id="11ndo3s" name="txtCom.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

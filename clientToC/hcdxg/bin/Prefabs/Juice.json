@@ -1,0 +1,1 @@
+{"type":"Image","props":{"var":"Juice","x":0,"y":0,"presetID":1,"isPresetRoot":true},"compId":25,"child":[{"type":"Script","props":{"presetID":2,"runtime":"Game/Juice.ts"},"compId":26}],"loadList":[],"loadList3D":[]}

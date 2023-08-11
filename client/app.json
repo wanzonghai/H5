@@ -1,0 +1,74 @@
+{
+    "pages": [
+        "page/index/index",
+        "page/userData/userData",
+        "page/put/put",
+        "page/active/active",
+        "page/orderlist/orderlist",
+        "page/sqlData/sqlData",
+        "page/shareData/shareData",
+        "page/overData/overData",
+        "page/retainData/retainData",
+        "page/configlist/configlist",
+        "page/custom/custom"
+    ],
+    "window": {
+        "defaultTitle": "西瓜大合成定制版本",
+        "navigationBarForceEnable": true,
+        "showNavigationBarLogo": true,
+        "allowsBounceVertical": true,
+        "titleImage": "https://ossgw.alicdn.com/taobao-miniapp/img/24ab95e9efb6262ad8623eab76d89aab.png",
+        "pullRefresh": true
+    },
+    "plugins": {
+        "myPlugin": {
+            "version": "0.0.12",
+            "provider": "3000000002026202"
+        }
+    },
+    "tabBarEx": {
+        "items": [
+            {
+                "id": "index",
+                "pagePath": "page/index/index",
+                "name": "首页",
+                "title": "首页"
+            },
+            {
+                "id": "configlist",
+                "pagePath": "page/configlist/configlist",
+                "name": "活动列表"
+            },
+            {
+                "items": [
+                    {
+                        "pagePath": "page/overData/overData",
+                        "name": "数据概览",
+                        "id": "overData"
+                    },
+                    {
+                        "pagePath": "page/retainData/retainData",
+                        "name": "留存数据",
+                        "id": "retainData"
+                    },
+                    {
+                        "pagePath": "page/shareData/shareData",
+                        "name": "分享数据",
+                        "id": "shareData"
+                    },
+                    {
+                        "pagePath": "page/userData/userData",
+                        "name": "用户数据",
+                        "id": "userData"
+                    }
+                ],
+                "name": "数据看板"
+            },
+            {
+                "id": "orderlist",
+                "pagePath": "page/orderlist/orderlist",
+                "name": "权益发放"
+            }
+        ]
+    }
+}

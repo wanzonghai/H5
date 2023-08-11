@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="156,124" initName="SurpassHint">
+  <displayList>
+    <image id="n0_wpln" name="bg" src="lh0h1" fileName="Images/surpassFrame.png" xy="78,62" pivot="0.5,0.5" anchor="true" size="156,124">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </image>
+    <text id="n1_wpln" name="surpassText" xy="85,35" pivot="0.5,0.5" anchor="true" size="132,29" fontSize="20" color="#ff5f62" vars="true" bold="true" singleLine="true" text="超越{count=80}%用户"/>
+    <loader id="n3_gqsf" name="photoLoader1" xy="46,85" pivot="0.5,0.5" anchor="true" size="56,56" url="ui://qwv197ctlh0h3l" fill="scale"/>
+    <loader id="n4_gqsf" name="photoLoader2" xy="113,85" pivot="0.5,0.5" anchor="true" size="56,56" url="ui://qwv197ctlh0h3l" fill="scale"/>
+  </displayList>
+</component>

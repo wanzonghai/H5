@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="GameAward">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" visible="false" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n16_s7b1" name="n16" src="r7g3o1o" fileName="png/gift/Common_BG.png" pkg="vzezwp8f" xy="374,667" pivot="0.5,0.5" anchor="true" size="640,500">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n17_s7b1" name="n17" src="s7b11k" fileName="png/gift/giftItemBg.png" xy="375,657" pivot="0.5,0.5" anchor="true" size="600,300">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n18_s7b1" name="n18" src="mzlr2o" fileName="png/getAwards.png" xy="375,418" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="dx3d17" fileName="components/closeBtn.xml" xy="690,425" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="right-right,top-top"/>
+    </component>
+    <loader id="n15_dx3d" name="iconLoader" xy="376,669" pivot="0.5,0.5" anchor="true" size="346,170" url="ui://xehum4g4wyiu23" align="center" vAlign="middle" fill="scale">
+      <relation target="n16_s7b1" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n12_dx3d" name="tText" xy="376,539" pivot="0.5,0.5" anchor="true" size="342,36" fontSize="26" text="实力爆棚！ 超越  95% 小伙伴">
+      <relation target="n15_dx3d" sidePair="center-center,top-bottom"/>
+    </text>
+    <component id="n7_o7s4" name="attentionBtn" src="dx3d19" fileName="components/attentionBtn.xml" xy="376,910" pivot="0.5,0.5" anchor="true" size="296,90">
+      <relation target="n16_s7b1" sidePair="center-center,bottom-bottom"/>
+      <Button title="前往使用"/>
+    </component>
+    <text id="n19_wyiu" name="priceText" xy="288,626" size="95,82" fontSize="62" color="#ffffff" vAlign="bottom" autoSize="shrink" singleLine="true" text="20">
+      <relation target="n15_dx3d" sidePair="left-left,bottom-bottom"/>
+    </text>
+    <text id="n20_wyiu" name="describeText" xy="394,620" size="129,41" fontSize="28" color="#ffffff" vAlign="bottom" autoSize="shrink" singleLine="true" text="满99使用">
+      <relation target="n15_dx3d" sidePair="right-right%,top-top"/>
+    </text>
+  </displayList>
+</component>

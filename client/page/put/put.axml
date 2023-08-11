@@ -1,0 +1,8 @@
+<view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <poster slot="poster"></poster>
+   </view>
+</view>

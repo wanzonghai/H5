@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="228,79">
+  <displayList>
+    <image id="n17_rfln" name="vipTipsImg" src="jbc7m" fileName="Personal_VIPdi.png" xy="114,39" pivot="0.5,0.5" anchor="true"/>
+    <text id="n18_rfln" name="txt" xy="111,32" pivot="0,0.5" anchor="true" size="98,29" fontSize="20" color="#ffffff" text="奖杯+20%"/>
+  </displayList>
+</component>

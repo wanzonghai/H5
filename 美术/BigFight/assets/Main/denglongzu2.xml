@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="129,335">
+  <displayList>
+    <image id="n81_vp72" name="n81" src="vp7233" fileName="Main_Denglong_1.png" xy="1,0" pivot="0.5,0.5" rotation="-22"/>
+    <image id="n83_vp72" name="n83" src="vp7233" fileName="Main_Denglong_1.png" xy="24,129" pivot="0.6,0" size="92,96" aspect="true" rotation="-10"/>
+    <image id="n84_vp72" name="n84" src="vp7233" fileName="Main_Denglong_1.png" xy="43,223" pivot="0.6,0" size="61,64" aspect="true" rotation="6"/>
+    <image id="n82_vp72" name="n82" src="vp7232" fileName="Main_Denglongsui.png" xy="62,282" rotation="41"/>
+  </displayList>
+  <transition name="denglong2" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Rotation" target="n82_vp72" tween="true" startValue="41" endValue="26.89" duration="37" ease="Custom" customEase="2,0,0,0.55,0.0925,0.8,0.8,1,0,1,1"/>
+    <item time="0" type="Rotation" target="n83_vp72" tween="true" startValue="-10" endValue="-15.71" duration="37" ease="Custom" customEase="2,0,0,0.55,0.0925,0.8,0.8,1,0,1,1"/>
+    <item time="0" type="Rotation" target="n84_vp72" tween="true" startValue="6" endValue="-4.73" duration="37" ease="Custom" customEase="2,0,0,0.55,0.0925,0.8,0.8,1,0,1,1"/>
+    <item time="0" type="XY" target="n82_vp72" tween="true" startValue="62,282" endValue="83,284" duration="37" ease="Custom" customEase="2,0,0,0.55,0.0925,0.8,0.8,1,0,1,1"/>
+    <item time="0" type="XY" target="n84_vp72" tween="true" startValue="43,223" endValue="52,223" duration="37" ease="Custom" customEase="2,0,0,0.55,0.0925,0.8,0.8,1,0,1,1"/>
+    <item time="37" type="Rotation" target="n82_vp72" tween="true" startValue="26.89" endValue="41" duration="35" ease="Custom" customEase="2,0,0,0.5625,0.16,0.5,0.53,1,0,1,1"/>
+    <item time="37" type="Rotation" target="n83_vp72" tween="true" startValue="-15.71" endValue="-10" duration="35" ease="Custom" customEase="2,0,0,0.5625,0.16,0.5,0.53,1,0,1,1"/>
+    <item time="37" type="Rotation" target="n84_vp72" tween="true" startValue="-4.73" endValue="6" duration="35" ease="Custom" customEase="2,0,0,0.5625,0.16,0.5,0.53,1,0,1,1"/>
+    <item time="37" type="XY" target="n82_vp72" tween="true" startValue="83,284" endValue="62,282" duration="35" ease="Custom" customEase="2,0,0,0.5625,0.16,0.5,0.53,1,0,1,1"/>
+    <item time="37" type="XY" target="n84_vp72" tween="true" startValue="52,223" endValue="43,223" duration="35" ease="Custom" customEase="2,0,0,0.5625,0.16,0.5,0.53,1,0,1,1"/>
+  </transition>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="309,93" extention="Button" initName="restartBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_o7s4" name="n0" src="o7s418" fileName="png/gift/giftBtnbg1.png" pkg="vzezwp8f" xy="0,0" size="309,93">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4_o7s4" name="title" xy="3,4" size="303,85" fontSize="40" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" singleLine="true" text="回到首页">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

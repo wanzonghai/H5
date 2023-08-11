@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="613,135">
+  <controller name="state" pages="0,未购买,1,使用中,5,可替换" selected="0"/>
+  <controller name="isSkin" pages="0,皮肤,1,商品" selected="0"/>
+  <controller name="getMode" pages="0,金币购买,1,签到,2,连胜,3,排行榜,4,任务" selected="0"/>
+  <controller name="addState" pages="0,提示1+2,1,提示1,2,提示2,3,无提示" selected="0"/>
+  <controller name="isLimit" pages="0,正常,1,限时" selected="0"/>
+  <displayList>
+    <image id="n0_hd9y" name="yellow" src="shd82u" fileName="Common_Panel_Item.png" pkg="qwv197ct" xy="0,0" size="610,120" visible="false">
+      <gearDisplay controller="isSkin" pages=""/>
+    </image>
+    <image id="n24_zcea" name="n24" src="emqn39" fileName="Common_Line.png" pkg="qwv197ct" xy="3,133">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <text id="n4_hd9y" name="nameTxt" xy="130,15" pivot="0.5,0.5" size="108,48" fontSize="35" color="#4e4e4e" vAlign="middle" text="达菲鸡">
+      <gearColor controller="isSkin" pages="0,1" values="#4e4e4e,#000000|#cc0000,#000000"/>
+    </text>
+    <component id="n12_hd9y" name="buyBtn" src="hd9yn" fileName="buyBtn.xml" xy="425,24">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="getMode" pages="0" condition="0"/>
+    </component>
+    <image id="n13_hd9y" name="used" src="hd9y9" fileName="Shop_Btn_Used.png" xy="426,24">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <component id="n22_bkfg" name="changeBtn" src="bkfgy" fileName="changeBtn.xml" xy="425,24">
+      <gearDisplay controller="state" pages="5"/>
+    </component>
+    <loader id="n17_93v1" name="loader" xy="10,3" size="106,113" url="ui://qwv197ctbkfga" clearOnPublish="true"/>
+    <text id="n18_93v1" name="getTxt" xy="430,39" pivot="0.5,0.5" size="154,42" fontSize="30" color="#ff9900" align="center" vAlign="middle" text="排位赛奖励">
+      <gearDisplay controller="state" pages="0"/>
+      <gearText controller="getMode" pages="1,2,3,4" values="签到奖励|连胜奖励|排名奖励|任务奖励" default="排位赛奖励"/>
+      <gearDisplay2 controller="getMode" pages="1,2,3,4" condition="0"/>
+    </text>
+    <component id="n20_slu3" name="tipsCom1" src="slu3u" fileName="tipsCom.xml" xy="130,80">
+      <gearDisplay controller="addState" pages="0,1"/>
+    </component>
+    <component id="n21_slu3" name="tipsCom2" src="slu3u" fileName="tipsCom.xml" xy="260,80">
+      <gearDisplay controller="addState" pages="0,2"/>
+      <gearXY controller="addState" pages="0,2" values="260,80|130,80" default="259,80"/>
+    </component>
+    <image id="n23_f501" name="n23" src="f501t" fileName="Common_Ico_TimeLimt.png" pkg="qwv197ct" xy="73,9">
+      <gearDisplay controller="isLimit" pages="1"/>
+    </image>
+  </displayList>
+  <transition name="slideIn" options="4">
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="600,0" endValue="0,0" duration="6"/>
+  </transition>
+</component>

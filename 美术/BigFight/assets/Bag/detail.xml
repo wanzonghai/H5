@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1624">
+  <displayList>
+    <image id="n7_j04i" name="mask" src="rqvvo" fileName="Common_Mask.png" pkg="qwv197ct" xy="0,0" size="750,1624" alpha="0.5" color="#000000"/>
+    <component id="n2_qlvz" name="detail" src="qlvzl" fileName="detailCom.xml" xy="47,379" pivot="0.5,0.5"/>
+  </displayList>
+  <transition name="slideIn" autoPlay="true">
+    <item time="0" type="XY" target="n2_qlvz" tween="true" startValue="-,-1000,0,-0.616" endValue="-,402" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="slideOut">
+    <item time="0" type="XY" target="n2_qlvz" tween="true" startValue="-,462" endValue="-,-1000" duration="9" ease="Back.In"/>
+  </transition>
+</component>

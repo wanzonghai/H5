@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,550">
+  <controller name="styleCtrl" pages="0,红色,1,蓝色" selected="1"/>
+  <displayList>
+    <image id="n1_fo1o" name="bg" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,458">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n7_kx34" name="title" src="fo1o1" fileName="Personal_Title.png" xy="153,0"/>
+    <image id="n11_j0sx" name="n11" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,134" size="615,240"/>
+    <image id="n10_j0sx" name="n10" src="j0sxq" fileName="Pifushiyong_Txt.png" xy="360,103"/>
+    <image id="n12_j0sx" name="n12" src="j0sxp" fileName="Pifushiyong_Jineng.png" xy="312,337"/>
+    <component id="n5_kx34" name="tryBtn" src="kx342" fileName="tryBtn.xml" xy="327,500" pivot="0.5,0.5" anchor="true"/>
+    <graph id="n8_kx34" name="role" xy="161,396" pivot="0.5,1" size="1,1" type="rect">
+      <relation target="" sidePair=""/>
+    </graph>
+    <component id="n13_emqn" name="cancelBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <text id="n4_kx34" name="speedTxt" xy="485,375" pivot="0.5,0.5" anchor="true" size="207,42" fontSize="30" color="#8662db" bold="true" text="移动速度+10%">
+      <gearColor controller="styleCtrl" pages="1" values="#8662db,#000000" default="#ff611c,#000000"/>
+      <relation target="n12_j0sx" sidePair="left-center,top-middle"/>
+    </text>
+  </displayList>
+</component>

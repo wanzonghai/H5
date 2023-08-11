@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <component id="n24_ip94" name="frame" src="ctsq37" fileName="baseFrame.xml" xy="92,425" size="565,483" controller="ctrlCloseStatus,1" pkg="qwv197ct">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="恭喜获得"/>
+    </component>
+    <image id="n25_ip94" name="n0" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="113,529" size="527,238">
+      <relation target="n24_ip94" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <loader id="n27_ip94" name="loadItemIcon" xy="119,537" size="515,225" url="ui://qwv197ctctsq3a" align="center" vAlign="middle" fill="scale" clearOnPublish="true"/>
+    <text id="n28_ip94" name="txtItemName" xy="121,795" size="505,54" fontSize="35" color="#666666" align="center" vAlign="middle" autoSize="none" text="恭喜获得Iphone 12 手机"/>
+    <component id="n30_ip94" name="btnOk" src="ctsq3c" fileName="bigButton.xml" xy="250,862" size="249,77" aspect="true">
+      <Button title="确定"/>
+    </component>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

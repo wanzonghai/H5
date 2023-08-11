@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="ctrlType" autoRadioGroupDepth="true" pages="0,实物,1,优惠券" selected="1"/>
+  <controller name="ctrlEmptyStatus" pages="0,空的,1,不为空" selected="1"/>
+  <displayList>
+    <component id="n3_kqvl" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="30,217" size="690,900">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="我的奖品包" icon="ui://ennunbg0dhwd3n"/>
+    </component>
+    <component id="n4_kqvl" name="btnCoupon" src="ctsq37" fileName="TabButton.xml" xy="501,317" pivot="0.5,1" anchor="true" size="306,78" group="n6_kqvl" scale="0.8,0.8">
+      <Button checked="true" title="优惠券" controller="ctrlType" page="1"/>
+    </component>
+    <component id="n5_kqvl" name="btnGoods" src="ctsq37" fileName="TabButton.xml" xy="263,317" pivot="0.5,1" anchor="true" size="306,78" group="n6_kqvl" scale="0.8,0.8">
+      <Button title="实物奖品" controller="ctrlType" page="0"/>
+    </component>
+    <group id="n6_kqvl" name="tab" xy="110,239" size="544,78" advanced="true">
+      <relation target="n11_rv95" sidePair="center-center,bottom-top"/>
+    </group>
+    <image id="n7_kqvl" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="48,316" size="657,780" group="n11_rv95"/>
+    <text id="n8_kqvl" name="noneTxt" xy="380,667" pivot="0.5,0.5" anchor="true" size="194,66" group="n11_rv95" fontSize="50" color="#cccccc" align="center" vAlign="middle" text="暂无奖励">
+      <gearDisplay controller="ctrlEmptyStatus" pages="0"/>
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <list id="n9_kqvl" name="listGift" xy="48,321" size="657,777" group="n11_rv95" overflow="scroll" defaultItem="ui://ennunbg0ctsq39" autoClearItems="true">
+      <gearDisplay controller="ctrlType" pages="0"/>
+      <gearDisplay2 controller="ctrlEmptyStatus" pages="1" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n10_kqvl" name="listSale" xy="48,321" size="657,773" group="n11_rv95" overflow="scroll" defaultItem="ui://ennunbg0ctsq39" autoClearItems="true">
+      <gearDisplay controller="ctrlType" pages="1"/>
+      <gearDisplay2 controller="ctrlEmptyStatus" pages="1" condition="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n11_rv95" name="list" xy="48,316" size="657,782" advanced="true">
+      <relation target="n3_kqvl" sidePair="width-width,height-height,left-left,top-top"/>
+    </group>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

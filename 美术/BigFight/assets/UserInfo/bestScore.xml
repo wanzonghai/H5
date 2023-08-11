@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="141,168">
+  <displayList>
+    <image id="n19_rfln" name="n19" src="jbc7f" fileName="Personal_Chengji.png" xy="71,84" pivot="0.5,0.5" anchor="true"/>
+    <text id="n21_rfln" name="mingciTxt" xy="49,99" pivot="0.5,0.5" anchor="true" size="10,42" fontSize="30" color="#65a1e7" align="center" text=""/>
+    <image id="n22_v9k7" name="n22" src="l8xz3c" fileName="common_rank.png" pkg="qwv197ct" xy="76,99" pivot="0.5,0.5" anchor="true" scale="0.8,0.8">
+      <relation target="n21_rfln" sidePair="middle-middle,left-right"/>
+    </image>
+  </displayList>
+</component>

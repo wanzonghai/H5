@@ -1,0 +1,12 @@
+
+1. 按照fairygui官方文档 配置工程 工程默认已经配置好
+2. 把taobaominiapp里的文件直接覆盖到release文件对应位置
+3. 添加开发依赖：@tbmp/mp-cloud-sdk
+
+4. 修改release/taobaominiapp/page/index下的index.js脚本：
+	delete require.cache[require.resolve("layaengine/libs/min/fairygui.js")];
+	require("layaengine/libs/min/fairygui.js"); // 只依赖laya.core,laya.html两个模块
+
+5. 修改release\taobaominiapp\pages\index\js 下的bundle.js脚本，添加
+	var fairygui = window.fairygui;
+	var fgui = window.fgui;

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="czp63sgg">
+  <resources>
+    <component id="tpcm0" name="Main.xml" path="/" exported="true"/>
+    <image id="tpcm2" name="Task_Btn_Get.png" path="/Images/"/>
+    <image id="tpcm3" name="Task_Btn_Go.png" path="/Images/"/>
+    <image id="tpcm4" name="Task_Btn_Got.png" path="/Images/"/>
+    <image id="tpcm8" name="Task_Title.png" path="/Images/"/>
+    <component id="tpcm9" name="getBtn.xml" path="/"/>
+    <component id="hd9ye" name="taskItem.xml" path="/"/>
+    <component id="hd9yf" name="goBtn.xml" path="/"/>
+    <component id="hd9yg" name="gotBtn.xml" path="/"/>
+    <image id="pkfkp" name="Task_Ico_TimeLimt.png" path="/Images/"/>
+    <component id="g0ibs" name="followBtn.xml" path="/"/>
+    <image id="sl47t" name="Task_Btn_Follow.png" path="/Images/"/>
+    <image id="sl47u" name="Task_Btn_Followed.png" path="/Images/"/>
+    <image id="msmcv" name="giftItemBg.png" path="/Images/" scale="9grid" scale9grid="38,44,250,327"/>
+    <image id="msmcw" name="task_icon1.png" path="/Images/"/>
+    <image id="msmcx" name="task_icon2.png" path="/Images/"/>
+    <image id="msmcy" name="bottom_Line.png" path="/Images/"/>
+    <image id="9se0t" name="Browse_Btn_Browse.png" path="/Browse/"/>
+    <image id="9se0r" name="Browse_Btn_Buy.png" path="/Browse/"/>
+    <image id="gmpx13" name="Browse_Btn_Collect.png" path="/Browse/"/>
+    <image id="emqnl" name="Browse_Title.png" path="/Browse/" exported="true"/>
+    <component id="9se0o" name="award.xml" path="/Browse/"/>
+    <component id="cb3yf" name="browseBtn.xml" path="/Browse/"/>
+    <component id="emqnn" name="browseItem.xml" path="/Browse/"/>
+    <component id="9se0q" name="buyBtn.xml" path="/Browse/"/>
+    <component id="9se0s" name="buyItem.xml" path="/Browse/"/>
+    <component id="hfek12" name="collectBtn.xml" path="/Browse/"/>
+    <component id="hfek11" name="collectItem.xml" path="/Browse/"/>
+    <component id="cb3yg" name="TaskBrowse.xml" path="/Browse/" exported="true"/>
+    <image id="9se0p" name="Browse_Banner.png" path="/Browse/"/>
+    <image id="w7oc9" name="img_icon.png" path="/Images/"/>
+    <image id="w7ocb" name="img_title.png" path="/Precondition/"/>
+    <component id="w7oc1" name="TaskPrecondition.xml" path="/Precondition/" exported="true"/>
+    <image id="sl47s" name="GetReward_Title.png" path="/GetReward/"/>
+    <component id="rqvv9" name="GetReward.xml" path="/GetReward/" exported="true"/>
+    <component id="msmcz" name="rewardCom.xml" path="/GetReward/"/>
+    <component id="mxaf3" name="TaskInvite.xml" path="/Invite/" exported="true"/>
+    <image id="mxaf1" name="Invite_Img_Hand.png" path="/Invite/"/>
+    <image id="mxaf2" name="Invite_Title.png" path="/Invite/"/>
+    <component id="mxaf4" name="coinCom.xml" path="/Invite/"/>
+    <image id="czb6p" name="extratitle2.png" path="/ExtraPopup/"/>
+    <component id="dp9714" name="TaskExtraPopup.xml" path="/ExtraPopup/" exported="true"/>
+    <image id="e4ur15" name="Icon.png" path="/Images/" exported="true"/>
+    <image id="qqee16" name="icon_jifen.png" path="/Images/" exported="true"/>
+    <image id="qqee17" name="icon_jinbi.png" path="/Images/" exported="true"/>
+    <image id="fzb018" name="getGiftIcon.png" path="/ExtraPopup/"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\Task"/>
+</packageDescription>

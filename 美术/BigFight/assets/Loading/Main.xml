@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" designImage="ui://9fdv9e5smy64q" designImageOffsetX="-225">
+  <displayList>
+    <graph id="n21_my64" name="maskBg" xy="0,-145" size="750,1624" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <component id="n22_my64" name="loading" src="my64r" fileName="loading.xml" xy="374,667" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

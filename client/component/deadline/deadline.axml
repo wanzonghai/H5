@@ -1,0 +1,22 @@
+<!-- 遮罩层 -->
+<view class="{{close == true ? 'cover_none' : subDeadline == '已过期' ? '' : 'cover_none'}}">
+   <view class="cover"></view>
+   <!-- 到期弹窗 -->
+   <view class="iview_11">
+      <view class="top-frame-dead">
+         <view class="left-msg-dead"></view>
+         <view class="right-close-dead">
+            <image mode="scaleToFill" onTap="close" src="../../images/configlist/close.png"></image>
+         </view>
+      </view>
+      <view class="iview_12">
+         <image class="iimage_7" src="https://oss.ixald.com/bigFight/admin/images/gantanhao.png" mode="aspectFit" />
+         <text class="itext_6">当前使用权限已到期</text>
+      </view>
+      <text class="itext_8">续订后，请重新登录应用！</text>
+      <view class="iview_13">
+         <view class="iview_10"></view>
+         <text class="itext_9" onTap='openQianniuRenew'>立即续订</text>
+      </view>
+   </view>
+</view>

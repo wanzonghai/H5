@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="infoCtr" alias="显示内容控制器" pages="0,haveAward,1,noAward,2,noAward2" selected="1">
+    <remark page="0" value="有奖品"/>
+    <remark page="1" value="没有奖品"/>
+    <remark page="2" value="人数不足无法开奖"/>
+  </controller>
+  <displayList>
+    <component id="n0_sbnb" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="374,667" pivot="0.5,0.5" anchor="true" size="657,568">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label icon="ui://onlm4vwpbt0do2w"/>
+    </component>
+    <image id="n4_sbnb" name="n4" src="iyoco2s" fileName="Images/giftItemBg.png" xy="374,655" pivot="0.5,0.5" anchor="true" size="613,386">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n5_sbnb" name="n5" xy="374,600" pivot="0.5,0.5" anchor="true" size="374,42" group="n9_sbnb" fontSize="30" text="活动结束啦！感谢您的参与!"/>
+    <text id="n6_sbnb" name="n6" xy="374,713" pivot="0.5,0.5" anchor="true" size="535,125" group="n9_sbnb" fontSize="30" color="#f5b604" align="center" vAlign="middle" autoSize="shrink" text="更多惊喜，期待您的光临~">
+      <gearText controller="infoCtr" pages="2" values="人数不足，无法开奖！" default="更多惊喜，期待您的光临~"/>
+    </text>
+    <component id="n3_sbnb" name="goStoreBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="374,945" pivot="0.5,0.5" anchor="true" size="309,93" group="n9_sbnb">
+      <Button title="去店铺转转"/>
+    </component>
+    <group id="n9_sbnb" name="noAward" xy="106,579" size="535,412" advanced="true">
+      <gearDisplay controller="infoCtr" pages="1,2"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n14_sbnb" name="n14" xy="375,509" pivot="0.5,0.5" anchor="true" size="184,29" group="n10_sbnb" fontSize="20" color="#f76e4f" align="center" text="恭喜在本次活动勇获"/>
+    <text id="n18_qvq3" name="n18" xy="237,509" pivot="0.5,0.5" anchor="true" size="82,36" group="n10_sbnb" visible="false" fontSize="26" color="#f5b604" align="center" ubb="true" text="恭喜在">
+      <relation target="n19_qvq3" sidePair="middle-middle,right-left"/>
+    </text>
+    <text id="n19_qvq3" name="n19" xy="336,509" pivot="0.5,0.5" anchor="true" size="213,36" group="n10_sbnb" visible="false" fontSize="26" align="center" ubb="true" text=" iQOO合成大作战 "/>
+    <text id="n20_qvq3" name="n20" xy="552,509" pivot="0.5,0.5" anchor="true" size="160,36" group="n10_sbnb" visible="false" fontSize="26" color="#f5b604" align="center" ubb="true" text="积分榜中勇获">
+      <relation target="n19_qvq3" sidePair="middle-middle,left-right"/>
+    </text>
+    <image id="n11_sbnb" name="n11" src="sbnby" fileName="Images/ActivityEnd_rankbg.png" xy="372,588" pivot="0.5,0.5" anchor="true" size="398,87" group="n10_sbnb" visible="false"/>
+    <text id="n15_sbnb" name="awardRank" xy="372,583" pivot="0.5,0.5" anchor="true" size="174,74" group="n10_sbnb" fontSize="56" color="#ffffff" align="center" vars="true" strokeColor="#f5b604" strokeSize="3" shadowColor="#f5b604" shadowOffset="3,-3" text="第 {count=1} 名">
+      <relation target="n11_sbnb" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n16_sbnb" name="n16" src="sbnbx" fileName="Images/ActivityEnd_awrdbg.png" xy="372,727" pivot="0.5,0.5" anchor="true" group="n10_sbnb"/>
+    <text id="n17_sbnb" name="awardInfo" xy="372,739" pivot="0.5,0.5" anchor="true" size="310,74" group="n10_sbnb" fontSize="26" color="#010101" align="center" vAlign="middle" autoSize="shrink" strokeColor="#f5b604" text="iQOO任一台手机免单&#xA;（限618期间支付订单）">
+      <relation target="n16_sbnb" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n8_sbnb" name="goAwardBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="371,937" pivot="0.5,0.5" anchor="true" size="309,93" group="n10_sbnb">
+      <Button title="前往查看"/>
+    </component>
+    <group id="n10_sbnb" name="haveAward" xy="173,491" size="459,492" advanced="true">
+      <gearDisplay controller="infoCtr" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

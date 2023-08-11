@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n0_iyoc" name="showAwardBtn" src="iyoco2v" fileName="iconBtn.xml" xy="550,225">
+      <relation target="" sidePair="right-right"/>
+      <Button title="奖品预览"/>
+    </component>
+    <component id="n1_iyoc" name="showOverBtn" src="iyoco2v" fileName="iconBtn.xml" xy="550,337">
+      <relation target="" sidePair="right-right"/>
+      <Button title="结束弹窗"/>
+    </component>
+    <component id="n2_iyoc" name="closeBtn" src="s0ol3" fileName="closeBtn.xml" pkg="qwv197ct" xy="656,87"/>
+  </displayList>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="vba71e6k">
+  <resources>
+    <component id="w7oc0" name="Main.xml" path="/" exported="true"/>
+    <component id="w7oc1" name="vip.xml" path="/"/>
+    <component id="w7oc5" name="sureBtn.xml" path="/"/>
+    <image id="w7oc8" name="btn_guanzhu.png" path="/"/>
+    <image id="w7oc9" name="img_icon.png" path="/"/>
+    <image id="w7oca" name="img_tips.png" path="/"/>
+    <image id="w7ocb" name="img_title.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

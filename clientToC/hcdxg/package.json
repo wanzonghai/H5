@@ -1,0 +1,22 @@
+{
+  "name": "bigfight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "bigfight": "index.js"
+  },
+  "scripts": {
+    "dev": "onchange \"**/**/*.ts\" -i -k -- polea compile ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "onchange": "^7.1.0",
+    "polea": "^0.2.5"
+  },
+  "devDependencies": {
+    "tslib": "^2.3.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navigation": "../../component/navigation/navigation",
+        "am-steps": "mini-ali-ui/es/steps/index"
+    }
+}

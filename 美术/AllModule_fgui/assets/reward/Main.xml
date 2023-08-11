@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="tipType" pages="0,,1," selected="0"/>
+  <displayList>
+    <text id="n0_ibl6" name="labelTitle" xy="375,157" pivot="0.5,0.5" anchor="true" size="518,79" fontSize="60" color="#ffffff" align="center" text="您有1份奖品待领取">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+    </text>
+    <loader id="n1_ibl6" name="iconBg" xy="378,577" pivot="0.5,0.5" anchor="true" size="571,641" url="ui://qwv197ctctsq38" fill="scaleFree"/>
+    <image id="n3_ibl6" name="n3" src="ctsq35" fileName="Images/title.png" pkg="qwv197ct" xy="217,256" size="318,81">
+      <relation target="n1_ibl6" sidePair="top-top"/>
+    </image>
+    <text id="n2_ibl6" name="label" xy="334,300" pivot="0.5,0.5" anchor="true" size="154,42" fontSize="30" color="#ffffff" align="center" text="奖品价值：">
+      <relation target="n3_ibl6" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n4_ibl6" name="labelValue" xy="406,300" pivot="0,0.5" anchor="true" size="85,42" fontSize="30" color="#ffffff" align="center" text="410元">
+      <relation target="n3_ibl6" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_ibl6" name="labelValue" xy="375,842" pivot="0.5,0.5" anchor="true" size="184,42" fontSize="30" align="center" text="新品精华面膜">
+      <relation target="n1_ibl6" sidePair="bottom-bottom"/>
+    </text>
+    <loader id="n6_ibl6" name="icon" xy="194,379" size="369,387" url="ui://qwv197cts0ol29" fill="scaleFree"/>
+    <component id="n11_ibl6" name="getBtn" src="ibl62" fileName="getBtn.xml" xy="375,1016" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n8_ibl6" name="label" xy="375,1016" pivot="0.5,0.5" anchor="true" size="164,54" fontSize="40" color="#ffffff" align="center" text="我要领取">
+      <relation target="n11_ibl6" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n9_ibl6" name="labelTip" xy="375,1142" pivot="0.5,0.5" anchor="true" size="471,42" fontSize="30" color="#ffffff" align="center" text="温馨提示：领取前需要订阅店铺哦~">
+      <gearText controller="tipType" pages="0" values="温馨提示：领取前需要订阅店铺哦~" default="温馨提示：领取前需要加入会员哦~"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n10_ibl6" name="closeBtn" src="ibl61" fileName="closeBtn.xml" xy="573,934"/>
+  </displayList>
+</component>

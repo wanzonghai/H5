@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="revivePopup">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n16_s7b1" name="n16" src="s7b11j" fileName="png/gift/Common_BG.png" xy="374,667" pivot="0.5,0.5" anchor="true" size="640,500">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n17_s7b1" name="n17" src="s7b11k" fileName="png/gift/giftItemBg.png" xy="375,657" pivot="0.5,0.5" anchor="true" size="600,300">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n18_s7b1" name="n18" src="ebwf1v" fileName="png/doubleAwardTitle.png" xy="374,421" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="center-center,top-top"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="dx3d17" fileName="components/closeBtn.xml" xy="689,428" pivot="0.5,0.5" anchor="true">
+      <relation target="n16_s7b1" sidePair="right-right,top-top"/>
+    </component>
+    <loader id="n15_dx3d" name="iconLoader" xy="375,629" pivot="0.5,0.5" anchor="true" size="150,150" url="ui://xehum4g4dx3d1e" fill="scale">
+      <relation target="n16_s7b1" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n12_dx3d" name="reviveText" xy="374,749" pivot="0.5,0.5" anchor="true" size="203,36" fontSize="26" color="#f76e4f" bold="true" text="关注店铺可复活!">
+      <relation target="n15_dx3d" sidePair="center-center,top-bottom"/>
+    </text>
+    <component id="n7_o7s4" name="attentionBtn" src="dx3d19" fileName="components/attentionBtn.xml" xy="375,918" pivot="0.5,0.5" anchor="true" size="296,90">
+      <relation target="n16_s7b1" sidePair="center-center,bottom-bottom"/>
+      <Button title="领取奖励"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="96,100" pivot="0.5,0.5" extention="Button" initName="bagBtn">
+  <displayList>
+    <loader id="n0_8gei" name="icon" xy="48,50" pivot="0.5,0.5" anchor="true" size="104,109" url="ui://1numrqqzmzlrw" align="center" vAlign="middle" fill="scaleMatchWidth" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n4_8gei" name="bubbleBG" src="8geih" fileName="png/gameqipao.png" pkg="vzezwp8f" xy="81,2" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="" sidePair="left-right,bottom-top"/>
+    </image>
+    <text id="n5_8gei" name="bagNText" xy="82,2" pivot="0.5,0.5" anchor="true" size="21,40" visible="false" fontSize="29" color="#ffffff" text="0">
+      <relation target="n4_8gei" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

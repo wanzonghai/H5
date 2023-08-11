@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <image id="n0_dp97" name="title" src="czb6p" fileName="ExtraPopup/extratitle2.png" xy="171,198">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n1_dp97" name="closeButton" src="s0ol3" fileName="CloseBtn.xml" pkg="qwv197ct" xy="636,127">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n2_dp97" name="hintText" xy="375,1025" pivot="0.5,0.5" anchor="true" size="220,48" fontSize="35" color="#ffffff" align="center" bold="true" text="点击打开礼包">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n3_dp97" name="icon" xy="375,649" pivot="0.5,0.5" anchor="true" size="386,382" aspect="true" scale="1.5,1.5" url="ui://czp63sggfzb018" align="center" vAlign="middle" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

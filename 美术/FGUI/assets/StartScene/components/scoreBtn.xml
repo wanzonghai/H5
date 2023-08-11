@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="373,92" extention="Button" initName="scoreBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_8gei" name="n0" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,15" size="298,62">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_8gei" name="n1" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,15" size="298,62" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_8gei" name="n2" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,15" size="298,62">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_8gei" name="n3" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,15" size="298,62">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_8gei" name="n6" src="8geii" fileName="png/duihuananniu.png" pkg="vzezwp8f" xy="255,46" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="middle-middle,right-right"/>
+    </image>
+    <text id="n7_8gei" name="n7" xy="258,47" pivot="0.5,0.5" anchor="true" size="56,36" fontSize="26" color="#ffffff" align="center" text="兑换">
+      <relation target="n6_8gei" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_8gei" name="scoreNText" xy="137,46" pivot="0.5,0.5" anchor="true" size="108,42" fontSize="30" color="#f01e22" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="0"/>
+    <text id="n9_mzlr" name="n9" xy="76,45" pivot="0.5,0.5" anchor="true" size="60,39" visible="false" fontSize="28" color="#ffd107" align="center" vAlign="middle" text="积分"/>
+    <loader id="n10_9ffy" name="icon" xy="46,45" pivot="0.5,0.5" anchor="true" size="82,85" url="ui://vzezwp8f8geip"/>
+  </displayList>
+  <Button/>
+</component>

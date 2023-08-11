@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ui9yqupa">
+  <resources>
+    <image id="tpcm0" name="Design.png" path="/"/>
+    <component id="rqvv6" name="Main.xml" path="/" exported="true"/>
+    <component id="rqvv9" name="getReward.xml" path="/"/>
+    <image id="pkc1o" name="GetReward_Light.png" path="/"/>
+    <image id="sl47s" name="GetReward_Title.png" path="/"/>
+    <image id="c84tt" name="GetReward_Title_Pay.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

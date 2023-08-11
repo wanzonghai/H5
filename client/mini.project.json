@@ -1,0 +1,7 @@
+{
+    "component2": true,
+    "axmlStrictCheck": true,
+    "exclude": [
+        "server/**"
+    ]
+}

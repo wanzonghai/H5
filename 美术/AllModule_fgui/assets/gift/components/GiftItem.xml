@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,440">
+  <displayList>
+    <image id="n0_o7s4" name="n0" src="s0ol2h" fileName="Images/giftItemBg.png" xy="8,6" size="280,423"/>
+    <image id="n1_o7s4" name="n1" src="s0ol2k" fileName="Images/giftItemTitlebg.png" xy="147,23" pivot="0.5,0.5" anchor="true"/>
+    <text id="n3_o7s4" name="leftNText" xy="150,24" pivot="0.5,0.5" anchor="true" size="240,29" fontSize="20" align="center" vAlign="middle" vars="true" autoSize="shrink" singleLine="true" text="库存剩余 {count=500} 份"/>
+    <component id="n9_o7s4" name="info" src="s0olc" fileName="components/GiftInfo.xml" xy="148,210" pivot="0.5,0.5" anchor="true"/>
+    <component id="n6_o7s4" name="exchangeBtn" src="s0oli" fileName="components/scoreExchangeBtn.xml" xy="149,399" pivot="0.5,0.5" anchor="true" size="233,50">
+      <Button title="35000000"/>
+    </component>
+    <component id="n8_o7s4" name="exchangeHint1" src="s0ol8" fileName="components/exchangeHint1.xml" xy="148,210" pivot="0.5,0.5" anchor="true" visible="false"/>
+    <component id="n7_o7s4" name="exchangeHint2" src="s0ol9" fileName="components/exchangeHint2.xml" xy="148,210" pivot="0.5,0.5" anchor="true" visible="false"/>
+  </displayList>
+</component>

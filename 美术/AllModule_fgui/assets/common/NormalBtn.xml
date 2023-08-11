@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="309,93" extention="Button" initName="normalBtn2">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_o7s4" name="n0" src="ctsq3c" fileName="Images/okButton.png" xy="0,0" size="309,93">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4_o7s4" name="title" xy="0,0" size="309,93" fontSize="34" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="自定义文字按钮1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

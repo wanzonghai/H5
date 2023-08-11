@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="ctrlFrontStatus" pages="0,前进,1,保持" selected="1"/>
+  <displayList>
+    <component id="n30_ip94" name="frame" src="ctsq37" fileName="baseFrame.xml" xy="24,225" size="701,884" pkg="qwv197ct">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="胜利"/>
+    </component>
+    <image id="n31_ip94" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="38,585" size="673,452" group="n34_ip94"/>
+    <list id="n33_ip94" name="listNewRank" xy="38,588" size="673,447" group="n34_ip94" overflow="scroll" defaultItem="ui://qkteqwfpip943k" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n34_ip94" name="listRank" xy="38,585" size="673,452" advanced="true">
+      <relation target="n30_ip94" sidePair="center-center%,middle-middle%"/>
+    </group>
+    <image id="n35_ip94" name="myPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="39,330" size="671,235" group="n41_ip94"/>
+    <text id="n36_ip94" name="txtFornt" xy="41,334" size="668,54" group="n41_ip94" fontSize="30" color="#6c6c6c" align="center" vAlign="middle" ubb="true" vars="true" autoSize="none" text="保持在第 [b][color=#ff6600][size=40]{num=9}[/size][/color][/b] 名可获得">
+      <gearText controller="ctrlFrontStatus" pages="1" values="保持在第 [b][color=#ff6600][size=40]{num=9}[/size][/color][/b] 名可获得" default="再前进 [b][color=#ff6600][size=40]{num=9}[/size][/color][/b] 名获得"/>
+    </text>
+    <loader id="n37_ip94" name="itemHead" xy="74,406" size="130,130" group="n41_ip94" url="ui://qwv197ctctsq3a" fill="scaleMatchWidth"/>
+    <text id="n38_ip94" name="txtItemName" xy="244,397" size="431,89" group="n41_ip94" fontSize="30" color="#6c6c6c" vAlign="middle" autoSize="none" text="POPMART泡泡玛特 哈利波特魔法世界动物系列盲盒玩具..."/>
+    <text id="n39_ip94" name="txtPrice" xy="244,504" size="180,42" group="n41_ip94" fontSize="30" color="#a0a0a0" align="right" vAlign="middle" vars="true" text="总价:￥{money=59.99}"/>
+    <component id="n43_ip94" name="btnItemInfo" src="ip943l" fileName="smallButton.xml" xy="488,496" size="207,56" group="n41_ip94" aspect="true">
+      <Button title="查看详情" titleFontSize="28"/>
+    </component>
+    <group id="n41_ip94" name="reward" xy="39,330" size="671,235" advanced="true">
+      <relation target="n30_ip94" sidePair="center-center%,middle-middle%"/>
+    </group>
+    <component id="n42_ip94" name="btnOk" src="ctsq3c" fileName="bigButton.xml" xy="218,1054">
+      <relation target="n30_ip94" sidePair="center-center%,bottom-bottom%"/>
+      <Button title="继续挑战"/>
+    </component>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

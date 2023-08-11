@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="ugd5elgt">
+  <resources>
+    <component id="tpcm0" name="Main.xml" path="/" exported="true"/>
+    <image id="tpcm1" name="Design.png" path="/"/>
+    <image id="tpcm2" name="Task_Btn_Get.png" path="/"/>
+    <image id="tpcm3" name="Task_Btn_Go.png" path="/"/>
+    <image id="tpcm4" name="Task_Btn_Got.png" path="/"/>
+    <image id="tpcm8" name="Task_Title.png" path="/"/>
+    <component id="tpcm9" name="getBtn.xml" path="/"/>
+    <component id="hd9ye" name="taskItem.xml" path="/"/>
+    <component id="hd9yf" name="goBtn.xml" path="/"/>
+    <component id="hd9yg" name="gotBtn.xml" path="/"/>
+    <component id="hd9yh" name="task.xml" path="/"/>
+    <image id="pkfkp" name="Task_Ico_TimeLimt.png" path="/"/>
+    <component id="g0ibs" name="followBtn.xml" path="/"/>
+    <image id="sl47t" name="Task_Btn_Follow.png" path="/"/>
+    <image id="sl47u" name="Task_Btn_Followed.png" path="/"/>
+    <component id="o8uwv" name="MiniTask.xml" path="/" exported="true"/>
+    <component id="o8uww" name="MiniTaskInfo.xml" path="/"/>
+    <image id="wv7zx" name="MIniTask_Title.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

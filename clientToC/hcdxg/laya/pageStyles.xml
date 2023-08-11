@@ -1,0 +1,6 @@
+<page>
+   <item name="prefab/testPrefab.prefab" props="" ifExport="分离模式" aName=""/>
+   <item name="dialog/setDialog.scene" props="" ifExport="内嵌模式" aName=""/>
+   <item name="dialog/signDialog.scene" props="" ifExport="内嵌模式" aName=""/>
+   <item name="prefab/game/guideImgLayer.prefab" props="" ifExport="默认" aName=""/>
+</page>

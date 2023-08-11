@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <controller name="count" pages="0,2奖励,1,1奖励" selected="0"/>
+  <controller name="type" pages="0,比赛奖励,1,获得奖励,2,补发奖励" selected="0"/>
+  <displayList>
+    <component id="n26_msmc" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="47,438" pivot="0.5,0.5" size="656,458">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label icon="ui://czp63sggsl47s"/>
+    </component>
+    <image id="n27_msmc" name="framebg" src="msmcv" fileName="Images/giftItemBg.png" xy="375,666" pivot="0.5,0.5" anchor="true" size="615,295">
+      <relation target="n26_msmc" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </image>
+    <component id="n7_rqvv" name="rewardCom1" src="msmcz" fileName="GetReward/rewardCom.xml" xy="118,517">
+      <gearXY controller="count" pages="0,1" values="118,517|251,517"/>
+      <relation target="n26_msmc" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n8_rqvv" name="rewardCom2" src="msmcz" fileName="GetReward/rewardCom.xml" xy="393,517">
+      <gearDisplay controller="count" pages="0"/>
+      <relation target="n26_msmc" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n20_sl47" name="okBtn" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="222,846">
+      <relation target="n26_msmc" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定"/>
+    </component>
+  </displayList>
+  <transition name="popUp">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="247,423">
+  <displayList>
+    <image id="n6_f1yh" name="n6" src="f1yh2r" fileName="Main_GameShow_BG.png" xy="-184,26" size="619,374"/>
+    <loader3D id="n7_f1yh" name="showDB" xy="-276,-22" size="100,100" url="ui://upm5wp5nro5522" animation="ection_redbag" skin="" loop="true" clearOnPublish="true"/>
+    <image id="n5_shd8" name="n5" src="shd82k" fileName="Main_GameShow.png" xy="123,212" pivot="0.5,0.5" anchor="true" size="735,452"/>
+    <image id="n1_rfln" name="n1" src="rfln1w" fileName="zideng.png" xy="321,-22"/>
+    <image id="n2_rfln" name="n2" src="rfln1w" fileName="zideng.png" xy="334,-22"/>
+    <image id="n3_rfln" name="n3" src="rfln1w" fileName="zideng.png" xy="347,-22"/>
+    <image id="n4_rfln" name="n4" src="rfln1w" fileName="zideng.png" xy="360,-22"/>
+  </displayList>
+  <transition name="lightAni" autoPlay="true" autoPlayRepeat="-1" frameRate="30">
+    <item time="0" type="Visible" target="n1_rfln" value="true"/>
+    <item time="0" type="Visible" target="n2_rfln" value="false"/>
+    <item time="0" type="Visible" target="n3_rfln" value="false"/>
+    <item time="0" type="Visible" target="n4_rfln" value="false"/>
+    <item time="12" type="Visible" target="n1_rfln" value="false"/>
+    <item time="12" type="Visible" target="n2_rfln" value="true"/>
+    <item time="24" type="Visible" target="n2_rfln" value="false"/>
+    <item time="24" type="Visible" target="n3_rfln" value="true"/>
+    <item time="36" type="Visible" target="n3_rfln" value="false"/>
+    <item time="36" type="Visible" target="n4_rfln" value="true"/>
+    <item time="48" type="Visible" target="n4_rfln" value="false"/>
+  </transition>
+  <transition name="fadeIn" autoPlay="true">
+    <item time="0" type="Alpha" target="n7_f1yh" value="0"/>
+    <item time="12" type="Alpha" target="n7_f1yh" tween="true" startValue="0" endValue="1" duration="6" ease="Custom" customEase=""/>
+  </transition>
+</component>

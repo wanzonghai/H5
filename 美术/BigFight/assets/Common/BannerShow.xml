@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="700,120" opaque="false">
+  <controller name="type" pages="0,一等奖,1,二等奖,2,其他" selected="0"/>
+  <displayList>
+    <image id="n2_8859" name="banner1" src="88592h" fileName="Common_Banner_No1.png" xy="0,0" size="741,117">
+      <gearDisplay controller="type" pages="0"/>
+      <relation target="n1_8859" sidePair="width-width"/>
+    </image>
+    <image id="n0_8859" name="banner2" src="88592i" fileName="Common_Banner_No2.png" xy="0,0" size="718,117">
+      <gearDisplay controller="type" pages="1,2"/>
+      <relation target="n1_8859" sidePair="width-width"/>
+    </image>
+    <richtext id="n1_8859" name="tipsTxt" xy="102,62" pivot="0,0.5" anchor="true" size="564,48" fontSize="35" color="#ffffff" vAlign="middle" ubb="true" vars="true" text="恭喜[color=#00FF00]{name=XXX}[/color]抢到了价值[color=#FFFF00]{price=9999}[/color]的[color=#FFFF00]{goods=屠龙宝刀}[/color]"/>
+  </displayList>
+</component>

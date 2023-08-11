@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="190,70">
+  <displayList>
+    <image id="n16_hd9y" name="n16" src="sl472w" fileName="Common_Banner.png" pkg="qwv197ct" xy="43,10" size="150,55"/>
+    <image id="n19_hd9y" name="n19" src="bvmi2b" fileName="Common_Ico_Point.png" pkg="qwv197ct" xy="6,-3" size="69,73"/>
+    <text id="n18_hd9y" name="valueTxt" xy="127,35" pivot="0.5,0.5" anchor="true" size="104,54" fontSize="35" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="99999"/>
+  </displayList>
+</component>

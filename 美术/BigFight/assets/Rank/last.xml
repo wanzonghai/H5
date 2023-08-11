@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,926">
+  <controller name="isGet" pages="0,返回,1,领奖" selected="0"/>
+  <displayList>
+    <image id="n28_cowj" name="n28" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,838"/>
+    <image id="n29_cowj" name="n29" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,107" size="615,535"/>
+    <image id="n30_cowj" name="n30" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="21,667" size="615,125"/>
+    <image id="n31_cowj" name="n31" src="cowj1w" fileName="Rank_Title_Last.png" xy="154,0"/>
+    <component id="n33_cowj" name="getBtn" src="cowj1y" fileName="getBtn.xml" xy="202,828">
+      <gearDisplay controller="isGet" pages="1"/>
+    </component>
+    <component id="n39_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <component id="n35_cowj" name="myItem" src="c8s24" fileName="rankItem.xml" xy="20,666"/>
+    <list id="n34_cowj" name="list" xy="21,129" size="613,490" overflow="scroll" lineGap="20" defaultItem="ui://qkteqwfpc8s24" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n38_yzjo" name="notEnough" src="yzjo21" fileName="Rank_Txt_NotEnough.png" xy="195,820" visible="false">
+      <gearDisplay controller="isGet" pages="0"/>
+    </image>
+    <text id="n37_cowj" name="noneTxt" xy="226,354" size="204,66" fontSize="50" color="#cccccc" text="暂无排行">
+      <relation target="n29_cowj" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

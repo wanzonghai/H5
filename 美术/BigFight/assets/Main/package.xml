@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="upm5wp5n">
+  <resources>
+    <image id="tpcm5" name="Main_Btn_Shop.png" path="/"/>
+    <image id="tpcm8" name="Main_Di.png" path="/" scale="9grid" scale9grid="13,12,26,24"/>
+    <image id="tpcma" name="Main_Gang.png" path="/"/>
+    <image id="tpcmi" name="Main_Touxiang.png" path="/"/>
+    <image id="tpcmj" name="Main_Touxiangdi.png" path="/"/>
+    <component id="tpcmk" name="Main.xml" path="/" exported="true"/>
+    <component id="hd9yl" name="rankBtn.xml" path="/"/>
+    <component id="hd9ym" name="shopBtn.xml" path="/"/>
+    <component id="hd9yn" name="taskBtn.xml" path="/"/>
+    <component id="hd9yp" name="challengeBtn.xml" path="/"/>
+    <component id="hd9ys" name="pointCom.xml" path="/"/>
+    <component id="hd9yt" name="coinCom.xml" path="/"/>
+    <component id="hd9yu" name="avatarCom.xml" path="/"/>
+    <component id="hwsf1q" name="tips.xml" path="/"/>
+    <image id="rfln1w" name="zideng.png" path="/"/>
+    <component id="rfln1y" name="dianshi.xml" path="/"/>
+    <component id="jbc721" name="headBtn.xml" path="/"/>
+    <misc id="ro5523" name="ection_tex.json" path="/"/>
+    <image id="ro5524" name="ection_tex.png" path="/"/>
+    <dragonbones id="ro5522" name="ection_ske.json" path="/" width="928" height="650" require="ro5523,ro5524" atlasNames="" anchor="399,233" pma="true"/>
+    <component id="igfa26" name="bagBtn.xml" path="/"/>
+    <component id="igfa27" name="ruleBtn.xml" path="/"/>
+    <image id="bvmi2b" name="Main_Btn_Bag.png" path="/"/>
+    <image id="bvmi2c" name="Main_Btn_Play.png" path="/"/>
+    <image id="bvmi2d" name="Main_Btn_Rank.png" path="/"/>
+    <image id="bvmi2e" name="Main_Btn_Rule.png" path="/"/>
+    <image id="bvmi2f" name="Main_Btn_Task.png" path="/"/>
+    <image id="shd82k" name="Main_GameShow.png" path="/" scale="9grid" scale9grid="71,111,15,226"/>
+    <image id="f1yh2r" name="Main_GameShow_BG.png" path="/"/>
+    <component id="jgw62s" name="soundBtn.xml" path="/"/>
+    <component id="jgw62t" name="closeSetBtn.xml" path="/"/>
+    <image id="p6em2u" name="Main_Btn_Sound_Open.png" path="/"/>
+    <image id="p6em2v" name="Main_Btn_Sound_Close.png" path="/"/>
+    <image id="md3v2w" name="Main_Gift.png" path="/"/>
+    <image id="uur62x" name="Common_Ico_Point.png" path="/"/>
+    <image id="uur62y" name="Common_Ico_Rank.png" path="/"/>
+    <image id="uur62z" name="Main_Dinglong.png" path="/"/>
+    <image id="tk5430" name="Main_BG.jpg" path="/"/>
+    <image id="vp7232" name="Main_Denglongsui.png" path="/"/>
+    <image id="vp7233" name="Main_Denglong_1.png" path="/"/>
+    <component id="vp7234" name="denglongzu.xml" path="/"/>
+    <component id="vp7236" name="denglongzu2.xml" path="/"/>
+    <component id="xo2n39" name="gift.xml" path="/"/>
+    <image id="xo2n3a" name="Main_BG.png" path="/"/>
+    <image id="r8mh3b" name="Design.png" path="/"/>
+    <image id="r8mh3c" name="Main_Btn_dianjichakanjiangchi.png" path="/"/>
+    <image id="r8mh3d" name="Main_Btn_Check.png" path="/"/>
+  </resources>
+  <publish name="Main"/>
+</packageDescription>

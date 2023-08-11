@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="314,80" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_igfa" name="n0" src="r8mh8" fileName="Bag_Btn_Goods_Unselect.png" xy="0,80" pivot="0,1" anchor="true">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_igfa" name="n1" src="r8mh9" fileName="Bag_Btn_Goods_Select.png" xy="0,80" pivot="0,1" anchor="true">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

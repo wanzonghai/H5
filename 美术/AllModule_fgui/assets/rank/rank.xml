@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <controller name="ctrlActveStatus" alias="活动状态" pages="0,进行中,1,已结束" selected="0"/>
+  <displayList>
+    <component id="n52_emqn" name="frame" src="ctsq37" fileName="Frame.xml" xy="24,141" pkg="qwv197ct">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="冲榜赢好礼"/>
+    </component>
+    <component id="n37_n1hp" name="inviteBtn" src="n1hp1e" fileName="inviteBtn.xml" xy="218,1142">
+      <relation target="n52_emqn" sidePair="center-center%,bottom-bottom"/>
+    </component>
+    <component id="n22_hfau" name="topLoader" src="ctsq3a" fileName="banner.xml" xy="39,238">
+      <relation target="n52_emqn" sidePair="center-center%,top-top"/>
+    </component>
+    <component id="n50_cowj" name="myPanel" src="ctsq3b" fileName="SelfItem.xml" xy="39,996">
+      <relation target="n52_emqn" sidePair="bottom-bottom"/>
+    </component>
+    <text id="n31_s82h" name="noneTxt" xy="274,680" size="204,66" group="n57_ctsq" fontSize="50" color="#cccccc" text="暂无排行">
+      <relation target="n17_x8cq" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n17_x8cq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="39,483" size="673,497" group="n57_ctsq">
+      <relation target="n52_emqn" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <list id="n3" name="curList" xy="39,484" size="673,497" group="n57_ctsq" overflow="scroll" scrollBarFlags="2" scrollBar="hidden" clipSoftness="0,20" defaultItem="ui://qkteqwfpc8s24" autoClearItems="true">
+      <relation target="n17_x8cq" sidePair="center-center%,middle-middle%"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n57_ctsq" name="listRank" xy="39,483" size="673,498"/>
+  </displayList>
+</component>

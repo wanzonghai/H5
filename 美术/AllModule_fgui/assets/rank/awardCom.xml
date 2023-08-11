@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="265,130">
+  <controller name="type" pages="0,商品,2,奖品,3,金币" selected="0"/>
+  <displayList>
+    <loader id="n4_cowj" name="rewardLoader" xy="58,66" pivot="0.5,0.5" anchor="true" size="100,100" url="ui://qwv197ctxz9x2k" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <image id="n8_q4n3" name="n8" src="emqn3a" fileName="Common_Panel_Round.png" pkg="qwv197ct" xy="58,66" pivot="0.5,0.5" anchor="true" size="100,100">
+      <gearDisplay controller="type" pages="0"/>
+      <relation target="n4_cowj" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n5_cowj" name="nameTxt" xy="120,50" pivot="0,0.5" anchor="true" size="142,56" fontSize="22" color="#4e4e4e" vAlign="middle" vars="true" autoSize="none" text="{name=}">
+      <gearText controller="type" pages="0,2,3" values="{name=}|{name=}稀有皮肤|{name=金币}"/>
+      <relation target="n4_cowj" sidePair="left-right"/>
+    </text>
+    <text id="n6_cowj" name="valueTxt" xy="120,97" pivot="0,0.5" anchor="true" size="84,29" fontSize="20" color="#ff0000" vars="true" text="价格：{value=}元">
+      <gearColor controller="type" pages="2,3" values="#ff9a18,#000000|#ff9a18,#000000" default="#ff0000,#000000"/>
+      <gearText controller="type" pages="0,2,3" values="价格：{value=}元|速度：+{value=}%|数量：{value=}"/>
+      <relation target="n4_cowj" sidePair="left-right"/>
+      <relation target="n5_cowj" sidePair="top-bottom"/>
+    </text>
+  </displayList>
+</component>

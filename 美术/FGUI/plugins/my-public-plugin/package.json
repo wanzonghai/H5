@@ -1,0 +1,11 @@
+{
+  "name": "my-public-plugin",
+  "displayName": "自定义发布插件",
+  "description": "",
+  "version": "1.0",
+  "author": {
+    "name": "admin"
+  },
+  "icon": "",
+  "main": "main.js"
+}

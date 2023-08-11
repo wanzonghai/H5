@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="701,1052" extention="Label">
+  <displayList>
+    <image id="n58_ctsq" name="n58" src="ctsq34" fileName="Images/background2.png" xy="0,83" size="701,969" group="n53_ctsq" pkg="qwv197ct">
+      <relation target="" sidePair="width-width,bottomext-bottom"/>
+      <relation target="n54_ctsq" sidePair="top-bottom"/>
+    </image>
+    <image id="n54_ctsq" name="titleBackgroud" src="ctsq35" fileName="Images/title.png" xy="0,0" size="701,83" group="n53_ctsq" pkg="qwv197ct">
+      <relation target="" sidePair="width-width,top-top"/>
+    </image>
+    <component id="n52_emqn" name="closeButton" src="v77a31" fileName="closeBtn.xml" xy="614,3" group="n53_ctsq">
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <graph id="n57_ctsq" name="contentArea" xy="0,83" size="701,969" group="n53_ctsq">
+      <relation target="n58_ctsq" sidePair=""/>
+    </graph>
+    <text id="n59_ctsq" name="title" xy="1,1" size="701,82" group="n53_ctsq" fontSize="48" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" autoClearText="true" text="窗口标题">
+      <relation target="n54_ctsq" sidePair="width-width,height-height"/>
+    </text>
+    <group id="n53_ctsq" name="frame" xy="0,0" size="702,1052"/>
+  </displayList>
+</component>

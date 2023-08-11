@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="313,97" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <image id="n45_ctsq" name="n45" src="ctsq2w" fileName="Images/bigButton.png" pkg="qwv197ct" xy="0,0" size="313,97">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n46_ctsq" name="title" xy="2,0" size="313,97" fontSize="32" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="领取奖励">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".8"/>
+</component>

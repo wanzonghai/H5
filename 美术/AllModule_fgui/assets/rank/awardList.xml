@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n28_ctsq" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="24,241" size="701,852">
+      <Label title="奖励详情" icon="ui://qkteqwfpdhwd3r"/>
+    </component>
+    <image id="n29_ctsq" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="38,324" size="673,752"/>
+    <list id="n24_cowj" name="listAwards" xy="43,323" size="663,751" overflow="scroll" defaultItem="ui://qkteqwfpcowj1n" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

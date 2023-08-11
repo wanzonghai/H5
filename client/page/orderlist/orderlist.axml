@@ -1,0 +1,128 @@
+<view>
+   <!-- 遮罩层 -->
+   <view class="{{cover}}"></view>
+   <!-- 顶部导航 -->
+   <navigation slot="navigation"></navigation>
+   <!-- 中部内容 -->
+   <view class="main-frame">
+      <!-- 查询 -->
+      <view class="search-frame">
+         <view class="search-frame-left">
+            <view class="order-msg">
+            小程序订单号
+         </view>
+            <view class="order-input">
+               <input class="order-input-1" data-type="checkOrderId" placeholder="请输入" onChange="searchAction" placeholder="" trim />
+            </view>
+            <view class="search-btm" data-type="ok" onTap="searchAction">
+            查询
+            </view>
+            <view class="state-msg">
+            状态:
+            </view>
+            <view class="state-select">
+               <select onChange="checkShip">
+                  <option value="2">全部</option>
+                  <option value="0">未发货</option>
+                  <option value="1">已发货</option>
+               </select>
+            </view>
+         </view>
+         <view class="export" data-type="frame" onTap="download">
+            导出未发货奖品
+         </view>
+      </view>
+      <!-- 获奖数据 -->
+      <view class="main-list-frame">
+         <view class="tables">
+            <table dataSource="{{searchResult.length > 0 ? searchResult :  awardList}}" loading="{{loading}}" hasBorder="{{false}}">
+               <table-column title="小程序订单号" dataIndex="orderId" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="font-weight: bold;">{{x.value}}</view>
+               </table-column>
+               <table-column title="淘宝名" dataIndex="tbName" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+               <table-column title="姓名" dataIndex="consignee" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+               <table-column title="手机号" dataIndex="phone" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+               <table-column title="发货地址" width="{{200}}" dataIndex="address" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="font-size:10px">{{x.value}}</view>
+               </table-column>
+               <table-column title="状态" dataIndex="isShip" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x">
+                     <block a:if="{{x.value == 0}}">
+                        <text style="color:red;font-weight: bold;">未发货</text>
+                     </block>
+                     <block a:if="{{x.value == 1}}">
+                        <text style="color:green;font-weight: bold">已发货</text>
+                     </block>
+                  </view>
+               </table-column>
+               <table-column title="获奖时间" dataIndex="rewardTime" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" style="font-size:10px">
+                     {{x.value}}
+                  </view>
+               </table-column>
+               <table-column title="操作" dataIndex="isShip" align="{{'center'}}" alignHeader="{{'center'}}">
+                  <view slot-scope="x" class="btn_frame">
+                     <block a:if="{{x.value == 0}}">
+                        <view class="ship_btn" data-isShip="1" data-orderInfo="{{x.record}}" onTap="submitShip">发货</view>
+                     </block>
+                     <block a:if="{{x.value == 1}}">
+                        <view class="ship_btn_red" data-orderInfo="{{x.record}}" onTap="shipAction">已发货</view>
+                     </block>
+                     <view class="look_award_btn" data-activeInfo="{{x.record}}" onTap="getRewardInfo">查看奖品</view>
+                  </view>
+               </table-column>
+            </table>
+         </view>
+         <view class="page-frmae">
+            <pagination total="{{total}}" pageSize="{{limit}}" onChange="onPageChange" />
+         </view>
+      </view>
+   </view>
+   <!-- 奖品弹窗 -->
+   <view class="{{reward_frame}}">
+      <table dataSource="{{rewardInfo}}" loading="{{loading}}" hasBorder="{{false}}">
+         <table-column title="奖品图片" dataIndex="pic_url" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x">
+               <image style="width:60px;height:60px;" mode="scaleToFill" src="{{x.value}}"></image>
+            </view>
+         </table-column>
+         <table-column title="奖品名称" dataIndex="title" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+         <table-column title="价值" dataIndex="price" align="{{'center'}}" alignHeader="{{'center'}}"></table-column>
+         <table-column title="数量" dataIndex="sendNum" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x">1</view>
+         </table-column>
+         <table-column title="获奖日期" dataIndex="rewardTime" align="{{'center'}}" alignHeader="{{'center'}}">
+            <view slot-scope="x" style="font-size:10px">{{x.value}}</view>
+         </table-column>
+      </table>
+      <view class="reward-close" onTap="close">
+        确定
+      </view>
+   </view>
+   <!-- 数据导出frame -->
+   <view class="{{download_frame}}">
+      <view class="download_frame_1">
+         导出未发货奖品
+      </view>
+      <view class="download_frame_2">
+         为了避免重复导出，导出后的商品将自动标记为已发货，是否继续?
+      </view>
+      <view class="download_frame_3">
+         <view class="btn1" data-type="download" onTap="download">确定</view>
+         <view class="btn2" onTap="close">取消</view>
+      </view>
+   </view>
+   <!-- 发货弹窗 -->
+   <view class="{{address_frame}}">
+      <view class="address_frame_1">
+         提示
+      </view>
+      <view class="address_frame_2">
+         确定调整为未发货状态吗？
+      </view>
+      <view class="address_frame_3">
+         <view class="btn1" data-isShip="0" onTap="submitShip">确定</view>
+         <view class="btn2" onTap="close">取消</view>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,11 @@
+view {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+
+text {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+
+button {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}

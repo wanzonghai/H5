@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <image id="n22_my64" name="img" src="u2823h" fileName="Images/loading.png" xy="375,608" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+    </image>
+  </displayList>
+  <transition name="wait" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Rotation" target="n22_my64" tween="true" startValue="0" endValue="360" duration="48" ease="Linear" repeat="-1"/>
+  </transition>
+</component>

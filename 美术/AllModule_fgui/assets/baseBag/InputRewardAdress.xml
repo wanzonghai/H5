@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <component id="n3_kqvl" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="24,197" size="701,898" controller="ctrlTitleStatus,1">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="请添加收货人信息"/>
+    </component>
+    <image id="n4_kqvl" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="40,307" size="670,720">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n5_kqvl" name="n5" xy="110,368" size="106,46" fontSize="34" color="#666666" text="收货人">
+      <relation target="n4_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <component id="n7_kqvl" name="btnOk" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="218,1041" size="313,97">
+      <relation target="n4_kqvl" sidePair="center-center%,bottom-bottom"/>
+      <Button title="申请发货"/>
+    </component>
+    <text id="n8_kqvl" name="n8" xy="108,490" size="140,46" fontSize="34" color="#666666" text="手机号码">
+      <relation target="n4_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <text id="n10_kqvl" name="n10" xy="114,598" size="140,46" fontSize="34" color="#666666" text="详细地址">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <text id="n12_dhwd" name="n12" xy="213,225" size="324,54" fontSize="40" color="#48b592" strokeColor="#ffffff" strokeSize="3" shadowColor="#ffffff" shadowOffset="3,3" text="请确认收货人信息">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n13_zeet" name="pannelName" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="276,352" size="378,80" color="#999999">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n6_kqvl" name="inputName" xy="280,355" size="372,72" fontSize="30" vAlign="middle" autoSize="none" text="收货人">
+      <relation target="n4_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <image id="n14_zeet" name="pannelPhone" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="274,474" size="378,80" color="#999999">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n9_kqvl" name="inputPhone" xy="278,478" size="372,72" fontSize="30" vAlign="middle" autoSize="none" text="123456789">
+      <relation target="n4_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <image id="n15_zeet" name="pannelAdress" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="114,678" size="526,300" color="#999999">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n11_kqvl" name="inputAdress" xy="121,691" size="511,272" fontSize="30" autoSize="none" text="收货地址">
+      <relation target="n4_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="xehum4g4">
+  <resources>
+    <component id="n1gt0" name="Main.xml" path="/" exported="true"/>
+    <component id="tnrq4" name="UI.xml" path="/components/"/>
+    <image id="tnrq5" name="popup_bg.png" path="/png/" scale="9grid" scale9grid="43,41,28,25"/>
+    <image id="tnrq7" name="popup_countdown_002.png" path="/png/"/>
+    <image id="tnrq8" name="popup_countdown_001.png" path="/png/"/>
+    <component id="tnrq9" name="CountDown.xml" path="/components/"/>
+    <image id="tnrqc" name="backBtn.png" path="/png/"/>
+    <component id="tnrqd" name="backButton.xml" path="/components/"/>
+    <component id="ieaze" name="startPannel.xml" path="/components/"/>
+    <component id="ieazf" name="GameOver.xml" path="/components/"/>
+    <font id="srl0j" name="scoreFont.fnt" path="/components/" exported="true"/>
+    <image id="srl08" name="number_0.png" path="/png/"/>
+    <image id="srl0k" name="number_9.png" path="/png/"/>
+    <image id="srl0l" name="number_1.png" path="/png/"/>
+    <image id="srl0m" name="number_2.png" path="/png/"/>
+    <image id="srl0n" name="number_3.png" path="/png/"/>
+    <image id="srl0o" name="number_4.png" path="/png/"/>
+    <image id="srl0p" name="number_5.png" path="/png/"/>
+    <image id="srl0q" name="number_6.png" path="/png/"/>
+    <image id="srl0r" name="number_7.png" path="/png/"/>
+    <image id="srl0s" name="number_8.png" path="/png/"/>
+    <image id="maift" name="jifenIngame.png" path="/png/"/>
+    <image id="o7s4u" name="btnFram2.png" path="/png/"/>
+    <image id="o7s4v" name="btnFram1.png" path="/png/"/>
+    <image id="o7s4x" name="gongxibenjuhuode.png" path="/png/"/>
+    <image id="o7s4y" name="guangxiao.png" path="/png/"/>
+    <component id="o7s410" name="reviveBtn.xml" path="/components/"/>
+    <component id="o7s411" name="restartBtn.xml" path="/components/"/>
+    <component id="o7s412" name="goHomeBtn.xml" path="/components/"/>
+    <component id="dx3d14" name="RevivePopup.xml" path="/components/"/>
+    <image id="dx3d15" name="giftConfirm_frame.png" path="/png/"/>
+    <image id="dx3d16" name="giftConfirm_titlebg.png" path="/png/"/>
+    <component id="dx3d17" name="closeBtn.xml" path="/components/"/>
+    <image id="dx3d18" name="Common_Btn Close.png" path="/png/"/>
+    <component id="dx3d19" name="attentionBtn.xml" path="/components/"/>
+    <image id="dx3d1a" name="giftBtnbg1.png" path="/png/" scale="9grid" scale9grid="64,0,167,93"/>
+    <component id="dx3d1d" name="browseBtn.xml" path="/components/"/>
+    <image id="dx3d1e" name="gaunzhu.png" path="/png/"/>
+    <component id="ktub1g" name="ConfirmPopup.xml" path="/components/"/>
+    <image id="ktub1h" name="btnbg_2.png" path="/png/"/>
+    <component id="ktub1i" name="btn2.xml" path="/components/"/>
+    <image id="s7b11j" name="Common_BG.png" path="/png/gift/" scale="9grid" scale9grid="150,116,16,13"/>
+    <image id="s7b11k" name="giftItemBg.png" path="/png/gift/" scale="9grid" scale9grid="80,102,160,204"/>
+    <image id="s7b11l" name="reviveTitle.png" path="/png/"/>
+    <image id="s7b11m" name="tishiTitle.png" path="/png/"/>
+    <component id="ebwf1n" name="GetScore.xml" path="/components/" exported="true"/>
+    <image id="ebwf1o" name="gameScore+.png" path="/png/"/>
+    <image id="ebwf1p" name="doubleBtnBg.png" path="/png/" scale="9grid" scale9grid="84,0,168,122"/>
+    <image id="ebwf1q" name="gotIcon.png" path="/png/"/>
+    <component id="ebwf1r" name="doubleAwardBtn.xml" path="/components/"/>
+    <image id="ebwf1t" name="goHomeText.png" path="/png/"/>
+    <component id="ebwf1u" name="goHomeBtn2.xml" path="/components/"/>
+    <image id="ebwf1v" name="doubleAwardTitle.png" path="/png/"/>
+    <component id="ebwf1w" name="DoubleAwardPopup.xml" path="/components/"/>
+    <image id="e26d22" name="duihuananniu.png" path="/png/" scale="9grid" scale9grid="29,0,58,50"/>
+    <image id="wyiu23" name="couponIcon.png" path="/png/"/>
+    <component id="wyiu25" name="GameAward.xml" path="/components/"/>
+    <image id="b9dp26" name="combonumber_4.png" path="/png/"/>
+    <image id="b9dp27" name="combonumber_5.png" path="/png/"/>
+    <image id="b9dp28" name="combonumber_6.png" path="/png/"/>
+    <image id="b9dp29" name="combonumber_7.png" path="/png/"/>
+    <image id="b9dp2a" name="combonumber_8.png" path="/png/"/>
+    <image id="b9dp2b" name="combonumber_9.png" path="/png/"/>
+    <image id="b9dp2c" name="comboImage.png" path="/png/"/>
+    <image id="b9dp2d" name="combonumber_0.png" path="/png/"/>
+    <image id="b9dp2e" name="combonumber_1.png" path="/png/"/>
+    <image id="b9dp2f" name="combonumber_2.png" path="/png/"/>
+    <image id="b9dp2g" name="combonumber_3.png" path="/png/"/>
+    <font id="b9dp2h" name="comboFont.fnt" path="/components/" exported="true"/>
+    <component id="b9dp2i" name="ComboEffect.xml" path="/components/" exported="true"/>
+    <component id="b9dp2j" name="MergeExternAward.xml" path="/components/"/>
+    <image id="b9dp2k" name="externalText.png" path="/png/"/>
+    <image id="b9dp2l" name="externalTitleIcon.png" path="/png/"/>
+    <component id="wpln2m" name="SurpassHint.xml" path="/components/"/>
+    <image id="s1e22n" name="fudaiIcon.png" path="/png/"/>
+    <image id="mzlr2o" name="getAwards.png" path="/png/"/>
+    <image id="gqsf2p" name="surpassFrame.png" path="/png/"/>
+    <component id="w05t2z" name="GameTaskPopup.xml" path="/components/"/>
+    <image id="w05t32" name="GameTask_Icon4.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t33" name="GameTask_Title1.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t34" name="GameTask_Title2.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t35" name="GameTask_Title3.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t36" name="GameTask_Title4.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t37" name="GameTask_frame.png" path="/png/gameTask/"/>
+    <image id="w05t38" name="GameTask_Icon1.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t39" name="GameTask_Icon2.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t3a" name="GameTask_Icon3.png" path="/png/gameTask/" exported="true"/>
+    <image id="w05t3b" name="GameGadget.png" path="/png/"/>
+    <component id="w05t3c" name="GameGadgetBtn.xml" path="/components/"/>
+    <component id="e26d1x" name="ScoreBtn.xml" path="/components/"/>
+    <component id="rirr3d" name="shareBtn2.xml" path="/components/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

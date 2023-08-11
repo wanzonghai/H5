@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="217,56" extention="Button">
+  <controller name="button" pages="0,up,1,down,8,disabled,9,selectedDisabled" selected="0"/>
+  <displayList>
+    <image id="n8_112yo" name="n8" src="s0ol1y" fileName="Images/jifen_gray.png" xy="32,28" pivot="0.5,0.5" anchor="true" aspect="true" visible="false">
+      <gearDisplay controller="button" pages="8,9"/>
+    </image>
+    <image id="n0_praz" name="n0" src="ctsq2i" fileName="Images/smallButton.png" pkg="qwv197ct" xy="0,0" size="217,56">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n1_praz" name="n1" src="ctsq2i" fileName="Images/smallButton.png" pkg="qwv197ct" xy="0,0" size="217,56" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n2_praz" name="n2" src="ctsq2k" fileName="Images/smallButtonGray.png" pkg="qwv197ct" xy="0,0" size="217,56">
+      <gearDisplay controller="button" pages="8"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n3_praz" name="n3" src="ctsq2k" fileName="Images/smallButtonGray.png" pkg="qwv197ct" xy="0,0" size="217,56">
+      <gearDisplay controller="button" pages="9"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <text id="n5_o7s4" name="n5" xy="184,28" pivot="0.5,0.5" anchor="true" size="56,36" fontSize="26" color="#ffffff" vAlign="bottom" autoSize="none" singleLine="true" text="兑换">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n6_o7s4" name="title" xy="100,28" pivot="0.5,0.5" anchor="true" size="94,36" fontSize="26" color="#ffffff" align="center" vAlign="bottom" singleLine="true" text="888888">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n9_pywd" name="jifenText" src="s0ol1x" fileName="Images/jifen.png" xy="23,28" pivot="0.5,0.5" anchor="true" scale="0.5,0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

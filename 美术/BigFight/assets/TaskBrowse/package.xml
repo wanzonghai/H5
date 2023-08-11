@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="cratx1hb">
+  <resources>
+    <component id="cb3y0" name="Main.xml" path="/" exported="true"/>
+    <component id="cb3yf" name="browseBtn.xml" path="/"/>
+    <component id="cb3yg" name="taskBrowse.xml" path="/"/>
+    <image id="emqnl" name="Browse_Title.png" path="/" exported="true"/>
+    <component id="emqnn" name="browseItem.xml" path="/"/>
+    <image id="9se0t" name="Browse_Btn_Browse.png" path="/"/>
+    <component id="9se0o" name="award.xml" path="/"/>
+    <image id="9se0p" name="Browse_Banner.png" path="/"/>
+    <component id="9se0q" name="buyBtn.xml" path="/"/>
+    <image id="9se0r" name="Browse_Btn_Buy.png" path="/"/>
+    <component id="9se0s" name="buyItem.xml" path="/"/>
+    <component id="hfek11" name="collectItem.xml" path="/"/>
+    <component id="hfek12" name="collectBtn.xml" path="/"/>
+    <image id="gmpx13" name="Browse_Btn_Collect.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

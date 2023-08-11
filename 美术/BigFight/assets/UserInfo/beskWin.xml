@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="149,214">
+  <displayList>
+    <image id="n25_rfln" name="bg" src="jbc7k" fileName="Personal_Liansheng.png" xy="74,106" pivot="0.5,0.5" anchor="true"/>
+    <text id="n27_rfln" name="txt" xy="74,123" pivot="0.5,0.5" anchor="true" size="10,42" fontSize="30" color="#e05b53" text=""/>
+  </displayList>
+</component>

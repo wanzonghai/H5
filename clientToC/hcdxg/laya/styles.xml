@@ -1,0 +1,10 @@
+<res>
+   <item name="hallRes/common/img_singleColor.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=1,1,1,1" picType="0" scale="0"/>
+   <item name="hallRes/common/btn_close.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="gameRes/btn_exit.png" type="Button" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="gameRes/moveBtn.png" type="Image" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="roleAni/ection_1.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="roleAni/ection_2.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="roleAni/ection_3.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="roleAni/ection_4.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+</res>

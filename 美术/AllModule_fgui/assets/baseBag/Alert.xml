@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <component id="n3_kqvl" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="24,427" size="701,429" controller="ctrlCloseStatus,1">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+      <Label title="提示" icon="ui://ennunbg0dhwd3m"/>
+    </component>
+    <image id="n4_kqvl" name="listPanel" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="40,526" size="670,258">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n5_kqvl" name="txtMessage" xy="116,584" pivot="0.5,0.5" size="518,144" fontSize="34" color="#666666" vAlign="middle" autoSize="none" text="请确认收货人信息正确无误，一旦&#xA;确定，不可修改！">
+      <relation target="n3_kqvl" sidePair="center-center%,middle-middle%"/>
+    </text>
+    <component id="n6_kqvl" name="btnOk" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="220,806">
+      <relation target="n3_kqvl" sidePair="bottom-bottom"/>
+      <Button title="确认"/>
+    </component>
+    <component id="n7_kqvl" name="btnNo" src="s0ol3" fileName="CloseBtn.xml" pkg="qwv197ct" xy="672,394">
+      <relation target="n3_kqvl" sidePair="bottom-bottom"/>
+      <Button title="再看看"/>
+    </component>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

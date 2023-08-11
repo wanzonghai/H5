@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,1077">
+  <displayList>
+    <image id="n0_hd9y" name="n0" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,1035"/>
+    <loader id="n7_jd13" name="topLoader" xy="23,136" size="611,212" url="ui://uw7no5rchd9y4" fill="scale"/>
+    <graph id="n9_tkeg" name="role" xy="192,380" pivot="0.5,1" size="1,1" type="rect" fillColor="#ff999999"/>
+    <image id="n2_hd9y" name="n2" src="hd9yg" fileName="Shop_Title.png" xy="-37,0"/>
+    <image id="n10_tkeg" name="n10" src="tkegz" fileName="Shop_Blue.png" xy="24,348" size="609,64"/>
+    <component id="n6_hd9y" name="coinCom" src="hd9yo" fileName="coinCom.xml" xy="402,262"/>
+    <image id="n3_hd9y" name="n3" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,375" size="615,676"/>
+    <list id="n5_hd9y" name="list" xy="21,390" size="613,643" overflow="scroll" lineGap="5" defaultItem="ui://uw7no5rchd9ym" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n11_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+  </displayList>
+</component>

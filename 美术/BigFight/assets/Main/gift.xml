@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="523,367">
+  <displayList>
+    <image id="n88_q4n3" name="n88" src="rqvvo" fileName="Common_Mask.png" pkg="qwv197ct" xy="131,67" size="260,243"/>
+    <loader id="n89_q4n3" name="goods" xy="141,67" size="240,240" fill="scaleFree"/>
+    <image id="n90_q4n3" name="n90" src="md3v2w" fileName="Main_Gift.png" xy="0,0"/>
+    <text id="n91_q4n3" name="priceTxt" xy="266,259" pivot="0.5,0.5" anchor="true" size="88,48" fontSize="35" color="#ff0000" align="center" vAlign="middle" autoSize="shrink" bold="true" text="999"/>
+    <image id="n92_r8mh" name="tips" src="r8mh3d" fileName="Main_Btn_Check.png" xy="499,159" pivot="0.5,0.5" anchor="true" visible="false"/>
+  </displayList>
+  <transition name="headbeat" autoPlay="true" autoPlayRepeat="-1" autoPlayDelay="2">
+    <item time="0" type="Scale" target="n92_r8mh" tween="true" startValue="1,1" endValue="0.95,0.95" duration="12"/>
+    <item time="0" type="Visible" target="n92_r8mh" value="true"/>
+    <item time="12" type="Scale" target="n92_r8mh" tween="true" startValue="0.95,0.95" endValue="1,1" duration="12"/>
+  </transition>
+</component>

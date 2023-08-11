@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" overflow="hidden" initName="GameOver" bgColor="#ff0000">
+  <controller name="statectrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <graph id="n0_ieaz" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.6" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n11_ebwf" name="n11" src="r7g3o1o" fileName="png/gift/Common_BG.png" pkg="vzezwp8f" xy="374,661" pivot="0.5,0.5" anchor="true" size="640,484">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n12_ebwf" name="n12" src="s7b11k" fileName="png/gift/giftItemBg.png" xy="375,651" pivot="0.5,0.5" anchor="true" size="600,296">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n3_o7s4" name="n3" src="o7s4y" fileName="png/guangxiao.png" xy="375,328" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n4_o7s4" name="n4" src="o7s4x" fileName="png/gongxibenjuhuode.png" xy="375,377" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n17_pywd" name="scorebg" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="375,648" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <loader id="n18_pywd" name="overScoreIcon" xy="273,648" pivot="0.5,0.5" anchor="true" size="82,85" url="ui://xehum4g4maift">
+      <relation target="n9_o7s4" sidePair="middle-middle,right-left"/>
+    </loader>
+    <text id="n9_o7s4" name="curScore" xy="330,649" pivot="0,0.5" anchor="true" size="160,75" font="ui://xehum4g4srl0j" fontSize="14" color="#ffffff" vAlign="middle" singleLine="true" text="235">
+      <relation target="n17_pywd" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n22_s1e2" name="luckBagBtn" src="o7s411" fileName="components/restartBtn.xml" xy="374,898" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="购0.01元福袋" titleColor="#000000"/>
+    </component>
+    <component id="n6_o7s4" name="restartBtn" src="o7s411" fileName="components/restartBtn.xml" xy="374,1015" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="再来一次"/>
+    </component>
+    <component id="n5_o7s4" name="moreAwardBtn" src="ebwf1r" fileName="components/doubleAwardBtn.xml" xy="375,899" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="statectrl" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="双倍领取" titleFontSize="40"/>
+    </component>
+    <component id="n7_o7s4" name="goHomeBtn" src="o7s412" fileName="components/goHomeBtn.xml" xy="375,899" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="statectrl" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button titleColor="#ffffff"/>
+    </component>
+    <component id="n13_ebwf" name="goHomeBtn2" src="ebwf1u" fileName="components/goHomeBtn2.xml" xy="374,1016" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="statectrl" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n14_ebwf" name="n14" xy="374,762" pivot="0.5,0.5" anchor="true" size="175,36" fontSize="26" color="#ff3333" text="攒积分 兑大礼!">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n16_e26d" name="scoreBtn" src="e26d1x" fileName="components/ScoreBtn.xml" xy="574,47" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <image id="n21_s1e2" name="getAwardIcon" src="ebwf1q" fileName="png/gotIcon.png" xy="633,557" pivot="0.5,0.5" anchor="true">
+      <gearDisplay controller="statectrl" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+</component>

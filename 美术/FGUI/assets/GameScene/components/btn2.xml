@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,80" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_ktub" name="n0" src="ktub1h" fileName="png/btnbg_2.png" xy="0,0" size="296,80">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ktub" name="n1" src="ktub1h" fileName="png/btnbg_2.png" xy="0,0" size="296,80" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_ktub" name="n2" src="ktub1h" fileName="png/btnbg_2.png" xy="0,0" size="296,80">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_ktub" name="n3" src="ktub1h" fileName="png/btnbg_2.png" xy="0,0" size="296,80">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n4_ktub" name="title" xy="0,0" size="296,80" fontSize="34" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" singleLine="true" text="是">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

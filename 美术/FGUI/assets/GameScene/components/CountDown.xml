@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="280,280" pivot="0.5,0.5" anchor="true" initName="CountDown">
+  <displayList>
+    <image id="n0_tnrq" name="n0" src="tnrq7" fileName="png/popup_countdown_002.png" xy="0,0" size="280,280" alpha="0.8" color="#717171">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_tnrq" name="bar" src="tnrq8" fileName="png/popup_countdown_001.png" xy="140,140" pivot="0.5,0.5" anchor="true" size="280,280" fillMethod="radial360" fillClockwise="false"/>
+    <text id="n2_tnrq" name="nLabel" xy="139,140" pivot="0.5,0.5" anchor="true" size="195,182" fontSize="140" color="#fd5753" align="center" vAlign="middle" autoSize="none" text="5"/>
+  </displayList>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n0_tlat" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <loader id="n1_wpln" name="noticeLoader" xy="375,593" pivot="0.5,0.5" anchor="true" size="658,900" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <graph id="n4_wpln" name="luckyImageBtn" xy="375,890" pivot="0.5,0.5" anchor="true" size="216,100" visible="false" type="rect">
+      <relation target="n1_wpln" sidePair="center-center,bottom-top%"/>
+    </graph>
+    <component id="n2_wpln" name="closeBtn" src="prazx" fileName="components/closeBtn.xml" xy="374,1133" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n3_wpln" name="hintText" xy="374,1225" pivot="0.5,0.5" anchor="true" size="171,42" visible="false" fontSize="30" color="#ffffff" vars="true" singleLine="true" text="{count=5}秒自动关闭">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

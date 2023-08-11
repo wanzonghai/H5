@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334">
+  <displayList>
+    <component id="n1_fn9c" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="75,267"/>
+    <component id="n2_fn9c" name="normalBtn2" src="s0ole" fileName="NormalBtn2.xml" pkg="qwv197ct" xy="220,620">
+      <Button title="显示弹窗"/>
+    </component>
+  </displayList>
+</component>

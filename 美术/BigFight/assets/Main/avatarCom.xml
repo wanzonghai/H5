@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,180">
+  <displayList>
+    <text id="n13_hd9y" name="nameTxt" xy="5,156" pivot="0,0.5" anchor="true" size="200,42" fontSize="30" color="#ffffff" vAlign="middle" autoSize="none" text="玩家8937"/>
+    <image id="n15_hd9y" name="frame" src="tpcmj" fileName="Main_Touxiangdi.png" xy="5,11"/>
+    <image id="n14_hd9y" name="avatar" src="tpcmi" fileName="Main_Touxiang.png" xy="10,16"/>
+    <loader id="n16_nbtd" name="avatarLoader" xy="10,16" size="100,100" fill="scaleMatchHeight"/>
+    <image id="n17_rfln" name="vip" src="rflnu" fileName="Commom_Ico_VIP.png" pkg="qwv197ct" xy="-4,76" scale="0.7,0.7"/>
+    <component id="n19_jbc7" name="headBtn" src="jbc721" fileName="headBtn.xml" xy="10,16" alpha="0.001"/>
+  </displayList>
+</component>

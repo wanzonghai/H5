@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,1080">
+  <displayList>
+    <image id="n0_hd9y" name="n0" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,230" size="656,603"/>
+    <image id="n2_hd9y" name="n2" src="wv7zx" fileName="MIniTask_Title.png" xy="109,192"/>
+    <image id="n5_f1yh" name="n5" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,303" size="615,486"/>
+    <list id="n4_hd9y" name="list" xy="21,304" size="613,486" overflow="scroll" lineGap="20" defaultItem="ui://ugd5elgthd9ye" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n7_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="605,193"/>
+  </displayList>
+</component>

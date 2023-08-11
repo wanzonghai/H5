@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,550">
+  <displayList>
+    <image id="n1_fo1o" name="bg" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,458">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n7_kx34" name="title" src="w7ocb" fileName="img_title.png" xy="112,0"/>
+    <image id="n11_j0sx" name="n11" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,134" size="615,240"/>
+    <component id="n5_kx34" name="tryBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="327,497" pivot="0.5,0.5" anchor="true">
+      <Button title="关注店铺"/>
+    </component>
+    <component id="n13_emqn" name="cancelBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <image id="n14_w7oc" name="n14" src="w7oca" fileName="img_tips.png" xy="70,157" visible="false"/>
+    <image id="n15_w7oc" name="n15" src="w7oc9" fileName="img_icon.png" xy="235,136" size="180,162" aspect="true"/>
+    <text id="n16_kjht" name="n16" xy="165,319" size="325,36" fontSize="26" color="#f24b5e" text="成为粉丝才可以打开礼包哦!"/>
+  </displayList>
+</component>

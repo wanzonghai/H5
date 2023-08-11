@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="342,120">
+  <displayList>
+    <image id="n10_rfln" name="frame" src="izpb17" fileName="Personal_Base.png" xy="142,60" pivot="0.5,0.5" anchor="true"/>
+    <image id="n33_jbc7" name="headImg" src="jbc722" fileName="default_head.png" pkg="qwv197ct" xy="6,6"/>
+    <loader id="n34_pkc1" name="avatarLoader" xy="6,6" size="100,100" fill="scaleMatchHeight"/>
+    <text id="n8_rfln" name="nameTxt" xy="123,18" pivot="0,0.5" size="198,35" fontSize="25" color="#ff611c" autoSize="shrink" bold="true" text="这里是名称"/>
+    <text id="n14_rfln" name="coinTxt" xy="171,82" pivot="0.5,0.5" anchor="true" size="96,42" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" text="00000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

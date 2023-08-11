@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5" anchor="true" initName="exchangeSuccess">
+  <displayList>
+    <graph id="n0_o7s4" name="bg" xy="375,667" pivot="0.5,0.5" anchor="true" size="750,1334" alpha="0.5" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </graph>
+    <image id="n9_s7b1" name="n9" src="s0ol29" fileName="Images/Common_BG.png" xy="374,590" pivot="0.5,0.5" anchor="true" size="657,568" pkg="qwv197ct">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n10_s7b1" name="n10" src="s0ol2h" fileName="Images/giftItemBg.png" xy="374,591" pivot="0.5,0.5" anchor="true" size="600,386">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n4_o7s4" name="closeBtn" src="s0ol3" fileName="closeBtn.xml" pkg="qwv197ct" xy="694,309" pivot="0.5,0.5" anchor="true">
+      <relation target="n9_s7b1" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n5_o7s4" name="info" src="s0olc" fileName="components/GiftInfo.xml" xy="375,602" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n8_o7s4" name="goBtn" src="s0ole" fileName="normalBtn2.xml" pkg="qwv197ct" xy="375,865" pivot="0.5,0.5" anchor="true" size="296,90">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="前往查看"/>
+    </component>
+    <image id="n11_s7b1" name="n11" src="s0ol2n" fileName="Images/gift_title2.png" xy="375,297" pivot="0.5,0.5" anchor="true">
+      <relation target="n9_s7b1" sidePair="center-center,top-top"/>
+    </image>
+  </displayList>
+</component>

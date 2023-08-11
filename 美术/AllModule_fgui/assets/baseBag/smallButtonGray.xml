@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,80" pivot="0.5,0.5" extention="Button">
+  <controller name="button" exported="true" pages="2,up,3,down,4,disabled,5,selectedDisabled" selected="0"/>
+  <displayList>
+    <image id="n47_ctsq" name="n47" src="ctsq2x" fileName="Images/cancelButton.png" pkg="qwv197ct" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n46_ctsq" name="title" xy="1,0" size="296,80" fontSize="32" color="#ffffff" align="center" vAlign="middle" autoSize="none" bold="true" text="取消">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".8"/>
+</component>

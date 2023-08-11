@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="1numrqqz">
+  <resources>
+    <folder id="/aloneRes/" name="aloneRes" path="/" atlas="alone_npot"/>
+    <component id="ktvs0" name="Main.xml" path="/" exported="true"/>
+    <image id="iucu1" name="btn_start.png" path="/png/"/>
+    <component id="iucu2" name="startBtn.xml" path="/components/"/>
+    <component id="iucu3" name="subjectBtn.xml" path="/components/"/>
+    <image id="c9ml9" name="LOGO.png" path="/png/"/>
+    <image id="8geia" name="jinbi.png" path="/png/"/>
+    <image id="8geib" name="jiangpinbao.png" path="/png/"/>
+    <image id="8geie" name="jinbidi.png" path="/png/"/>
+    <image id="8geif" name="lingjinbi.png" path="/png/"/>
+    <image id="8geig" name="paomadengdi.png" path="/png/"/>
+    <component id="8geij" name="bagBtn.xml" path="/components/"/>
+    <component id="8geil" name="ruleBtn.xml" path="/components/"/>
+    <component id="8geim" name="coinBtn.xml" path="/components/"/>
+    <image id="8gein" name="xiaojinbi.png" path="/png/"/>
+    <component id="8geiq" name="systemHint.xml" path="/components/"/>
+    <image id="prazu" name="taitou.png" path="/png/"/>
+    <component id="8geio" name="scoreBtn.xml" path="/components/"/>
+    <image id="pywdv" name="haoliduihuan.png" path="/png/"/>
+    <image id="mzlrw" name="rank.png" path="/png/"/>
+    <image id="9ffy16" name="startBG.png" path="/aloneRes/"/>
+    <image id="zxvf17" name="awardFrame.png" path="/png/"/>
+    <image id="zxvf18" name="大西瓜 主界面 加商品.png" path="/"/>
+    <component id="zxvf3e" name="awardShow.xml" path="/components/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

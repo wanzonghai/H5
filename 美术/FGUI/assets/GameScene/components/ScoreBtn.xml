@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="373,87" extention="Button" initName="scoreBtn">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_8gei" name="n0" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,11" size="332,66">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_8gei" name="n1" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,11" size="332,66" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_8gei" name="n2" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,11" size="332,66">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_8gei" name="n3" src="e26d1y" fileName="png/jifendi.png" pkg="vzezwp8f" xy="23,11" size="332,66">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_8gei" name="n6" src="8geii" fileName="png/duihuananniu.png" pkg="vzezwp8f" xy="286,44" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="middle-middle,right-right"/>
+    </image>
+    <text id="n7_8gei" name="n7" xy="289,43" pivot="0.5,0.5" anchor="true" size="56,36" fontSize="26" color="#ffffff" align="center" text="兑换">
+      <relation target="n6_8gei" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_8gei" name="scoreNText" xy="160,43" pivot="0.5,0.5" anchor="true" size="106,42" fontSize="30" color="#f01e22" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="0"/>
+    <loader id="n8_pywd" name="icon" xy="55,43" pivot="0.5,0.5" anchor="true" size="82,85" url="ui://vzezwp8f8geip">
+      <relation target="n6_8gei" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

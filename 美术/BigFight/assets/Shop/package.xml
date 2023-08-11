@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="uw7no5rc">
+  <resources>
+    <component id="hd9y0" name="Main.xml" path="/" exported="true"/>
+    <image id="hd9y1" name="Design.png" path="/"/>
+    <image id="hd9y4" name="Shop_Banner.png" path="/"/>
+    <image id="hd9y7" name="Shop_Btn_Gray.png" path="/"/>
+    <image id="hd9y9" name="Shop_Btn_Used.png" path="/"/>
+    <image id="hd9yd" name="Shop_Panel_Red.png" path="/" scale="9grid" scale9grid="20,5,40,10"/>
+    <image id="hd9yf" name="Shop_Panel_Yellow.png" path="/" scale="9grid" scale9grid="20,5,40,10"/>
+    <image id="hd9yg" name="Shop_Title.png" path="/"/>
+    <component id="hd9ym" name="shopItem.xml" path="/"/>
+    <component id="hd9yn" name="buyBtn.xml" path="/"/>
+    <component id="hd9yo" name="coinCom.xml" path="/"/>
+    <component id="hd9yr" name="shop.xml" path="/"/>
+    <component id="slu3u" name="tipsCom.xml" path="/"/>
+    <image id="bkfgv" name="Shop_Btn_Buy.png" path="/"/>
+    <image id="bkfgw" name="Shop_Btn_Change.png" path="/"/>
+    <component id="bkfgy" name="changeBtn.xml" path="/"/>
+    <image id="tkegz" name="Shop_Blue.png" path="/" scale="9grid" scale9grid="20,5,40,10"/>
+    <image id="the910" name="Shop_Ico_Coin.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

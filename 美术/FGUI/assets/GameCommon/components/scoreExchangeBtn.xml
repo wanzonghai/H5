@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="217,56" extention="Button">
+  <controller name="button" pages="0,up,1,down,8,disabled,9,selectedDisabled" selected="1"/>
+  <displayList>
+    <image id="n0_praz" name="n0" src="dx3d1k" fileName="png/gift/giftItemBtnBg.png" xy="-1,1" size="217,56">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n1_praz" name="n1" src="dx3d1k" fileName="png/gift/giftItemBtnBg.png" xy="-1,1" size="217,56" color="#cccccc">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n2_praz" name="n2" src="112yo1m" fileName="png/gift/giftItemBtnBg2.png" xy="-1,1" size="217,56">
+      <gearDisplay controller="button" pages="8"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n3_praz" name="n3" src="112yo1m" fileName="png/gift/giftItemBtnBg2.png" xy="-1,1" size="217,56">
+      <gearDisplay controller="button" pages="9"/>
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </image>
+    <image id="n8_112yo" name="n8" src="112yo1n" fileName="png/jifen_gray.png" xy="32,31" pivot="0.5,0.5" anchor="true" aspect="true">
+      <gearDisplay controller="button" pages="8,9"/>
+    </image>
+    <image id="n10_ioet" name="n10" src="8geip" fileName="png/jifen.png" xy="27,30" pivot="0.5,0.5" anchor="true" size="37,38">
+      <gearDisplay controller="button" pages="0,1"/>
+    </image>
+    <text id="n5_o7s4" name="n5" xy="170,29" pivot="0.5,0.5" anchor="true" size="56,36" fontSize="26" vAlign="bottom" autoSize="none" singleLine="true" text="兑换"/>
+    <text id="n6_o7s4" name="needScoreNText" xy="101,29" pivot="0.5,0.5" anchor="true" size="83,36" fontSize="26" align="center" vAlign="bottom" autoSize="shrink" singleLine="true" text="300"/>
+    <text id="n9_pywd" name="needScoreicon" xy="38,29" pivot="0.5,0.5" anchor="true" size="57,36" visible="false" fontSize="26" align="center" vAlign="bottom" autoSize="shrink" singleLine="true" text="积分"/>
+  </displayList>
+  <Button/>
+</component>

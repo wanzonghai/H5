@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="capgk921">
+  <resources>
+    <component id="ibl60" name="Main.xml" path="/" exported="true"/>
+    <component id="ibl61" name="closeBtn.xml" path="/"/>
+    <component id="ibl62" name="getBtn.xml" path="/"/>
+    <image id="ibl67" name="gift.png" path="/Images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true" codePath="..\src\module\reward"/>
+</packageDescription>

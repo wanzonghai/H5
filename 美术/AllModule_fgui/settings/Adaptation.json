@@ -1,0 +1,14 @@
+{
+  "scaleMode": "ScaleWithScreenSize",
+  "screenMathMode": "MatchWidth",
+  "designResolutionX": 750,
+  "designResolutionY": 1334,
+  "devices": [
+    {
+      "name": "DesignSize",
+      "resolutionX": 1334,
+      "resolutionY": 750
+    }
+  ],
+  "fileName": "Adaptation"
+}

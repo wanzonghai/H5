@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" pivot="0.5,0.5">
+  <displayList>
+    <component id="n7_n9oc" name="frame" src="ctsq37" fileName="CommonFrame.xml" pkg="qwv197ct" xy="47,238" pivot="0.5,0.5" size="656,857">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Label icon="ui://c5mx7a76n9oc3"/>
+    </component>
+    <image id="n8_n9oc" name="framebg" src="n9ocl" fileName="Images/giftItemBg.png" xy="375,666" pivot="0.5,0.5" anchor="true" size="615,694">
+      <relation target="n7_n9oc" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </image>
+    <list id="n9_n9oc" name="list" xy="374,666" pivot="0.5,0.5" anchor="true" size="572,651" overflow="scroll" defaultItem="ui://c5mx7a76n9oc4" align="center">
+      <relation target="n8_n9oc" sidePair="center-center,middle-middle"/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="popUp" autoPlay="true">
+    <item time="0" type="Scale" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Back.Out"/>
+  </transition>
+  <transition name="packUp">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0,0" duration="9" ease="Back.In"/>
+  </transition>
+</component>

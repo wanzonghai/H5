@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,902">
+  <controller name="typeCtrl" pages="0,规则,1,公告" selected="0"/>
+  <controller name="btnCtrl" pages="0,关闭,1,确定,2,无" selected="0"/>
+  <displayList>
+    <image id="n9_izpb" name="BG" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,857">
+      <relation target="n1_igfa" sidePair="bottomext-bottom"/>
+    </image>
+    <image id="n1_igfa" name="n1" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,114" size="615,716"/>
+    <text id="n4_igfa" name="versionTxt" xy="42,785" pivot="0,0.5" size="390,29" fontSize="20" color="#999999" leading="5" vars="true" autoSize="none" text="v{ver=1.0.0}">
+      <relation target="n1_igfa" sidePair="bottom-bottom"/>
+    </text>
+    <image id="n16_t4ik" name="title_notice" src="otjz2q" fileName="Notice_Title.png" pkg="qwv197ct" xy="203,0">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+    </image>
+    <image id="n8_izpb" name="title_rule" src="izpb4" fileName="Rule_Title.png" xy="169,3">
+      <gearDisplay controller="typeCtrl" pages="0"/>
+    </image>
+    <component id="n14_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="602,12">
+      <gearDisplay controller="btnCtrl" pages="0"/>
+    </component>
+    <list id="n15_mc3p" name="list" xy="42,183" size="572,581" overflow="scroll" defaultItem="ui://hh5u25h7mc3p5">
+      <item/>
+    </list>
+    <component id="n17_t4ik" name="confirmBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="198,941">
+      <gearDisplay controller="btnCtrl" pages="1"/>
+    </component>
+    <text id="n18_u2xk" name="n18" xy="159,128" size="337,36" visible="false" fontSize="26" color="#ff0000" text="活动时间：5月13号-5月20号"/>
+  </displayList>
+</component>

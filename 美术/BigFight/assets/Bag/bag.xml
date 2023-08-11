@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,968">
+  <controller name="type" pages="2,实物奖励,0,优惠券" selected="0"/>
+  <displayList>
+    <image id="n1_igfa" name="n1" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,924"/>
+    <image id="n3_igfa" name="n3" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,184" size="615,760"/>
+    <image id="n9_j04i" name="n9" src="j04iq" fileName="Bag_Title.png" xy="198,1"/>
+    <component id="n6_igfa" name="couponBtn" src="igfa8" fileName="couponBtn.xml" xy="295,104">
+      <Button controller="type" page="0"/>
+    </component>
+    <component id="n5_igfa" name="goodsBtn" src="igfa7" fileName="goodsBtn.xml" xy="45,104">
+      <Button checked="true" controller="type" page="2"/>
+    </component>
+    <list id="n7_igfa" name="goodsList" xy="22,191" size="613,747" overflow="scroll" defaultItem="ui://hekdvdn8igfac" autoClearItems="true">
+      <gearDisplay controller="type" pages="2"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n8_igfa" name="couponList" xy="22,191" size="613,744" overflow="scroll" defaultItem="ui://hekdvdn8igfac" autoClearItems="true">
+      <gearDisplay controller="type" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n15_emqn" name="backBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20"/>
+    <text id="n11_lt7o" name="noneTxt" xy="226,473" size="204,66" visible="false" fontSize="50" color="#cccccc" text="暂无奖励">
+      <relation target="n3_igfa" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n4_igfa" name="tipsTxt" xy="62,1023" pivot="0.5,0.5" size="532,32" visible="false" fontSize="22" color="#ffffff" align="center" text="已经加入对应商家的兑换券里，下单达到条件即可使用">
+      <gearDisplay controller="type" pages="0"/>
+    </text>
+  </displayList>
+</component>

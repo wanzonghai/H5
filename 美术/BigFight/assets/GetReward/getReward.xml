@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="656,546">
+  <controller name="count" pages="0,2奖励,1,1奖励" selected="1"/>
+  <controller name="type" pages="0,比赛奖励,1,获得奖励,2,补发奖励" selected="0"/>
+  <displayList>
+    <image id="n19_pkc1" name="light" src="pkc1o" fileName="GetReward_Light.png" xy="122,-99"/>
+    <image id="n3_rqvv" name="n3" src="rqvvk" fileName="Common_BG.png" pkg="qwv197ct" xy="0,42" size="656,458">
+      <relation target="" sidePair="center-center"/>
+    </image>
+    <image id="n21_sl47" name="n21" src="f1yh2v" fileName="Common_Panel_White.png" pkg="qwv197ct" xy="20,120" size="615,304"/>
+    <image id="n5_rqvv" name="title_rank" src="sl47s" fileName="GetReward_Title.png" xy="170,0">
+      <gearDisplay controller="type" pages="0"/>
+    </image>
+    <image id="n11_rqvv" name="title_get" src="sl47s" fileName="GetReward_Title.png" xy="170,0">
+      <gearDisplay controller="type" pages="1,2"/>
+    </image>
+    <image id="n25_c84t" name="title_pay" src="sl47s" fileName="GetReward_Title.png" xy="170,0">
+      <gearDisplay controller="type" pages="2"/>
+    </image>
+    <component id="n7_rqvv" name="rewardCom1" src="rqvvp" fileName="rewardCom.xml" pkg="qwv197ct" xy="162,196">
+      <gearXY controller="count" pages="0,1" values="162,174|162,196"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n8_rqvv" name="rewardCom2" src="rqvvp" fileName="rewardCom.xml" pkg="qwv197ct" xy="162,280">
+      <gearDisplay controller="count" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n20_sl47" name="confirmBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="173,448">
+      <gearDisplay controller="type" pages="1,2"/>
+    </component>
+    <component id="n22_uz4n" name="shareBtn" src="hob4s" fileName="confirmBtn.xml" pkg="qwv197ct" xy="173,448">
+      <gearDisplay controller="type" pages="0"/>
+      <Button title="炫耀一下"/>
+    </component>
+    <component id="n24_v77a" name="closeBtn" src="v77a31" fileName="closeBtn.xml" pkg="qwv197ct" xy="590,20">
+      <gearDisplay controller="type" pages="0"/>
+    </component>
+  </displayList>
+</component>

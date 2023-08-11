@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="672,137">
+  <controller name="ctrLastRankStatus" alias="上期排行" exported="true" pages="0,显示,1,不显示" selected="1"/>
+  <displayList>
+    <image id="n50_cowj" name="n0" src="ctsq38" fileName="Images/background.png" pkg="qwv197ct" xy="0,0" size="468,136">
+      <relation target="" sidePair="width-width%,height-height"/>
+    </image>
+    <component id="n51_cowj" name="myItem" src="c8s24" fileName="rankItem.xml" xy="1,1" controller="ctrlIsSelf,1">
+      <relation target="" sidePair="width-width,height-height,left-left,top-top"/>
+    </component>
+    <component id="n40_cowj" name="lastRankBtn" src="cowj1h" fileName="lastRankBtn.xml" xy="588,28">
+      <gearDisplay controller="ctrLastRankStatus" pages="0"/>
+      <relation target="" sidePair="middle-middle%,right-right"/>
+    </component>
+    <component id="n41_cowj" name="ruleBtn" src="cowj1i" fileName="ruleBtn.xml" xy="523,18">
+      <gearDisplay controller="ctrLastRankStatus" pages="0,1"/>
+      <gearXY controller="ctrLastRankStatus" pages="0,1" values="473,17|523,18"/>
+      <relation target="" sidePair="middle-middle%,right-right"/>
+    </component>
+  </displayList>
+</component>

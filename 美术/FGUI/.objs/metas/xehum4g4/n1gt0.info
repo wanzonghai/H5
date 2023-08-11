@@ -1,0 +1,39 @@
+{
+  "objectStatus": {
+    "n19_gyh2": {
+      "hidden": true
+    },
+    "n15_wyiu": {
+      "hidden": true
+    },
+    "n17_b9dp": {
+      "hidden": true
+    },
+    "n8_ieaz": {
+      "hidden": true
+    },
+    "n14_ebwf": {
+      "hidden": true
+    },
+    "n13_ebwf": {
+      "hidden": true
+    },
+    "n10_srl0": {
+      "hidden": true
+    },
+    "n12_ktub": {
+      "hidden": true
+    },
+    "n18_wpln": {
+      "hidden": true
+    },
+    "n22_w05t": {
+      "hidden": true
+    },
+    "n7_ieaz": {
+      "hidden": true
+    }
+  },
+  "adaptiveTest": true,
+  "fitScreen": "FitSize"
+}

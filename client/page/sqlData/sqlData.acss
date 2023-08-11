@@ -1,0 +1,289 @@
+/* 遮罩层 */
+
+.cover_none {
+   display: none
+}
+
+.cover {
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   background: rgba(56, 49, 49, 0.4);
+   width: 100%;
+   /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+   height: 100%;
+   filter: alpha(opacity=60);
+   /*设置透明度为60%*/
+   opacity: 0.6;
+   /*非IE浏览器下设置透明度为60%*/
+   z-Index: 9;
+}
+
+.main-frame {
+   height: 100%;
+   background-color: #f6f6f6;
+   padding: 20px 20px 20px 20px;
+}
+
+.check-time-frame {
+   /* height: 50px; */
+   /* background-color: white; */
+   border-radius: 5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between
+}
+
+.check-time-frame-1 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.check-time-frame-2 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.user-data {
+   line-height: 50px;
+   margin-right: 15px;
+   font-size: 16px;
+   color: #477cf6;
+}
+
+.export {
+   width: 80px;
+   height: 34px;
+   line-height: 34px;
+   text-align: center;
+   background-color: #3d7fff;
+   float: right;
+   margin-top: 8px;
+   border-radius: 3px;
+   color: white;
+   font-size: 14px;
+}
+
+.check-active-frame {
+   /* background-color: white; */
+   border-radius: 5px;
+   /* margin-top: 20px; */
+   display: flex;
+   flex-flow: column;
+}
+
+.box-frame-1 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between
+}
+
+.box-frame-1-1 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box-frame-1-2 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.active-msg {
+   /* margin-left: 22px; */
+   line-height: 50px;
+   /* font-weight: bold; */
+}
+
+.active-select {
+   margin-top: 10px;
+   margin-left: 15px;
+}
+
+.active-select select {
+   width: 154px;
+   height: 36px;
+}
+
+.center-data-frame {
+   margin-top: 15px;
+   background-color: white;
+   border-radius: 5px;
+}
+
+.top-msg-frame {
+   height: 40px;
+   line-height: 40px;
+   padding-left: 20px;
+   /* border-bottom: 1px solid #ebeef0; */
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.active_time {
+   color: #3d7fff
+}
+
+.result-frame {
+   background-color: white;
+   padding: 0px 20px 20px 20px;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+}
+
+.scroll-frame {
+   height: 520px;
+}
+
+.checkBtn {
+   width: 100px;
+   height: 35px;
+   text-align: center;
+   background-color: #3d7fff;
+   line-height: 35px;
+   margin-top: 6px;
+   margin-left: 50px;
+   border-radius: 10px;
+   color: white;
+}
+
+.btn_frame {
+   font-size: 13px;
+   text-align: center;
+   color: white;
+   font-weight: bold;
+}
+
+.ship_btn {
+   width: 70px;
+   height: 22px;
+   background-color: #3d7fff;
+   text-align: center;
+   line-height: 22px;
+   border-radius: 3px;
+   margin-top: 5px;
+   margin-left: 50px;
+}
+
+.ship_btn_yellow {
+   width: 70px;
+   height: 22px;
+   background-color: #FFB463;
+   text-align: center;
+   line-height: 22px;
+   border-radius: 3px;
+   margin-top: 5px;
+   margin-left: 50px;
+}
+
+.ship_btn_red {
+   width: 70px;
+   height: 22px;
+   background-color: red;
+   text-align: center;
+   line-height: 22px;
+   border-radius: 3px;
+   margin-top: 5px;
+   margin-left: 50px;
+}
+
+.reward_box_frame {
+   position: fixed;
+   top: 40%;
+   left: 35%;
+   cursor: pointer;
+   z-index: 10;
+   border-radius: 20px;
+   flex-flow: column;
+   background-color: white;
+   padding-bottom: 15px;
+   padding: 20px 20px 20px 20px;
+}
+
+.reward-close {
+   width: 70px;
+   height: 30px;
+   background-color: #3d7fff;
+   float: right;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 5px;
+   margin-top: 10px;
+   color: white;
+}
+
+.addCoin_box_frame {
+   position: fixed;
+   top: 40%;
+   left: 35%;
+   cursor: pointer;
+   z-index: 10;
+   border-radius: 20px;
+   flex-flow: column;
+   background-color: white;
+   padding-bottom: 15px;
+   padding: 20px 20px 20px 20px;
+   line-height: 35px;
+}
+
+.add-input input {
+   width: 100px;
+}
+
+.addCoin-btn-frame {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-top: 5px;
+}
+
+.btn-success {
+   width: 80px;
+   height: 30px;
+   background-color: #3d7fff;
+   text-align: center;
+   border-radius: 5px;
+   line-height: 30px;
+   color: white;
+}
+
+.btn_no {
+   background-color: #D7D7D7;
+}
+
+.pushBlack_box_frame {
+   position: fixed;
+   top: 40%;
+   left: 35%;
+   cursor: pointer;
+   z-index: 10;
+   border-radius: 20px;
+   flex-flow: column;
+   background-color: white;
+   padding-bottom: 15px;
+   padding: 20px 20px 20px 20px;
+   line-height: 35px;
+   text-align: center;
+}
+
+.msg_1 {
+   font-size: 20px;
+   color: green;
+   font-weight: bold
+}
+
+.msg_2 {
+   font-size: 13px;
+   color: red;
+}
+
+.page-frmae {
+   margin-top: 15px;
+   padding: 0px 0px 20px 0px;
+   text-align: center;
+}
+.table_frame_list {
+   
+}

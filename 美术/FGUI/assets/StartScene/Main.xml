@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1334" overflow="hidden" designImage="ui://1numrqqzzxvf18">
+  <displayList>
+    <loader id="n7_c9ml" name="bg" xy="375,525" pivot="0.5,0.5" anchor="true" size="750,1624" url="ui://1numrqqz9ffy16" align="center" vAlign="bottom">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </loader>
+    <image id="n6_c9ml" name="titleIcon" src="c9ml9" fileName="png/LOGO.png" xy="375,341" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+    </image>
+    <component id="n17_zxvf" name="awardShow" src="zxvf3e" fileName="components/awardShow.xml" xy="374,699" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+    </component>
+    <component id="n1_iucu" name="startBtn" src="iucu2" fileName="components/startBtn.xml" xy="375,989" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+    </component>
+    <component id="n10_8gei" name="coinBtn" src="8geim" fileName="components/coinBtn.xml" xy="120,55" pivot="0.5,0.5" anchor="true" visible="false">
+      <relation target="" sidePair="center-center,top-top%"/>
+    </component>
+    <component id="n11_8gei" name="scoreBtn" src="8geio" fileName="components/scoreBtn.xml" xy="609,97" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="right-right,top-top%"/>
+    </component>
+    <component id="n12_nkzp" name="rankBtn" src="8geij" fileName="components/bagBtn.xml" xy="375,1188" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+      <Button title="积分榜"/>
+    </component>
+    <component id="n13_s1e2" name="ruleBtn" src="8geil" fileName="components/ruleBtn.xml" xy="158,1188" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+      <Button icon="ui://1numrqqz8geif"/>
+    </component>
+    <component id="n9_8gei" name="getCoinBtn" src="8geij" fileName="components/bagBtn.xml" xy="572,1186" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle%"/>
+      <Button title="赚次数" icon="ui://1numrqqz8geib"/>
+    </component>
+  </displayList>
+</component>
